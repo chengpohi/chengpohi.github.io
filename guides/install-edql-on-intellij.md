@@ -1,13 +1,21 @@
-# Creating your first project
-
-{% hint style="info" %}
-**Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
-{% endhint %}
+# Install EDQL on Intellij
 
 ## The basics
 
-Projects are containers for task lists. Think of them as a library for everything your team needs to get done to complete or ship a project.
+EDQL plugin is based on Jetbrains IDE, and support version >= 203, so we can install it on Intellij, Webstorm, Go Land IDEs
 
-## Creating a project
+## Install by Marketspace
 
-Hit the big '+' button in your sidebar and select 'New Project' from the menu that pops up. Give your project a name, and you're good to go!
+Open the Intellij plugins and search **EDQL**, Download install and restart IDE.
+
+![](../.gitbook/assets/install-edql.png)
+
+## Manual install
+
+Open [EDQL Plugin](https://plugins.jetbrains.com/plugin/16364-edql-elasticsearch-data-query-language) website, select the **newest** version and download plugin zip
+
+![](../.gitbook/assets/manual-install.png)
+
+Open IDE plugin form , and select install plugin from disk with **downloaded zip**&#x20;
+
+![](<../.gitbook/assets/install-edql (1).png>)
