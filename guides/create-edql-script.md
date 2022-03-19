@@ -79,4 +79,4 @@ ApiSessionToken "c"
 
 ### Action for Index
 
-### Query DSL block
+### Query DSL Block
