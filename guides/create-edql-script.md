@@ -79,4 +79,38 @@ ApiSessionToken "c"
 
 ### Action for Index
 
+When query to Elasticsearch Cluster, need to define the action with index, example: GET, POST, DELETE, PUT, so if want to query myindex:
+
+```
+POST my-index/_search
+
+#OR
+
+GET my-index/_mapping
+
+#OR
+
+GET _cluster/stats
+```
+
 ### Query DSL Block
+
+Query DSL block is same as the offcial Query DSL block: [QueryDSL](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html)
+
+```
+POST my-index/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "term": {
+            "title.keyword": "DGS10"
+          }
+        }
+      ]
+    }
+  }
+}
+```
+
