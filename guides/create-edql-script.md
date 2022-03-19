@@ -48,19 +48,29 @@ Timeout 3000
 
 If Elasticsearch Cluster configured the Authorization, we need to configure the Authorization for connect to Elasticsearch Cluster, for example: basic authorization, elastic cloud authorization, AWS credentials
 
-```
-#Authorization header
-Authorization "Bear xxx"
+#### Authorization header
 
-#Basic username & password
+```
+Authorization "Bear xxx"
+```
+
+#### Basic Username and Password
+
+```
 Username "u"
 Password "p"
+```
 
-#api key id
+#### ApiKey Credential
+
+```
 ApiKeyId "aa"
 ApiKeySecret "cc
+```
 
-#AWS credentials
+#### AWS Credential
+
+```
 AWSRegion "us-east"
 ApiKeyId "ccc"
 ApiKeySecret "cc"
