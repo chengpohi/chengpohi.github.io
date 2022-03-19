@@ -2,7 +2,7 @@
 
 ## The basics
 
-EDQL plugin is based on Jetbrains IDE, and support version >= 203, so we can install it on Intellij, Webstorm, Go Land IDEs
+EDQL plugin is based on Jetbrains IDE, and support version >= 203, so we can install it on Intellij, Webstorm, Go Land IDE etc.
 
 ## Install by Marketspace
 
