@@ -114,3 +114,4 @@ POST my-index/_search
 }
 ```
 
+![](../.gitbook/assets/new-visual.gif)
