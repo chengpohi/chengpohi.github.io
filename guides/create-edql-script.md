@@ -64,15 +64,15 @@ Password "p"
 #### ApiKey Credential
 
 ```
-ApiKeyId "aa"
-ApiKeySecret "cc
+ApiKeyId "a"
+ApiKeySecret "c"
 ```
 
 #### AWS Credential
 
 ```
 AWSRegion "us-east"
-ApiKeyId "ccc"
-ApiKeySecret "cc"
-ApiSessionToken "cc
+ApiKeyId "c"
+ApiKeySecret "c"
+ApiSessionToken "c"
 ```
