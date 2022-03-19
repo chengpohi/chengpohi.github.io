@@ -16,6 +16,6 @@ Open [EDQL Plugin](https://plugins.jetbrains.com/plugin/16364-edql-elasticsearch
 
 ![](../.gitbook/assets/manual-install.png)
 
-Open IDE plugin form , and select install plugin from disk with **downloaded zip**&#x20;
+Open IDE plugin dialog, and select install plugin from disk with **downloaded zip**&#x20;
 
 ![](<../.gitbook/assets/install-edql (1).png>)
