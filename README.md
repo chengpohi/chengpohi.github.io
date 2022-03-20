@@ -75,7 +75,7 @@ EDQL is a full features of script and compatible with Elasticsearch Query DSL bl
 
 Use cases with EDQL
 
-With EDQL can help solve multi scenarios problem, you could find use cases by:
+With EDQL can help solve multi scenarios problems, you could find use cases by:
 
 {% content-ref url="use-cases/query-data.md" %}
 [query-data.md](use-cases/query-data.md)
