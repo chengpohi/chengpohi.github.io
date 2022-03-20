@@ -1,0 +1,11 @@
+input: .
+output: .retype
+url: # Add your website address here
+branding:
+  title: Intellij EDQL
+  label: Docs
+links:
+  - text: Getting Started
+    link: https://chengpohi.github.io/guides/install-edql-on-intellij/
+footer:
+  copyright: "&copy; Copyright . All rights reserved."
