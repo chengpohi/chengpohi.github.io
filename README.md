@@ -2,7 +2,7 @@
 
 [EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/) is an Intellij Plugin for Query Elasticsearch, it’s fully compatible with Elasticsearch Query DSL syntax. It’s powerful for management ES documents and visualize views. such as: query result, aggregation result, export result, plot etc. Since it works as script language, you can build your own query templates with function, variable, library by using productivity Intellij IDE.&#x20;
 
-## Core Features:
+## Core Features
 
 1. Query Elasticsearch with Query DSL
 2. Manage query result, including: add, delete, update document
@@ -73,7 +73,7 @@ EDQL is a full features of script and compatible with Elasticsearch Query DSL bl
 [script-syntax.md](language-specification/script-syntax.md)
 {% endcontent-ref %}
 
-Use cases with EDQL
+### Use cases with EDQL
 
 With EDQL can help solve multi scenarios problems, you could find use cases by:
 
