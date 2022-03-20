@@ -15,14 +15,18 @@
 * [Task Lists](language-specification/task-lists.md)
 * [Tasks](language-specification/tasks.md)
 
-## IDE Supporting
+## IDE SUPPORTING
 
-* [For Designers](ide-supporting/for-designers/README.md)
-  * [Figma Integration](ide-supporting/for-designers/figma-integration.md)
-* [For Engineers](ide-supporting/for-engineers/README.md)
-  * [GitHub Integration](ide-supporting/for-engineers/github-integration.md)
-* [For Support](ide-supporting/for-support/README.md)
-  * [Intercom Integration](ide-supporting/for-support/intercom-integration.md)
+* [Copy of Tasks](ide-supporting/copy-of-tasks.md)
+
+## USE CASES
+
+* [For Designers](use-cases/for-designers/README.md)
+  * [Figma Integration](use-cases/for-designers/figma-integration.md)
+* [For Engineers](use-cases/for-engineers/README.md)
+  * [GitHub Integration](use-cases/for-engineers/github-integration.md)
+* [For Support](use-cases/for-support/README.md)
+  * [Intercom Integration](use-cases/for-support/intercom-integration.md)
 
 ## Extras
 
