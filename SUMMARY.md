@@ -20,6 +20,10 @@
 * [Actions](ide-supporting/actions.md)
 * [Visual Editor](ide-supporting/visual-editor.md)
 
+## Visualization
+
+* [Visualize](visualization/visualize.md)
+
 ## USE CASES
 
 * [Query Data](use-cases/query-data.md)
