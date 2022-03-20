@@ -57,13 +57,9 @@ Follow our handy guides to get started on the basics as quickly as possible:
 [run-edql-request.md](guides/run-edql-request.md)
 {% endcontent-ref %}
 
-{% hint style="info" %}
-**Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
-{% endhint %}
+### Explore More About EDQL Syntax
 
-### Fundamentals: Dive a little deeper
-
-Learn the fundamentals of MyProduct to get a deeper understanding of our main features:
+EDQL is a full features of script and compatible with Elasticsearch Query DSL block, include: function, variable, iteration etc., explore more :
 
 {% content-ref url="language-specification/glossary.md" %}
 [glossary.md](language-specification/glossary.md)
@@ -76,11 +72,3 @@ Learn the fundamentals of MyProduct to get a deeper understanding of our main fe
 {% content-ref url="language-specification/script-syntax.md" %}
 [script-syntax.md](language-specification/script-syntax.md)
 {% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% hint style="info" %}
-**Good to know:** Splitting your product into fundamental concepts, objects, or areas can be a great way to let readers deep dive into the concepts that matter most to them. Combine guides with this approach to 'fundamentals' and you're well on your way to great documentation!
-{% endhint %}
