@@ -65,20 +65,20 @@ Follow our handy guides to get started on the basics as quickly as possible:
 
 Learn the fundamentals of MyProduct to get a deeper understanding of our main features:
 
-{% content-ref url="language-specification/projects.md" %}
-[projects.md](language-specification/projects.md)
+{% content-ref url="language-specification/basic-glossary.md" %}
+[basic-glossary.md](language-specification/basic-glossary.md)
 {% endcontent-ref %}
 
-{% content-ref url="language-specification/members.md" %}
-[members.md](language-specification/members.md)
+{% content-ref url="language-specification/basic-syntax.md" %}
+[basic-syntax.md](language-specification/basic-syntax.md)
 {% endcontent-ref %}
 
-{% content-ref url="language-specification/task-lists.md" %}
-[task-lists.md](language-specification/task-lists.md)
+{% content-ref url="language-specification/advance-syntax.md" %}
+[advance-syntax.md](language-specification/advance-syntax.md)
 {% endcontent-ref %}
 
-{% content-ref url="language-specification/tasks.md" %}
-[tasks.md](language-specification/tasks.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% hint style="info" %}

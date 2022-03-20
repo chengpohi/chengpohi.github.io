@@ -10,23 +10,21 @@
 
 ## Language Specification
 
-* [Projects](language-specification/projects.md)
-* [Members](language-specification/members.md)
-* [Task Lists](language-specification/task-lists.md)
-* [Tasks](language-specification/tasks.md)
+* [Basic Glossary](language-specification/basic-glossary.md)
+* [Basic Syntax](language-specification/basic-syntax.md)
+* [Advance Syntax](language-specification/advance-syntax.md)
 
 ## IDE SUPPORTING
 
-* [Copy of Tasks](ide-supporting/copy-of-tasks.md)
+* [Language Support](ide-supporting/language-support.md)
+* [Actions](ide-supporting/actions.md)
+* [Visual Editor](ide-supporting/visual-editor.md)
 
 ## USE CASES
 
-* [For Designers](use-cases/for-designers/README.md)
-  * [Figma Integration](use-cases/for-designers/figma-integration.md)
-* [For Engineers](use-cases/for-engineers/README.md)
-  * [GitHub Integration](use-cases/for-engineers/github-integration.md)
-* [For Support](use-cases/for-support/README.md)
-  * [Intercom Integration](use-cases/for-support/intercom-integration.md)
+* [Query Data](use-cases/query-data.md)
+* [Analysis Data](use-cases/analysis-data.md)
+* [Manage Cluster](use-cases/manage-cluster.md)
 
 ## Extras
 
