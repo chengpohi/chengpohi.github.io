@@ -29,5 +29,6 @@ jobs:
       - name: Copy To Branches Action
         uses: planetoftheweb/copy-to-branches@latest
         env:
-	  key: retype
+	  key: main
+	  branches: retype
           files: google380e3aaa82ba1c1f.html
