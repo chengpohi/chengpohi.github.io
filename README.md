@@ -57,7 +57,7 @@ Follow our handy guides to get started on the basics as quickly as possible:
 [run-edql-request.md](guides/run-edql-request.md)
 {% endcontent-ref %}
 
-### Explore More About EDQL Syntax
+### Explore More about EDQL Syntax
 
 EDQL is a full features of script and compatible with Elasticsearch Query DSL block, include: function, variable, iteration etc., explore more :
 
