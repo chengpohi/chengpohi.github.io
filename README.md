@@ -1,6 +1,6 @@
 # What is EDQL?
 
-[EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/) is an Intellij Plugin for Query Elasticsearch, it’s fully compatible with Elasticsearch Query DSL syntax. It’s powerful for management ES documents and visualize views. such as: query result, aggregation result, export result, plot etc. Since it works as script language, you can build your own query templates with function, variable, library by using productivity Intellij IDE.
+[EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/) is an Intellij Plugin for Query Elasticsearch, it’s fully compatible with Elasticsearch Query DSL syntax. It’s powerful for management ES documents and visualize views. such as: query result, aggregation result, export result, plot etc. Since it works as script language, you can build your own query templates with function, variable, library by using productivity Intellij IDE.&#x20;
 
 ## Core Features:
 
@@ -65,20 +65,20 @@ Follow our handy guides to get started on the basics as quickly as possible:
 
 Learn the fundamentals of MyProduct to get a deeper understanding of our main features:
 
-{% content-ref url="fundamentals/projects.md" %}
-[projects.md](fundamentals/projects.md)
+{% content-ref url="language-specification/projects.md" %}
+[projects.md](language-specification/projects.md)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/members.md" %}
-[members.md](fundamentals/members.md)
+{% content-ref url="language-specification/members.md" %}
+[members.md](language-specification/members.md)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/task-lists.md" %}
-[task-lists.md](fundamentals/task-lists.md)
+{% content-ref url="language-specification/task-lists.md" %}
+[task-lists.md](language-specification/task-lists.md)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/tasks.md" %}
-[tasks.md](fundamentals/tasks.md)
+{% content-ref url="language-specification/tasks.md" %}
+[tasks.md](language-specification/tasks.md)
 {% endcontent-ref %}
 
 {% hint style="info" %}
