@@ -30,4 +30,4 @@ jobs:
         uses: planetoftheweb/copy-to-branches@latest
         env:
 	  key: retype
-          files: google380e3aaa82ba1c1f.html.md
+          files: google380e3aaa82ba1c1f.html
