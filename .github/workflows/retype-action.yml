@@ -19,3 +19,15 @@ jobs:
       - uses: retypeapp/action-github-pages@v2
         with:
           update-branch: true
+
+  copy-to-branches:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Copy To Branches Action
+        uses: planetoftheweb/copy-to-branches@latest
+        env:
+	  key: retype
+          files: google380e3aaa82ba1c1f.html.md
