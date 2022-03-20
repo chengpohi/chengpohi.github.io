@@ -10,9 +10,9 @@
 
 ## Language Specification
 
-* [Basic Glossary](language-specification/basic-glossary.md)
+* [Glossary](language-specification/glossary.md)
 * [Basic Syntax](language-specification/basic-syntax.md)
-* [Advance Syntax](language-specification/advance-syntax.md)
+* [Script Syntax](language-specification/script-syntax.md)
 
 ## IDE SUPPORTING
 
