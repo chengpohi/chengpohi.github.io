@@ -11,5 +11,5 @@ footer:
   copyright: "&copy; Copyright . All rights reserved."
   
 integrations:
-  googleTagManager:
+  googleAnalytics:
     id: "G-EV2LRW2MF7"        # Your Google Tag Manager measurement id.
