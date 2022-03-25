@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://edql-wiki.github.io/</loc>
+    <loc>https://edql-wiki.github.io/index.html</loc>
     <lastmod>2022-03-23T02:08:43Z</lastmod>
     <priority>1.0</priority>
   </url>
@@ -11,72 +11,72 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://edql-wiki.github.io/guides/install-edql-on-intellij/</loc>
+    <loc>https://edql-wiki.github.io/guides/install-edql-on-intellij/index.html</loc>
     <lastmod>2022-03-23T02:08:43Z</lastmod>
     <priority>0.47</priority>
   </url>
   <url>
-    <loc>https://edql-wiki.github.io/extras/keyboard-shortcuts/</loc>
+    <loc>https://edql-wiki.github.io/extras/keyboard-shortcuts/index.html</loc>
     <lastmod>2022-03-23T02:08:43Z</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://edql-wiki.github.io/ide-supporting/language-support/</loc>
+    <loc>https://edql-wiki.github.io/ide-supporting/language-support/index.html</loc>
     <lastmod>2022-03-23T02:08:43Z</lastmod>
     <priority>0.39</priority>
   </url>
   <url>
-    <loc>https://edql-wiki.github.io/ide-supporting/actions/</loc>
+    <loc>https://edql-wiki.github.io/ide-supporting/actions/index.html</loc>
     <lastmod>2022-03-23T02:08:43Z</lastmod>
     <priority>0.38</priority>
   </url>
   <url>
-    <loc>https://edql-wiki.github.io/ide-supporting/visual-editor/</loc>
+    <loc>https://edql-wiki.github.io/ide-supporting/visual-editor/index.html</loc>
     <lastmod>2022-03-23T02:08:43Z</lastmod>
     <priority>0.37</priority>
   </url>
   <url>
-    <loc>https://edql-wiki.github.io/guides/create-edql-script/</loc>
+    <loc>https://edql-wiki.github.io/guides/create-edql-script/index.html</loc>
     <lastmod>2022-03-23T02:08:43Z</lastmod>
     <priority>0.36</priority>
   </url>
   <url>
-    <loc>https://edql-wiki.github.io/guides/run-edql-request/</loc>
+    <loc>https://edql-wiki.github.io/guides/run-edql-request/index.html</loc>
     <lastmod>2022-03-23T02:08:43Z</lastmod>
     <priority>0.35</priority>
   </url>
   <url>
-    <loc>https://edql-wiki.github.io/visualization/visualize/</loc>
+    <loc>https://edql-wiki.github.io/visualization/visualize/index.html</loc>
     <lastmod>2022-03-23T02:08:43Z</lastmod>
     <priority>0.35</priority>
   </url>
   <url>
-    <loc>https://edql-wiki.github.io/language-specification/glossary/</loc>
+    <loc>https://edql-wiki.github.io/language-specification/glossary/index.html</loc>
     <lastmod>2022-03-23T02:08:43Z</lastmod>
     <priority>0.33</priority>
   </url>
   <url>
-    <loc>https://edql-wiki.github.io/language-specification/basic-syntax/</loc>
+    <loc>https://edql-wiki.github.io/language-specification/basic-syntax/index.html</loc>
     <lastmod>2022-03-23T02:08:43Z</lastmod>
     <priority>0.32</priority>
   </url>
   <url>
-    <loc>https://edql-wiki.github.io/language-specification/script-syntax/</loc>
+    <loc>https://edql-wiki.github.io/language-specification/script-syntax/index.html</loc>
     <lastmod>2022-03-23T02:08:43Z</lastmod>
     <priority>0.31</priority>
   </url>
   <url>
-    <loc>https://edql-wiki.github.io/use-cases/query-data/</loc>
+    <loc>https://edql-wiki.github.io/use-cases/query-data/index.html</loc>
     <lastmod>2022-03-23T02:08:43Z</lastmod>
     <priority>0.23</priority>
   </url>
   <url>
-    <loc>https://edql-wiki.github.io/use-cases/analysis-data/</loc>
+    <loc>https://edql-wiki.github.io/use-cases/analysis-data/index.html</loc>
     <lastmod>2022-03-23T02:08:43Z</lastmod>
     <priority>0.22</priority>
   </url>
   <url>
-    <loc>https://edql-wiki.github.io/use-cases/manage-cluster/</loc>
+    <loc>https://edql-wiki.github.io/use-cases/manage-cluster/index.html</loc>
     <lastmod>2022-03-23T02:08:43Z</lastmod>
     <priority>0.21</priority>
   </url>
