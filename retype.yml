@@ -1,15 +1,15 @@
 input: .
 output: .retype
-url: https://edql-wiki.github.io/
+url: https://chengpohi.github.io/
 branding:
   title: Intellij EDQL
   label: Docs
 links:
   - text: Getting Started
-    link: https://edql-wiki.github.io/guides/install-edql-on-intellij/
+    link: https://chengpohii.github.io/guides/install-edql-on-intellij/
 footer:
   copyright: "&copy; Copyright . All rights reserved."
   
 integrations:
   googleAnalytics:
-    id: "G-624J9RHK2L"        # Your Google Tag Manager measurement id.
+    id: "G-9VF7YJPJ7Q"        # Your Google Tag Manager measurement id.
