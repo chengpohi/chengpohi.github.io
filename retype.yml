@@ -2,14 +2,16 @@ input: .
 output: .retype
 url: https://chengpohi.github.io/
 branding:
-  title: Intellij EDQL
-  label: Docs
+  title: EDQL
+  label: Wiki
 links:
-  - text: Getting Started
-    link: https://chengpohii.github.io/guides/install-edql-on-intellij/
+  - text: Install EDQL on Intellij
+    link: https://chengpohi.github.io/guides/install-edql-on-intellij/
 footer:
   copyright: "&copy; Copyright . All rights reserved."
   
 integrations:
   googleAnalytics:
     id: "G-9VF7YJPJ7Q"        # Your Google Tag Manager measurement id.
+expanded: true
+
