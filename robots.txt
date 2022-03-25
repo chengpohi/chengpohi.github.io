@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://edql-wiki.github.io/sitemap.xml
+Sitemap: https://chengpohi.github.io/sitemap.xml
