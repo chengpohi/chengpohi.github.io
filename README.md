@@ -21,7 +21,9 @@
 
 Quickly Review an Query Example:&#x20;
 
-> query from local and query myindex with custom source fields
+> Query from localhost cluster with port _9200_&#x20;
+>
+> Query index _myindex_ with custom source fields
 
 ```
 #elasticsearch host
