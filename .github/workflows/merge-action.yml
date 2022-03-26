@@ -18,3 +18,5 @@ jobs:
         type: now
         from_branch: gitbook
         target_branch: main
+        github_token: ${{ github.token }}
+
