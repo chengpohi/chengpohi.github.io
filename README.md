@@ -80,7 +80,7 @@ EDQL is a full features of script with compatible Elasticsearch Query DSL, and a
 
 ### Use cases with EDQL
 
-With EDQL can help solve multi scenarios problems, you could find use cases by:
+EDQL is not only target for query also can help solve multi scenarios problems, you could find use cases by:
 
 {% content-ref url="use-cases/query-data.md" %}
 [query-data.md](use-cases/query-data.md)
