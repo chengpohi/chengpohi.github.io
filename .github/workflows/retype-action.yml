@@ -1,6 +1,9 @@
 name: Publish Retype powered website to GitHub Pages
 on:
-  workflow_dispatch:
+  workflow_run:
+    workflows: ["Merge gitbook branch"]
+    types:
+      - completed
   push:
     branches:
       - main
