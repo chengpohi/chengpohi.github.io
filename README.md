@@ -64,7 +64,7 @@ Follow our handy guides to get started on the basics as quickly as possible:
 
 ### Explore More about EDQL Syntax
 
-EDQL is a full features of script and compatible with Elasticsearch Query DSL, also support: function, variable, collection, type and iteration etc., explore more :
+EDQL is a full features of script with compatible Elasticsearch Query DSL, and also support: function, variable, collection, type and iteration etc. explore more :
 
 {% content-ref url="language-specification/glossary.md" %}
 [glossary.md](language-specification/glossary.md)
