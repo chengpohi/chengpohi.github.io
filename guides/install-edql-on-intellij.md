@@ -8,7 +8,7 @@
 
 Open the Intellij plugins and search **EDQL**, Download install and restart IDE.
 
-![](<../.gitbook/assets/install-edql (1).png>)
+![](../.gitbook/assets/install-edql.png)
 
 ## Manual install
 
@@ -18,4 +18,4 @@ Open [EDQL Plugin](https://plugins.jetbrains.com/plugin/16364-edql-elasticsearch
 
 Open IDE plugin dialog, and select install plugin from disk with **downloaded zip**
 
-![](../.gitbook/assets/install-edql.png)
+![](<../.gitbook/assets/install-edql (1).png>)
