@@ -12,23 +12,23 @@
     <meta name="generator" content="Retype 2.1">
 
     <!-- Primary Meta Tags -->
-    <title>What is EDQL?</title>
-    <meta name="title" content="What is EDQL?">
-    <meta name="description" content="EDQL is an Intellij Plugin for Query Elasticsearch, it’s fully compatible with Elasticsearch Query DSL syntax." />
+    <title>Create EDQL Script</title>
+    <meta name="title" content="Create EDQL Script">
+    <meta name="description" content="it will auto fill the HOST, Timeout and Authorization with a simple EDQL Action. the EDQL file will stored in current file directory." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://chengpohi.github.io/">
-    <meta property="og:title" content="What is EDQL?">
-    <meta property="og:description" content="EDQL is an Intellij Plugin for Query Elasticsearch, it’s fully compatible with Elasticsearch Query DSL syntax.">
-    <meta property="og:image" content="https://chengpohi.github.io/.gitbook/assets/new-demo.gif">
+    <meta property="og:url" content="https://chengpohi.github.io/guides/create-edql-script/">
+    <meta property="og:title" content="Create EDQL Script">
+    <meta property="og:description" content="it will auto fill the HOST, Timeout and Authorization with a simple EDQL Action. the EDQL file will stored in current file directory.">
+    <meta property="og:image" content="https://chengpohi.github.io/.gitbook/assets/new-edql-by-file.gif">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://chengpohi.github.io/">
-    <meta property="twitter:title" content="What is EDQL?">
-    <meta property="twitter:description" content="EDQL is an Intellij Plugin for Query Elasticsearch, it’s fully compatible with Elasticsearch Query DSL syntax.">
-    <meta property="twitter:image" content="https://chengpohi.github.io/.gitbook/assets/new-demo.gif">
+    <meta property="twitter:url" content="https://chengpohi.github.io/guides/create-edql-script/">
+    <meta property="twitter:title" content="Create EDQL Script">
+    <meta property="twitter:description" content="it will auto fill the HOST, Timeout and Authorization with a simple EDQL Action. the EDQL file will stored in current file directory.">
+    <meta property="twitter:image" content="https://chengpohi.github.io/.gitbook/assets/new-edql-by-file.gif">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -166,92 +166,178 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="what-is-edql" class="break-words">
+<doc-anchor-target id="create-edql-script" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-edql">#</doc-anchor-trigger>
-        <span>What is EDQL?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#create-edql-script">#</doc-anchor-trigger>
+        <span>Create EDQL Script</span>
     </h1>
 </doc-anchor-target>
-<p><a href="https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/">EDQL</a> is an Intellij Plugin for Query Elasticsearch, it’s fully compatible with Elasticsearch Query DSL syntax. It’s powerful for management ES documents and visualize views. such as: query result, aggregation result, export result, plot etc. Since it works as script language, you can build your own query templates with function, variable, library by using productivity Intellij IDE. </p>
-<doc-anchor-target id="core-features">
+<doc-anchor-target id="new-edql-file-by-new-file">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#core-features">#</doc-anchor-trigger>
-        <span>Core Features</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#new-edql-file-by-new-file">#</doc-anchor-trigger>
+        <span>New EDQL file by New File</span>
     </h2>
 </doc-anchor-target>
-<ol>
-<li>Query Elasticsearch with Query DSL</li>
-<li>Manage query result, including: add, delete, update document</li>
-<li>Visualize query result as compact table and table functions</li>
-<li>Plot aggregation result: line chart</li>
-<li>Download/Export query result by CSV, Raw JSON, Images</li>
-<li>Elasticsearch Host bind and Authorization bind</li>
-<li>Fully Intellij operations support: go to declaration, find usages, extract, autocomplete, highlight, live templates, folding/unfolding</li>
-<li>Intellij Run Configurations: run single request or run multiple requests</li>
-<li>Transfer/convert query DSL to Java request code</li>
-<li>Shell script syntax: variable, function, iteration, collect, type</li>
-</ol>
-<doc-anchor-target id="getting-started">
+<p>it will auto fill the HOST, Timeout and Authorization with a simple EDQL Action. the EDQL file will stored in current file directory.</p>
+<p><figure class="content-center">
+    <img src="../../.gitbook/assets/new-edql-by-file.gif" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="new-edql-by-the-manager-dashboard">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#getting-started">#</doc-anchor-trigger>
-        <span>Getting Started</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#new-edql-by-the-manager-dashboard">#</doc-anchor-trigger>
+        <span>New EDQL by the Manager Dashboard</span>
     </h2>
 </doc-anchor-target>
-<p><strong>Got 2 minutes?</strong> Quickly Review an Example:</p>
+<p>it will auto fill the HOST, Timeout and Authorization with a simple EDQL Action, the EDQL file will be stored in the Manager like the Scratches files.</p>
+<p><figure class="content-center">
+    <img src="../../.gitbook/assets/new-edql-by-manager.gif" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="configure-by-visual-editor">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#configure-by-visual-editor">#</doc-anchor-trigger>
+        <span>Configure by Visual Editor</span>
+    </h2>
+</doc-anchor-target>
+<p>After creating an EDQL file, we can quickly configure by the visual editor for easily configuration. </p>
+<p><figure class="content-center">
+    <img src="../../.gitbook/assets/configure-by-dashboard.gif" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="configurations">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#configurations">#</doc-anchor-trigger>
+        <span>Configurations</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="host">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#host">#</doc-anchor-trigger>
+        <span>HOST</span>
+    </h3>
+</doc-anchor-target>
+<p>HOST mean the Elasticsearch host endpoint, that we want to query and manage Elasticsearch Cluster.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">#elasticsearch host
-HOST http://localhost:9200
-Authorization &quot;Basic xxx&quot;
-local myindex = &quot;myindex&quot;
-#display fields
-local fields = [
-  &quot;a&quot;,
-  &quot;b&quot;,
-  &quot;c&quot;
-]
-POST $myindex/_search
+<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:920</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="kibana_host">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#kibana_host">#</doc-anchor-trigger>
+        <span>KIBANA_HOST</span>
+    </h3>
+</doc-anchor-target>
+<p>If we can&#x27;t directly connect to Elasticsearch Cluster host, but we can connect to Kibana, we can configure the KIBANA_HOST for Elasticsearch Cluster proxy</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">KIBANA_HOST http://localhost:5601/</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="timeout">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#timeout">#</doc-anchor-trigger>
+        <span>Timeout</span>
+    </h3>
+</doc-anchor-target>
+<p>Timeout is used to control the every action request timeout, like query, write and delete etc</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Timeout 3000</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="authorization">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#authorization">#</doc-anchor-trigger>
+        <span>Authorization</span>
+    </h3>
+</doc-anchor-target>
+<p>If Elasticsearch Cluster configured the Authorization, we need to configure the Authorization for connect to Elasticsearch Cluster, for example: basic authorization, elastic cloud authorization, AWS credentials</p>
+<doc-anchor-target id="authorization-header">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#authorization-header">#</doc-anchor-trigger>
+        <span>Authorization header</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Authorization &quot;Bear xxx&quot;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="basic-username-and-password">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#basic-username-and-password">#</doc-anchor-trigger>
+        <span>Basic Username and Password</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Username &quot;u&quot;
+Password &quot;p&quot;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="apikey-credential">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#apikey-credential">#</doc-anchor-trigger>
+        <span>ApiKey Credential</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">ApiKeyId &quot;a&quot;
+ApiKeySecret &quot;c&quot;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="aws-credential">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#aws-credential">#</doc-anchor-trigger>
+        <span>AWS Credential</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">AWSRegion &quot;us-east&quot;
+ApiKeyId &quot;c&quot;
+ApiKeySecret &quot;c&quot;
+ApiSessionToken &quot;c&quot;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="action-for-index">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#action-for-index">#</doc-anchor-trigger>
+        <span>Action for Index</span>
+    </h3>
+</doc-anchor-target>
+<p>When query to Elasticsearch Cluster, need to define the action with index, example: GET, POST, DELETE, PUT, so if want to query myindex:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">POST my-index/_search
+
+#OR
+
+GET my-index/_mapping
+
+#OR
+
+GET _cluster/stats</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="query-dsl-block">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#query-dsl-block">#</doc-anchor-trigger>
+        <span>Query DSL Block</span>
+    </h3>
+</doc-anchor-target>
+<p>Query DSL block is same as the offcial Query DSL block: <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html">QueryDSL</a></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">POST my-index/_search
 {
-  &quot;_source&quot;: $fields,
   &quot;query&quot;: {
-    &quot;match_all&quot;: {}
+    &quot;bool&quot;: {
+      &quot;must&quot;: [
+        {
+          &quot;term&quot;: {
+            &quot;title.keyword&quot;: &quot;DGS10&quot;
+          }
+        }
+      ]
+    }
   }
 }</code></pre>
 </doc-codeblock></div>
 <p><figure class="content-center">
-    <img src=".gitbook/assets/new-demo.gif" alt="" />
+    <img src="../../.gitbook/assets/new-visual.gif" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<doc-anchor-target id="guides-jump-right-in">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#guides-jump-right-in">#</doc-anchor-trigger>
-        <span>Guides: Jump right in</span>
-    </h3>
-</doc-anchor-target>
-<p>Follow our handy guides to get started on the basics as quickly as possible:</p>
-<p><a href="guides/install-edql-on-intellij/">install-edql-on-intellij.md</a></p>
-<p><a href="guides/create-edql-script/">create-edql-script.md</a></p>
-<p><a href="guides/run-edql-request/">run-edql-request.md</a></p>
-<doc-anchor-target id="explore-more-about-edql-syntax">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#explore-more-about-edql-syntax">#</doc-anchor-trigger>
-        <span>Explore More about EDQL Syntax</span>
-    </h3>
-</doc-anchor-target>
-<p>EDQL is a full features of script and compatible with Elasticsearch Query DSL block, include: function, variable, iteration etc., explore more :</p>
-<p><a href="language-specification/glossary/">glossary.md</a></p>
-<p><a href="language-specification/basic-syntax/">basic-syntax.md</a></p>
-<p><a href="language-specification/script-syntax/">script-syntax.md</a></p>
-<doc-anchor-target id="use-cases-with-edql">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#use-cases-with-edql">#</doc-anchor-trigger>
-        <span>Use cases with EDQL</span>
-    </h3>
-</doc-anchor-target>
-<p>With EDQL can help solve multi scenarios problems, you could find use cases by:</p>
-<p><a href="use-cases/query-data/">query-data.md</a></p>
-<p><a href="use-cases/analysis-data/">analysis-data.md</a></p>
-<p><a href="use-cases/manage-cluster/">manage-cluster.md</a></p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -261,13 +347,20 @@ POST $myindex/_search
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/guides/install-edql-on-intellij/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Install EDQL on Intellij</span>
+                                            </span>
+                                        </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/guides/install-edql-on-intellij/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/guides/run-edql-request/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Install EDQL on Intellij</span>
+                                                <span class="block mt-1">Run EDQL Request</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -311,6 +404,6 @@ POST $myindex/_search
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "What is EDQL?", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Create EDQL Script", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
