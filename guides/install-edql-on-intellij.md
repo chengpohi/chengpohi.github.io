@@ -10,7 +10,7 @@ For different users, there are 2 ways to install EDQL on Intellij IDE Platform
 
 ### Install by Marketspace
 
-Open the Intellij plugins and search **EDQL**, Download install and restart IDE.
+Open the Intellij plugins and search **EDQL**, Download install and restart IDE
 
 ![](../.gitbook/assets/install-edql.png)
 
