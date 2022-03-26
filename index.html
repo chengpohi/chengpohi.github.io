@@ -32,11 +32,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.1.701626665024" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.1.701627566575" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701626665024" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701627566575" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701626665024" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701627566575" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -200,10 +200,10 @@
     </h2>
 </doc-anchor-target>
 <p>Quickly Review an Query Example: </p>
-<blockquote>
-<p>Query from localhost cluster with port <em>9200</em> </p>
-<p>Query index <em>myindex</em> with custom source fields</p>
-</blockquote>
+<ul>
+<li>Query from localhost cluster with port <em>9200</em> </li>
+<li>Query index <em>myindex</em> with custom source fields</li>
+</ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">#elasticsearch host
 HOST http://localhost:9200
@@ -244,7 +244,7 @@ POST $myindex/_search
         <span>Explore More about EDQL Syntax</span>
     </h3>
 </doc-anchor-target>
-<p>EDQL is a full features of script and compatible with Elasticsearch Query DSL block, include: function, variable, iteration etc., explore more :</p>
+<p>EDQL is a full features of script and compatible with Elasticsearch Query DSL, also support: function, variable, collection, type and iteration etc., explore more :</p>
 <p><a href="language-specification/glossary/">glossary.md</a></p>
 <p><a href="language-specification/basic-syntax/">basic-syntax.md</a></p>
 <p><a href="language-specification/script-syntax/">script-syntax.md</a></p>
