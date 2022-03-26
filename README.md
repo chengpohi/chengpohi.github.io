@@ -21,9 +21,8 @@
 
 Quickly Review an Query Example:&#x20;
 
-> Query from localhost cluster with port _9200_&#x20;
->
-> Query index _myindex_ with custom source fields
+* Query from localhost cluster with port _9200_&#x20;
+* Query index _myindex_ with custom source fields
 
 ```
 #elasticsearch host
@@ -65,7 +64,7 @@ Follow our handy guides to get started on the basics as quickly as possible:
 
 ### Explore More about EDQL Syntax
 
-EDQL is a full features of script and compatible with Elasticsearch Query DSL block, include: function, variable, iteration etc., explore more :
+EDQL is a full features of script and compatible with Elasticsearch Query DSL, also support: function, variable, collection, type and iteration etc., explore more :
 
 {% content-ref url="language-specification/glossary.md" %}
 [glossary.md](language-specification/glossary.md)
