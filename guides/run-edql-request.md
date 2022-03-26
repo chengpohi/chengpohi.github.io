@@ -8,8 +8,6 @@ We can run single request by click the request right icon directly or when curso
 
 ![](../.gitbook/assets/new-single-requests.gif)
 
-
-
 ### Run Multiple Requests
 
 If EDQL script has multiple request actions, we can run all request actions when cursor not stay on any request action block and use Run shortcut to run whole requests. For multiple request actions, multiple responses will return:

@@ -14,7 +14,7 @@ it will auto fill the HOST, Timeout and Authorization with a simple EDQL Action,
 
 ## Configure by Visual Editor
 
-After creating an EDQL file, we can quickly configure by the visual editor for easily configuration.&#x20;
+After creating an EDQL file, we can quickly configure by the visual editor for easily configuration.
 
 ![](../.gitbook/assets/configure-by-dashboard.gif)
 
