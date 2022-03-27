@@ -1,5 +1,20 @@
 # Glossary
 
-{% hint style="info" %}
-**Good to know:** Splitting your product into fundamental concepts, objects, or areas can be a great way to let readers deep dive into the concepts that matter most to them.
-{% endhint %}
+* Connection
+* Host
+* Authorization
+* Username
+* Password
+* ApiKeyId
+* ApiKeySecret
+* AWSRegion
+* Timeout
+* GET
+* POST
+* DELETE
+* PUT
+* var
+* function
+* for
+* import
+* comment
