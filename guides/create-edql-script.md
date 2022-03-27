@@ -1,4 +1,9 @@
-# Create EDQL Script
+# Write an EDQL Script
+
+Since EDQL is based on **Intellij**, for different use cases there are two places to store new edql file
+
+* store on current project directory
+* store on EDQL manager dashboard
 
 ## New EDQL file by New File
 
