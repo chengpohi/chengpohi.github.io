@@ -1,0 +1,22 @@
+name: Unzip sitemap
+on:
+  workflow_run:
+      workflows: ["Publish Retype"]
+      types:
+        - completed
+  push:
+    branches:
+      - retype
+
+jobs:
+  publish:
+    name: Unzip sitemap
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Extract some files
+      run: gunzip sitemap.xml.gz
+    - name: Commit & Push changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ github.token }}
