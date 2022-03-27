@@ -69,9 +69,9 @@ Timeout 1000
 
 this will set timeout for action 1 second.
 
-## REST Actions
+## Query Actions
 
-**REST Actions** is same with [Elasticsearch REST APIs](https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-apis.html), but in edql context defined it as **REST Actions**. so we can copy from **Elascticsearch** offical sample requests and execute these directly. such as:
+**Query Actions** is same with [Elasticsearch REST APIs](https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-apis.html), but in edql context defined it as **Query Actions**. so we can copy from **Elascticsearch** offical sample requests and execute these directly. such as:
 
 ```
 POST my-index/_search
@@ -89,7 +89,7 @@ query from **my-index** with **bool** query and **filter**.
 
 why called it as **REST Actions** not **REST APIS**? since have enhanced the apis such as variables and functions etc, maybe call it as **Action** maybe better.
 
-## Query DSL JSON Block
+## Query DSL: JSON Block
 
 **Query DSL JSON Block** is same as **Elasticsearch** query DSL definition, we can write these query contexts in current block. such as **bool** query, **aggregation** etc. Example:
 
