@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.1.701707816363" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.1.701707850659" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701707816363" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701707850659" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701707816363" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701707850659" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -253,13 +253,13 @@ ApiSessionToken &quot;&quot;</code></pre>
 <pre class="language-none"><code v-pre class="language-none">Timeout 1000</code></pre>
 </doc-codeblock></div>
 <p>this will set timeout for action 1 second.</p>
-<doc-anchor-target id="rest-actions">
+<doc-anchor-target id="query-actions">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rest-actions">#</doc-anchor-trigger>
-        <span>REST Actions</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#query-actions">#</doc-anchor-trigger>
+        <span>Query Actions</span>
     </h2>
 </doc-anchor-target>
-<p><strong>REST Actions</strong> is same with <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-apis.html">Elasticsearch REST APIs</a>, but in edql context defined it as <strong>REST Actions</strong>. so we can copy from <strong>Elascticsearch</strong> offical sample requests and execute these directly. such as:</p>
+<p><strong>Query Actions</strong> is same with <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-apis.html">Elasticsearch REST APIs</a>, but in edql context defined it as <strong>Query Actions</strong>. so we can copy from <strong>Elascticsearch</strong> offical sample requests and execute these directly. such as:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">POST my-index/_search
 {
@@ -276,7 +276,7 @@ ApiSessionToken &quot;&quot;</code></pre>
 <doc-anchor-target id="query-dsl-json-block">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#query-dsl-json-block">#</doc-anchor-trigger>
-        <span>Query DSL JSON Block</span>
+        <span>Query DSL: JSON Block</span>
     </h2>
 </doc-anchor-target>
 <p><strong>Query DSL JSON Block</strong> is same as <strong>Elasticsearch</strong> query DSL definition, we can write these query contexts in current block. such as <strong>bool</strong> query, <strong>aggregation</strong> etc. Example:</p>
