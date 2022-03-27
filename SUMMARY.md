@@ -5,7 +5,7 @@
 ## Guides
 
 * [Install EDQL on Intellij](guides/install-edql-on-intellij.md)
-* [Create EDQL Script](guides/create-edql-script.md)
+* [Write an EDQL Script](guides/create-edql-script.md)
 * [Run EDQL Request](guides/run-edql-request.md)
 
 ## Language Specification
