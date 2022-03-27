@@ -7,35 +7,37 @@ Since EDQL is based on **Intellij**, for different use cases there are two place
 
 ## New EDQL file by New File
 
-it will auto fill the HOST, Timeout and Authorization with a simple EDQL Action. the EDQL file will stored in current file directory.
+New EDQL file by New file, it will automatically load the EDQL file template, include: HOST, Timeout , Authorization and with a simple EDQL Query Action. this file will be stored on the current directory
 
 ![](../.gitbook/assets/new-edql-by-file.gif)
 
 ## New EDQL by the Manager Dashboard
 
+EDQL manager dashboard is used to manage the EDQL files, it will share cross projects, so we can use this place to store the EDQL files that will be used anywhere.
+
 it will auto fill the HOST, Timeout and Authorization with a simple EDQL Action, the EDQL file will be stored in the Manager like the Scratches files.
 
 ![](../.gitbook/assets/new-edql-by-manager.gif)
 
-## Configure by Visual Editor
+## Write by Visual Editor
 
-After creating an EDQL file, we can quickly configure by the visual editor for easily configuration.
+After EDQL file is created, we can use the **Visual Editor** to configure an query action, since the common query conditions are annoying and boring.  Visual Editor is a powerful tool to visual query conditions and configurations, example: term match, range query, wildcard query and size, explan etc.
 
 ![](../.gitbook/assets/configure-by-dashboard.gif)
 
-## Configurations
+## Basic Configuration
 
 ### HOST
 
-HOST mean the Elasticsearch host endpoint, that we want to query and manage Elasticsearch Cluster.
+HOST is target to Elasticsearch/Opensearch cluster **master host endpoint or gateway**
 
 ```
-HOST http://127.0.0.1:920
+HOST http://127.0.0.1:9200
 ```
 
 ### KIBANA\_HOST
 
-If we can't directly connect to Elasticsearch Cluster host, but we can connect to Kibana, we can configure the KIBANA\_HOST for Elasticsearch Cluster proxy
+In some cases we can't directly connect to Elasticsearch Cluster host, only **Kibana** is exposed to use, in this case we can configure the KIBANA\_HOST to proxy query from Elasticsearch
 
 ```
 KIBANA_HOST http://localhost:5601/
@@ -43,7 +45,9 @@ KIBANA_HOST http://localhost:5601/
 
 ### Timeout
 
-Timeout is used to control the every action request timeout, like query, write and delete etc
+Timeout is used to configure every action request timeout, like query, write and delete etc
+
+> **Caution**: this only limit the request timeout, not this action execute time.
 
 ```
 Timeout 3000
@@ -51,17 +55,21 @@ Timeout 3000
 
 ### Authorization
 
-If Elasticsearch Cluster configured the Authorization, we need to configure the Authorization for connect to Elasticsearch Cluster, for example: basic authorization, elastic cloud authorization, AWS credentials
+If Elasticsearch/Opensearch cluster has configured **Authorization**, we need to configure the Authorization to connect Elasticsearch Cluster
+
+> basic authorization, elastic cloud authorization, AWS credentials
 
 #### Authorization header
 
 ```
+HOST http://127.0.0.1:9200
 Authorization "Bear xxx"
 ```
 
 #### Basic Username and Password
 
 ```
+HOST http://127.0.0.1:9200
 Username "u"
 Password "p"
 ```
@@ -69,22 +77,31 @@ Password "p"
 #### ApiKey Credential
 
 ```
+HOST http://127.0.0.1:9200
 ApiKeyId "a"
 ApiKeySecret "c"
 ```
 
 #### AWS Credential
 
+> aws has another configuration of aws region
+
 ```
+HOST http://127.0.0.1:9200
 AWSRegion "us-east"
 ApiKeyId "c"
 ApiKeySecret "c"
 ApiSessionToken "c"
 ```
 
-### Action for Index
+### Query Action
 
-When query to Elasticsearch Cluster, need to define the action with index, example: GET, POST, DELETE, PUT, so if want to query myindex:
+Elasticsearch query action include 4 parts:
+
+* Query Methods: GET, POST, DELETE and PUT
+* Query Index: the index name for query
+* Query Type: _search,_ mapping
+* Query Body: the JSON body for query conditions
 
 ```
 POST my-index/_search
@@ -98,9 +115,9 @@ GET my-index/_mapping
 GET _cluster/stats
 ```
 
-### Query DSL Block
+### Query DSL Body
 
-Query DSL block is same as the offcial Query DSL block: [QueryDSL](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html)
+Query DSL body is same as the offcial Query DSL block: [QueryDSL](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html), it's a **JSON** format with the query configurations. since EDQL is based on Intellij, it supports autocomplete, format and live templates, example: qbm, range, wildcard etc.
 
 ```
 POST my-index/_search
