@@ -1,5 +1,8 @@
 # Keyboard Shortcuts
 
-{% hint style="info" %}
-**Good to know:** depending on the product you're building, it can be useful to explicitly document use cases. Got a product that can be used by a bunch of people in different ways? Maybe consider splitting it out!
-{% endhint %}
+EDQL supports common shortcuts on Intellij IDE, include:
+
+* Format EDQL file, Intellij IDE format shortcut: ⌥⇧⌘L or Ctrl+Alt+Shift+L
+* Rename variable, functions: Intellij IDE rename shortcut: Shift+F6
+* Go Declaration: Intellij IDE declaration shortcut: Ctrl+B
+* ...
