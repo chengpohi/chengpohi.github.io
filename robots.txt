@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://chengpohi.github.io/sitemap.xml.gz
+Sitemap: https://chengpohi.github.io/sitemap.xml
+
