@@ -1,3 +1,7 @@
+---
+description: Firstly install EDQL on Intellij and start
+---
+
 # Install EDQL on Intellij
 
 ## The Basics

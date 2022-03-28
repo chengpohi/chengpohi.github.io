@@ -1,3 +1,7 @@
+---
+description: Write an EDQL script, connect to Elasticsearch cluster and configurations
+---
+
 # Write EDQL Script
 
 Since EDQL is based on **Intellij**, for different use cases there are two places to store new edql file

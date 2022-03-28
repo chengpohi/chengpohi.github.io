@@ -1,4 +1,10 @@
-# Run EDQL Request
+---
+description: >-
+  Run EDQL query on Elasticsearch: execute EDQL query action and visualize
+  result-set
+---
+
+# Run EDQL Query
 
 ## Run with Intellij IDE
 
