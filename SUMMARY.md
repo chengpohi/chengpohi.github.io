@@ -14,21 +14,21 @@
 * [Script Syntax](language-specification/script-syntax.md)
 * [Glossary](language-specification/glossary.md)
 
-## IDE SUPPORTING
+## USE CASES
 
-* [Language Support](ide-supporting/language-support.md)
-* [Actions](ide-supporting/actions.md)
-* [Visual Editor](ide-supporting/visual-editor.md)
+* [Query](use-cases/query-data.md)
+* [Analysis Data](use-cases/analysis-data.md)
+* [Manage Cluster](use-cases/manage-cluster.md)
 
 ## Visualization
 
 * [Visualize](visualization/visualize.md)
 
-## USE CASES
+## IDE SUPPORTING
 
-* [Query Data](use-cases/query-data.md)
-* [Analysis Data](use-cases/analysis-data.md)
-* [Manage Cluster](use-cases/manage-cluster.md)
+* [Language Support](ide-supporting/language-support.md)
+* [Actions](ide-supporting/actions.md)
+* [Visual Editor](ide-supporting/visual-editor.md)
 
 ## Extras
 
