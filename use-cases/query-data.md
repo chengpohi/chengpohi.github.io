@@ -1,3 +1,9 @@
+---
+description: >-
+  Search documents from Elasticsearch: filter, highlight, modify and export
+  result set
+---
+
 # Query
 
 ## Search Documents

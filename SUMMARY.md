@@ -6,7 +6,7 @@
 
 * [Install EDQL on Intellij](guides/install-edql-on-intellij.md)
 * [Write EDQL Script](guides/create-edql-script.md)
-* [Run EDQL Request](guides/run-edql-request.md)
+* [Run EDQL Query](guides/run-edql-request.md)
 
 ## USE CASES
 
