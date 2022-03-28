@@ -12,31 +12,31 @@
     <meta name="generator" content="Retype 2.1">
 
     <!-- Primary Meta Tags -->
-    <title>Create EDQL Script</title>
-    <meta name="title" content="Create EDQL Script">
-    <meta name="description" content="it will auto fill the HOST, Timeout and Authorization with a simple EDQL Action. the EDQL file will stored in current file directory." />
+    <title>Write EDQL Script</title>
+    <meta name="title" content="Write EDQL Script">
+    <meta name="description" content="Since EDQL is based on Intellij, for different use cases there are two places to store new edql file" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chengpohi.github.io/guides/create-edql-script/">
-    <meta property="og:title" content="Create EDQL Script">
-    <meta property="og:description" content="it will auto fill the HOST, Timeout and Authorization with a simple EDQL Action. the EDQL file will stored in current file directory.">
+    <meta property="og:title" content="Write EDQL Script">
+    <meta property="og:description" content="Since EDQL is based on Intellij, for different use cases there are two places to store new edql file">
     <meta property="og:image" content="https://chengpohi.github.io/.gitbook/assets/new-edql-by-file.gif">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://chengpohi.github.io/guides/create-edql-script/">
-    <meta property="twitter:title" content="Create EDQL Script">
-    <meta property="twitter:description" content="it will auto fill the HOST, Timeout and Authorization with a simple EDQL Action. the EDQL file will stored in current file directory.">
+    <meta property="twitter:title" content="Write EDQL Script">
+    <meta property="twitter:description" content="Since EDQL is based on Intellij, for different use cases there are two places to store new edql file">
     <meta property="twitter:image" content="https://chengpohi.github.io/.gitbook/assets/new-edql-by-file.gif">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.1.701708407397" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.1.701747666912" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701708407397" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701747666912" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701708407397" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701747666912" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -166,19 +166,24 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="create-edql-script" class="break-words">
+<doc-anchor-target id="write-edql-script" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-edql-script">#</doc-anchor-trigger>
-        <span>Create EDQL Script</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#write-edql-script">#</doc-anchor-trigger>
+        <span>Write EDQL Script</span>
     </h1>
 </doc-anchor-target>
+<p>Since EDQL is based on <strong>Intellij</strong>, for different use cases there are two places to store new edql file</p>
+<ul>
+<li>store on current project directory</li>
+<li>store on EDQL manager dashboard</li>
+</ul>
 <doc-anchor-target id="new-edql-file-by-new-file">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#new-edql-file-by-new-file">#</doc-anchor-trigger>
         <span>New EDQL file by New File</span>
     </h2>
 </doc-anchor-target>
-<p>it will auto fill the HOST, Timeout and Authorization with a simple EDQL Action. the EDQL file will stored in current file directory.</p>
+<p>New EDQL file by New file, it will automatically load the EDQL file template, include: HOST, Timeout , Authorization and with a simple EDQL Query Action. this file will be stored on the current directory</p>
 <p><figure class="content-center">
     <img src="../../.gitbook/assets/new-edql-by-file.gif" alt="" />
     <figcaption class="caption"></figcaption>
@@ -190,28 +195,29 @@
         <span>New EDQL by the Manager Dashboard</span>
     </h2>
 </doc-anchor-target>
+<p>EDQL manager dashboard is used to manage the EDQL files, it will share cross projects, so we can use this place to store the EDQL files that will be used anywhere.</p>
 <p>it will auto fill the HOST, Timeout and Authorization with a simple EDQL Action, the EDQL file will be stored in the Manager like the Scratches files.</p>
 <p><figure class="content-center">
     <img src="../../.gitbook/assets/new-edql-by-manager.gif" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<doc-anchor-target id="configure-by-visual-editor">
+<doc-anchor-target id="write-by-visual-editor">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#configure-by-visual-editor">#</doc-anchor-trigger>
-        <span>Configure by Visual Editor</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#write-by-visual-editor">#</doc-anchor-trigger>
+        <span>Write by Visual Editor</span>
     </h2>
 </doc-anchor-target>
-<p>After creating an EDQL file, we can quickly configure by the visual editor for easily configuration.</p>
+<p>After EDQL file is created, we can use the <strong>Visual Editor</strong> to configure an query action, since the common query conditions are annoying and boring.  Visual Editor is a powerful tool to visual query conditions and configurations, example: term match, range query, wildcard query and size, explan etc.</p>
 <p><figure class="content-center">
     <img src="../../.gitbook/assets/configure-by-dashboard.gif" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<doc-anchor-target id="configurations">
+<doc-anchor-target id="basic-configuration">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#configurations">#</doc-anchor-trigger>
-        <span>Configurations</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#basic-configuration">#</doc-anchor-trigger>
+        <span>Basic Configuration</span>
     </h2>
 </doc-anchor-target>
 <doc-anchor-target id="host">
@@ -220,9 +226,9 @@
         <span>HOST</span>
     </h3>
 </doc-anchor-target>
-<p>HOST mean the Elasticsearch host endpoint, that we want to query and manage Elasticsearch Cluster.</p>
+<p>HOST is target to Elasticsearch/Opensearch cluster <strong>master host endpoint or gateway</strong></p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:920</code></pre>
+<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:9200</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="kibana_host">
     <h3>
@@ -230,7 +236,7 @@
         <span>KIBANA_HOST</span>
     </h3>
 </doc-anchor-target>
-<p>If we can&#x27;t directly connect to Elasticsearch Cluster host, but we can connect to Kibana, we can configure the KIBANA_HOST for Elasticsearch Cluster proxy</p>
+<p>In some cases we can&#x27;t directly connect to Elasticsearch Cluster host, only <strong>Kibana</strong> is exposed to use, in this case we can configure the KIBANA_HOST to proxy query from Elasticsearch</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">KIBANA_HOST http://localhost:5601/</code></pre>
 </doc-codeblock></div>
@@ -240,7 +246,10 @@
         <span>Timeout</span>
     </h3>
 </doc-anchor-target>
-<p>Timeout is used to control the every action request timeout, like query, write and delete etc</p>
+<p>Timeout is used to configure every action request timeout, like query, write and delete etc</p>
+<blockquote>
+<p><strong>Caution</strong>: this only limit the request timeout, not this action execute time.</p>
+</blockquote>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">Timeout 3000</code></pre>
 </doc-codeblock></div>
@@ -250,7 +259,10 @@
         <span>Authorization</span>
     </h3>
 </doc-anchor-target>
-<p>If Elasticsearch Cluster configured the Authorization, we need to configure the Authorization for connect to Elasticsearch Cluster, for example: basic authorization, elastic cloud authorization, AWS credentials</p>
+<p>If Elasticsearch/Opensearch cluster has configured <strong>Authorization</strong>, we need to configure the Authorization to connect Elasticsearch Cluster</p>
+<blockquote>
+<p>basic authorization, elastic cloud authorization, AWS credentials</p>
+</blockquote>
 <doc-anchor-target id="authorization-header">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#authorization-header">#</doc-anchor-trigger>
@@ -258,7 +270,8 @@
     </h4>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Authorization &quot;Bear xxx&quot;</code></pre>
+<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:9200
+Authorization &quot;Bear xxx&quot;</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="basic-username-and-password">
     <h4>
@@ -267,7 +280,8 @@
     </h4>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Username &quot;u&quot;
+<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:9200
+Username &quot;u&quot;
 Password &quot;p&quot;</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="apikey-credential">
@@ -277,7 +291,8 @@ Password &quot;p&quot;</code></pre>
     </h4>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">ApiKeyId &quot;a&quot;
+<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:9200
+ApiKeyId &quot;a&quot;
 ApiKeySecret &quot;c&quot;</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="aws-credential">
@@ -286,19 +301,29 @@ ApiKeySecret &quot;c&quot;</code></pre>
         <span>AWS Credential</span>
     </h4>
 </doc-anchor-target>
+<blockquote>
+<p>aws has another configuration of aws region</p>
+</blockquote>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">AWSRegion &quot;us-east&quot;
+<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:9200
+AWSRegion &quot;us-east&quot;
 ApiKeyId &quot;c&quot;
 ApiKeySecret &quot;c&quot;
 ApiSessionToken &quot;c&quot;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="action-for-index">
+<doc-anchor-target id="query-action">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#action-for-index">#</doc-anchor-trigger>
-        <span>Action for Index</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#query-action">#</doc-anchor-trigger>
+        <span>Query Action</span>
     </h3>
 </doc-anchor-target>
-<p>When query to Elasticsearch Cluster, need to define the action with index, example: GET, POST, DELETE, PUT, so if want to query myindex:</p>
+<p>Elasticsearch query action include 4 parts:</p>
+<ul>
+<li>Query Methods: GET, POST, DELETE and PUT</li>
+<li>Query Index: the index name for query</li>
+<li>Query Type: <em>search,</em> mapping</li>
+<li>Query Body: the JSON body for query conditions</li>
+</ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">POST my-index/_search
 
@@ -310,13 +335,13 @@ GET my-index/_mapping
 
 GET _cluster/stats</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="query-dsl-block">
+<doc-anchor-target id="query-dsl-body">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#query-dsl-block">#</doc-anchor-trigger>
-        <span>Query DSL Block</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#query-dsl-body">#</doc-anchor-trigger>
+        <span>Query DSL Body</span>
     </h3>
 </doc-anchor-target>
-<p>Query DSL block is same as the offcial Query DSL block: <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html">QueryDSL</a></p>
+<p>Query DSL body is same as the offcial Query DSL block: <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html">QueryDSL</a>, it&#x27;s a <strong>JSON</strong> format with the query configurations. since EDQL is based on Intellij, it supports autocomplete, format and live templates, example: qbm, range, wildcard etc.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">POST my-index/_search
 {
@@ -404,6 +429,6 @@ GET _cluster/stats</code></pre>
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Create EDQL Script", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Write EDQL Script", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
