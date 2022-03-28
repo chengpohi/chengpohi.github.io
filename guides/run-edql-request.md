@@ -2,7 +2,7 @@
 
 ## Run with Intellij IDE
 
-EDQL is a script, it's very easy to run and execute on Intellij IDE, the EDQL minimum run block is Query Action, also support run whole script. The following 3 ways to run EDQL script by Intellij.&#x20;
+EDQL is a script, it's easy to run and execute on Intellij IDE, the EDQL minimum run block is Query Action, also support run whole script. The following 3 ways to run EDQL script by Intellij.&#x20;
 
 ### Run Single Action
 
