@@ -12,26 +12,29 @@
     <meta name="generator" content="Retype 2.1">
 
     <!-- Primary Meta Tags -->
-    <title>Query Data</title>
-    <meta name="title" content="Query Data">
+    <title>Query</title>
+    <meta name="title" content="Query">
+    <meta name="description" content="Elasticsearch is a powerful search engine and has complex and features query syntax for search and analysis data." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chengpohi.github.io/use-cases/query-data/">
-    <meta property="og:title" content="Query Data">
+    <meta property="og:title" content="Query">
+    <meta property="og:description" content="Elasticsearch is a powerful search engine and has complex and features query syntax for search and analysis data.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://chengpohi.github.io/use-cases/query-data/">
-    <meta property="twitter:title" content="Query Data">
+    <meta property="twitter:title" content="Query">
+    <meta property="twitter:description" content="Elasticsearch is a powerful search engine and has complex and features query syntax for search and analysis data.">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.1.701747666912" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.1.701799639036" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701747666912" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701799639036" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701747666912" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701799639036" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -161,24 +164,44 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="query-data" class="break-words">
+<doc-anchor-target id="query" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#query-data">#</doc-anchor-trigger>
-        <span>Query Data</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#query">#</doc-anchor-trigger>
+        <span>Query</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="find-data">
+<doc-anchor-target id="search-documents">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#find-data">#</doc-anchor-trigger>
-        <span>Find Data</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#search-documents">#</doc-anchor-trigger>
+        <span>Search Documents</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="export-data">
+<p>Elasticsearch is a powerful search engine and has complex and features query syntax for search and analysis data. but the query syntax it&#x27;s complex and have a hard curve to learn. EDQL is try to improve learn curve with supporting primitive Elasticsearch query syntax and IDE support(highlight, autocomplete, document etc).</p>
+<p>We can just copy the query demo from Elasticsearch document website, paste to EDQL script and run for quickly verify the result.  Also we can try to test Elasticsearch new features by using EDQL script.</p>
+<p>Since EDQL is a script file, we can create EDQL scripts for daily search and search shortcuts. and these scripts can be shared by projects and team, help other people for quickly search from Elasticsearch without extra effort.</p>
+<p>With search result can be displayed compact data table, it&#x27;s easy to filter data, highlight data and  modify data.</p>
+<p>Also EDQL has a powerful Visual Editor, it can help quickly to search data by configure queries without writing code, the Visual Editor has the Layout mode, we can just run queries to search data, for example: team share EDQL scripts for search data</p>
+<doc-anchor-target id="export-documents">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#export-data">#</doc-anchor-trigger>
-        <span>Export Data</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#export-documents">#</doc-anchor-trigger>
+        <span>Export Documents</span>
     </h2>
 </doc-anchor-target>
+<p>In some cases we want to export Elasticsearch documents for analysis or sharing, EDQL support two modes export Elasticsearch data, for now both modes only support download as CSV file</p>
+<doc-anchor-target id="export-search-result-set">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#export-search-result-set">#</doc-anchor-trigger>
+        <span>Export Search Result-Set</span>
+    </h3>
+</doc-anchor-target>
+<p>Export search result-set is for when run the EDQL query action, want to export current data table, the export data only limit the EDQL query action return current result size determined by query action: &quot;size&quot; parameter</p>
+<doc-anchor-target id="export-by-query">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#export-by-query">#</doc-anchor-trigger>
+        <span>Export by Query</span>
+    </h3>
+</doc-anchor-target>
+<p>Export by query is based on Visual Editor, it default will use scroll download the query action whole data, when start downloading you can configure the scroll size. it will download whole data that match the query action, it maybe take a long time to export determined by the query hits. EDQL also has support to cancel the long time exporting on progress bar</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -188,11 +211,11 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/visualization/visualize/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/language-specification/glossary/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Visualize</span>
+                                                <span class="block mt-1">Glossary</span>
                                             </span>
                                         </a>
                                     </div>
@@ -245,6 +268,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Query Data", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Query", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
