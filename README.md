@@ -62,22 +62,6 @@ Follow our handy guides to get started on the basics as quickly as possible:
 [run-edql-request.md](guides/run-edql-request.md)
 {% endcontent-ref %}
 
-### Explore More about EDQL Syntax
-
-EDQL is a full features of script with compatible Elasticsearch Query DSL, and also support: function, variable, collection, type and iteration etc. explore more :
-
-{% content-ref url="language-specification/glossary.md" %}
-[glossary.md](language-specification/glossary.md)
-{% endcontent-ref %}
-
-{% content-ref url="language-specification/basic-syntax.md" %}
-[basic-syntax.md](language-specification/basic-syntax.md)
-{% endcontent-ref %}
-
-{% content-ref url="language-specification/script-syntax.md" %}
-[script-syntax.md](language-specification/script-syntax.md)
-{% endcontent-ref %}
-
 ### Use cases with EDQL
 
 EDQL is not only target for query also can help solve multi scenarios problems, you could find use cases by:
@@ -92,4 +76,22 @@ EDQL is not only target for query also can help solve multi scenarios problems, 
 
 {% content-ref url="use-cases/manage-cluster.md" %}
 [manage-cluster.md](use-cases/manage-cluster.md)
+{% endcontent-ref %}
+
+
+
+### Explore More about EDQL Syntax
+
+EDQL is a full features of script with compatible Elasticsearch Query DSL, and also support: function, variable, collection, type and iteration etc. explore more :
+
+{% content-ref url="language-specification/glossary.md" %}
+[glossary.md](language-specification/glossary.md)
+{% endcontent-ref %}
+
+{% content-ref url="language-specification/basic-syntax.md" %}
+[basic-syntax.md](language-specification/basic-syntax.md)
+{% endcontent-ref %}
+
+{% content-ref url="language-specification/script-syntax.md" %}
+[script-syntax.md](language-specification/script-syntax.md)
 {% endcontent-ref %}
