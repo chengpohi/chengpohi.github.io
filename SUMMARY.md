@@ -8,17 +8,17 @@
 * [Write EDQL Script](guides/create-edql-script.md)
 * [Run EDQL Request](guides/run-edql-request.md)
 
+## USE CASES
+
+* [Query](use-cases/query-data.md)
+* [Analysis](use-cases/analysis-data.md)
+* [Manage Cluster](use-cases/manage-cluster.md)
+
 ## Language Specification
 
 * [Basic Syntax](language-specification/basic-syntax.md)
 * [Script Syntax](language-specification/script-syntax.md)
 * [Glossary](language-specification/glossary.md)
-
-## USE CASES
-
-* [Query](use-cases/query-data.md)
-* [Analysis Data](use-cases/analysis-data.md)
-* [Manage Cluster](use-cases/manage-cluster.md)
 
 ## Visualization
 
