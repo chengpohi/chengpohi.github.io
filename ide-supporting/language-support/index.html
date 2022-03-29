@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.1.701801703103" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.1.701858369414" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701801703103" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701858369414" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701801703103" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701858369414" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -170,31 +170,31 @@
         <span>Language Support</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="1-run">
+<doc-anchor-target id="run">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-run">#</doc-anchor-trigger>
-        <span>1. Run</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#run">#</doc-anchor-trigger>
+        <span>Run</span>
     </h2>
 </doc-anchor-target>
 <p><strong>EDQL</strong> script support run request action directly on <strong>Intellij</strong> by click right <strong>Run</strong> icon or use the <strong>Run shortcut</strong>.</p>
-<doc-anchor-target id="11-run-single-request">
+<doc-anchor-target id="run-single-query-action">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#11-run-single-request">#</doc-anchor-trigger>
-        <span>1.1 Run Single Request</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#run-single-query-action">#</doc-anchor-trigger>
+        <span>Run Single Query Action</span>
     </h3>
 </doc-anchor-target>
 <p>We can run single request by click the request right icon directly or when cursor stay on the request action block use the Run shortcut directly. it will only run current request action and return current request action response.</p>
-<doc-anchor-target id="12-run-multiple-requests">
+<doc-anchor-target id="run-edql-script">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#12-run-multiple-requests">#</doc-anchor-trigger>
-        <span>1.2 Run Multiple Requests</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#run-edql-script">#</doc-anchor-trigger>
+        <span>Run EDQL Script</span>
     </h3>
 </doc-anchor-target>
 <p>If EDQL script has multiple request actions, we can run all request actions when cursor not stay on any request action block and use Run shortcut to run whole requests. For multiple request actions, multiple responses will return.</p>
-<doc-anchor-target id="13-live-templates">
+<doc-anchor-target id="live-templates">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#13-live-templates">#</doc-anchor-trigger>
-        <span>1.3 Live Templates</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#live-templates">#</doc-anchor-trigger>
+        <span>Live Templates</span>
     </h3>
 </doc-anchor-target>
 <p><strong>EDQL</strong> plugin already defined the common used Live Templates for intelligence, easily and quickly to write the request action or query conditions, so when input the below keyword, the Live Template will automatically expand.</p>
@@ -526,10 +526,10 @@
 </doc-codeblock></div>
 </li>
 </ul>
-<doc-anchor-target id="3-highlight">
+<doc-anchor-target id="highlight">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-highlight">#</doc-anchor-trigger>
-        <span>3. Highlight</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#highlight">#</doc-anchor-trigger>
+        <span>Highlight</span>
     </h2>
 </doc-anchor-target>
 <p><strong>Highlight</strong> include two parts for edql, for now it supports:</p>
@@ -553,10 +553,10 @@
 </li>
 </ol>
 <p><strong>TODO</strong>: In next step will try to support semantics hilightling</p>
-<doc-anchor-target id="4-autocomplete">
+<doc-anchor-target id="autocomplete">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-autocomplete">#</doc-anchor-trigger>
-        <span>4. Autocomplete</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#autocomplete">#</doc-anchor-trigger>
+        <span>Autocomplete</span>
     </h2>
 </doc-anchor-target>
 <p><strong>Autocomplete</strong> include two ways autocomplete for edql:</p>
@@ -569,17 +569,17 @@
 </li>
 </ol>
 <p><strong>TODO</strong>: autocomplete auto integrate with the current dsl, such as remove extra bracket</p>
-<doc-anchor-target id="5-refactor">
+<doc-anchor-target id="refactor">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#5-refactor">#</doc-anchor-trigger>
-        <span>5. Refactor</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#refactor">#</doc-anchor-trigger>
+        <span>Refactor</span>
     </h2>
 </doc-anchor-target>
 <p><strong>Refactor</strong> is an import way for coding, for now edql supports: rename variable, rename function name</p>
-<doc-anchor-target id="6-format">
+<doc-anchor-target id="format">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#6-format">#</doc-anchor-trigger>
-        <span>6. Format</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#format">#</doc-anchor-trigger>
+        <span>Format</span>
     </h2>
 </doc-anchor-target>
 <p><strong>Format</strong> support to format <strong>Query DSL</strong> blocks, includes: function, variable, JSON block, array block etc. it’s a simple way to make code is clean</p>
