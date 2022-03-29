@@ -14,27 +14,27 @@
     <!-- Primary Meta Tags -->
     <title>Analysis</title>
     <meta name="title" content="Analysis">
-    <meta name="description" content="Analysis Elasticsearch data: aggregation and plot" />
+    <meta name="description" content="Analysis Elasticsearch data: aggregations and plot" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chengpohi.github.io/use-cases/analysis-data/">
     <meta property="og:title" content="Analysis">
-    <meta property="og:description" content="Analysis Elasticsearch data: aggregation and plot">
+    <meta property="og:description" content="Analysis Elasticsearch data: aggregations and plot">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://chengpohi.github.io/use-cases/analysis-data/">
     <meta property="twitter:title" content="Analysis">
-    <meta property="twitter:description" content="Analysis Elasticsearch data: aggregation and plot">
+    <meta property="twitter:description" content="Analysis Elasticsearch data: aggregations and plot">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.1.701871416430" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.1.701884749661" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701871416430" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701884749661" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701871416430" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701884749661" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -170,18 +170,100 @@
         <span>Analysis</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="aggregation">
+<doc-anchor-target id="aggregations">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#aggregation">#</doc-anchor-trigger>
-        <span>Aggregation</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#aggregations">#</doc-anchor-trigger>
+        <span>Aggregations</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="plot">
+<p>Elasticsearch is good at analysising data by using <strong>Aggreagation</strong> feature, for example: max, min, , mean or sum value etc. Aggregation has 3 aggregation categories, include: bucket, metrics and pipeline mode. </p>
+<p>EDQL fully support Elasticsearch Aggregation syntax for quickly statistic data. and since it&#x27;s based on Intellij platform, have built a lot of Aggregation templates for quickly write aggregation term, for example: max, min etc. </p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">POST my-index/_search
+{
+  &quot;aggs&quot;: {
+    &quot;m&quot;: {
+      &quot;max&quot;: { // live template
+        &quot;field&quot;: &quot;f&quot;
+      }
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+<p>also EDQL support <em>function</em> we can create the custom aggregation function as a aggregation shortcut for usage:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">function sum(index, field) {
+  POST $index/_search
+  {
+    &quot;size&quot;: 0,
+    &quot;query&quot;: {},
+    &quot;aggs&quot;: {
+      &quot;sum&quot;: {
+        &quot;sum&quot;: {
+          &quot;field&quot;: $field
+        }
+      }
+    }
+  }
+}
+
+sum(&quot;my-index&quot;, &quot;field&quot;)</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="plot-and-visualize">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#plot">#</doc-anchor-trigger>
-        <span>Plot</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#plot-and-visualize">#</doc-anchor-trigger>
+        <span>Plot and Visualize</span>
     </h2>
 </doc-anchor-target>
+<p>In most time, we not only just want to statistic data, also need to plot data, especially for time series, buckets or range aggregation result. EDQL support the plot syntax in Query Action, we can easily to plot Aggregation result with the custom chart parameters. also the chart is interactive, can be used to deeper analysis or mark.</p>
+<blockquote>
+<p>This example aggregation by time with week and month interval, we configure visualization by plot configure, include two line: ff and tt with x axis and y axis, set the chart type as line. after  run this Query Action, we can use the Run Result window to display these charts and interactive include: zoom, selective, filter or marker etc</p>
+</blockquote>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">POST my-index/_search
+{
+  &quot;plot&quot;: {
+    &quot;data&quot;: [
+      {
+        &quot;x&quot;: &quot;ff.buckets.key_as_string&quot;,
+        &quot;y&quot;: &quot;ff.buckets.doc_count&quot;,
+        &quot;type&quot;: &quot;line&quot;
+      },
+      {
+        &quot;x&quot;: &quot;tt.buckets.key_as_string&quot;,
+        &quot;y&quot;: &quot;tt.buckets.doc_count&quot;,
+        &quot;type&quot;: &quot;line&quot;
+      }
+    ]
+  },
+  &quot;query&quot;: {
+    &quot;bool&quot;: {
+    }
+  },
+  &quot;sort&quot;: [
+    {
+      &quot;create_time&quot;: {
+        &quot;order&quot;: &quot;desc&quot;
+      }
+    }
+  ],
+  &quot;size&quot;: &quot;0&quot;,
+  &quot;aggs&quot;: {
+    &quot;ff&quot;: {
+      &quot;date_histogram&quot;: {
+        &quot;field&quot;: &quot;update_time&quot;,
+        &quot;calendar_interval&quot;: &quot;week&quot;
+      }
+    },
+    &quot;tt&quot;: {
+      &quot;date_histogram&quot;: {
+        &quot;field&quot;: &quot;update_time&quot;,
+        &quot;calendar_interval&quot;: &quot;month&quot;
+      }
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
 
                                 
                                 <!-- Required only on API pages -->
