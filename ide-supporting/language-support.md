@@ -1,18 +1,18 @@
 # Language Support
 
-## 1. Run
+## Run
 
 **EDQL** script support run request action directly on **Intellij** by click right **Run** icon or use the **Run shortcut**.
 
-### 1.1 Run Single Request
+### Run Single Query Action
 
 We can run single request by click the request right icon directly or when cursor stay on the request action block use the Run shortcut directly. it will only run current request action and return current request action response.
 
-### 1.2 Run Multiple Requests
+### Run EDQL Script
 
 If EDQL script has multiple request actions, we can run all request actions when cursor not stay on any request action block and use Run shortcut to run whole requests. For multiple request actions, multiple responses will return.
 
-### 1.3 Live Templates
+### Live Templates
 
 **EDQL** plugin already defined the common used Live Templates for intelligence, easily and quickly to write the request action or query conditions, so when input the below keyword, the Live Template will automatically expand.
 
@@ -344,7 +344,7 @@ Defined Live Templates:
         
     ```
 
-## 3. Highlight
+## Highlight
 
 **Highlight** include two parts for edql, for now it supports:
 
@@ -362,7 +362,7 @@ Defined Live Templates:
 
 **TODO**: In next step will try to support semantics hilightling
 
-## 4. Autocomplete
+## Autocomplete
 
 **Autocomplete** include two ways autocomplete for edql:
 
@@ -375,10 +375,10 @@ Defined Live Templates:
 
 **TODO**: autocomplete auto integrate with the current dsl, such as remove extra bracket
 
-## 5. Refactor
+## Refactor
 
 **Refactor** is an import way for coding, for now edql supports: rename variable, rename function name
 
-## 6. Format
+## Format
 
 **Format** support to format **Query DSL** blocks, includes: function, variable, JSON block, array block etc. it’s a simple way to make code is clean
