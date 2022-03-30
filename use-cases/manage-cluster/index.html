@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.1.701932720837" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.1.701949879173" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701932720837" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701949879173" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701932720837" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701949879173" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -170,11 +170,12 @@
         <span>Manage Cluster</span>
     </h1>
 </doc-anchor-target>
-<p>Elasticsearch stability is very import, in daily time we often need to observe <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster.html">Elasticsearch cluster</a> state whether is health, index stats or tasks running. EDQL has implemented full features to manage Elasticsearch cluster by actions, include: cluster, nodes, index, tasks etc.</p>
-<doc-anchor-target id="cluster-info">
+<p>Elasticsearch Cluster has many <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster.html">metrics</a> need to observe all the time, Example we often need to check whether cluster health, index stats or tasks background running. </p>
+<p>EDQL has provided full features to manage Elasticsearch cluster by interactive action include: cluster, nodes, index, tasks etc. so we can simplily observe Elasticsearch metrics by EDQL without any extra effort.</p>
+<doc-anchor-target id="cluster-stats">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#cluster-info">#</doc-anchor-trigger>
-        <span>Cluster Info</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cluster-stats">#</doc-anchor-trigger>
+        <span>Cluster Stats</span>
     </h2>
 </doc-anchor-target>
 <doc-anchor-target id="index-manage">
@@ -183,6 +184,9 @@
         <span>Index Manage</span>
     </h2>
 </doc-anchor-target>
+<p>Add Index</p>
+<p>Delete Index</p>
+<p>Modify Index</p>
 <doc-anchor-target id="snapshot-manage">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#snapshot-manage">#</doc-anchor-trigger>
