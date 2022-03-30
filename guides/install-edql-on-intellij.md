@@ -12,13 +12,13 @@ description: Firstly install EDQL on Intellij and start
 
 For different users, there are 2 ways to install EDQL on Intellij IDE Platform
 
-### Install by Marketspace
+### Download EDQL from Marketspace
 
 Open the Intellij plugins and search **EDQL**, Download install and restart IDE
 
 ![](../.gitbook/assets/install-edql.png)
 
-### Manual install
+### Download EDQL from website
 
 Open [EDQL Plugin](https://plugins.jetbrains.com/plugin/16364-edql-elasticsearch-data-query-language) website, select the **newest** version and download plugin zip
 
