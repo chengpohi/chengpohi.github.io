@@ -11,7 +11,7 @@
 ## USE CASES
 
 * [Query](use-cases/query-data.md)
-* [Analysis](use-cases/analysis-data.md)
+* [Aggregations](use-cases/analysis-data.md)
 * [Manage Cluster](use-cases/manage-cluster.md)
 
 ## Language Specification
