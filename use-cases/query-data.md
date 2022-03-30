@@ -8,7 +8,7 @@ description: >-
 
 ## Search Documents
 
-Elasticsearch is a powerful search engine and has complex and features query syntax for search and analysis data. but the query syntax it's complex and have a hard curve to learn. EDQL is try to improve learn curve with supporting primitive Elasticsearch query syntax and IDE support(highlight, autocomplete, document etc).
+Elasticsearch is a powerful search engine and has complex and features [query dsl syntax](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html) for search and analysis data. but the query syntax it's complex and have a hard curve to learn. EDQL is try to improve learn curve with supporting primitive Elasticsearch query syntax and IDE support(highlight, autocomplete, document etc).
 
 We can just copy the query demo from Elasticsearch document website, paste to EDQL script and run for quickly verify the result.  Also we can try to test Elasticsearch new features by using EDQL script.
 
@@ -29,3 +29,11 @@ Export search result-set is for when run the EDQL query action, want to export c
 ### Export by Query
 
 Export by query is based on Visual Editor, it default will use scroll download the query action whole data, when start downloading you can configure the scroll size. it will download whole data that match the query action, it maybe take a long time to export determined by the query hits. EDQL also has support to cancel the long time exporting on progress bar
+
+
+
+## EDQL syntax could find on:
+
+{% content-ref url="../language-specification/basic-syntax.md" %}
+[basic-syntax.md](../language-specification/basic-syntax.md)
+{% endcontent-ref %}

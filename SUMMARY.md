@@ -26,8 +26,8 @@
 
 ## IDE SUPPORTING
 
-* [Language Support](ide-supporting/language-support.md)
 * [Actions](ide-supporting/actions.md)
+* [Language Support](ide-supporting/language-support.md)
 * [Visual Editor](ide-supporting/visual-editor.md)
 
 ## Extras

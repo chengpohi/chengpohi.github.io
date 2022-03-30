@@ -1,3 +1,7 @@
+---
+description: a list of glossaryies for EDQL
+---
+
 # Glossary
 
 * Connection

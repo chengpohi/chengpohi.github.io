@@ -1,3 +1,7 @@
+---
+description: basic EDQL syntax for help quickly use EDQL
+---
+
 # Basic Syntax
 
 ## Connection
