@@ -2,11 +2,11 @@
 description: 'Analysis Elasticsearch data: aggregations and plot'
 ---
 
-# Analysis
+# Aggregations
 
 ## Aggregations
 
-Elasticsearch is good at analysising data by using **Aggreagation** feature, for example: max, min, , mean or sum value etc. Aggregation has 3 aggregation categories, include: bucket, metrics and pipeline mode.&#x20;
+Elasticsearch is good at analysising data by using [**Aggreagation**](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html) feature, for example: max, min, , mean or sum value etc. Aggregation has 3 aggregation categories, include: bucket, metrics and pipeline mode.&#x20;
 
 EDQL fully support Elasticsearch Aggregation syntax for quickly statistic data. and since it's based on Intellij platform, have built a lot of Aggregation templates for quickly write aggregation term, for example: max, min etc.&#x20;
 
@@ -95,3 +95,9 @@ POST my-index/_search
   }
 }
 ```
+
+See more on:
+
+{% content-ref url="../visualization/visualize.md" %}
+[visualize.md](../visualization/visualize.md)
+{% endcontent-ref %}

@@ -1,3 +1,7 @@
+---
+description: with script syntax, support abstract and create common functions
+---
+
 # Script Syntax
 
 ## Variable

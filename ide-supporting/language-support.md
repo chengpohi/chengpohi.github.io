@@ -1,3 +1,7 @@
+---
+description: Intellij IDE for EDQL language syntax
+---
+
 # Language Support
 
 ## Run
