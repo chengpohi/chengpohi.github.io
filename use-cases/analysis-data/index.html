@@ -12,29 +12,29 @@
     <meta name="generator" content="Retype 2.1">
 
     <!-- Primary Meta Tags -->
-    <title>Analysis</title>
-    <meta name="title" content="Analysis">
+    <title>Aggregations</title>
+    <meta name="title" content="Aggregations">
     <meta name="description" content="Analysis Elasticsearch data: aggregations and plot" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chengpohi.github.io/use-cases/analysis-data/">
-    <meta property="og:title" content="Analysis">
+    <meta property="og:title" content="Aggregations">
     <meta property="og:description" content="Analysis Elasticsearch data: aggregations and plot">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://chengpohi.github.io/use-cases/analysis-data/">
-    <meta property="twitter:title" content="Analysis">
+    <meta property="twitter:title" content="Aggregations">
     <meta property="twitter:description" content="Analysis Elasticsearch data: aggregations and plot">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.1.701920396136" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.1.701921151987" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701920396136" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701921151987" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701920396136" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701921151987" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -164,19 +164,19 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="analysis" class="break-words">
+<doc-anchor-target id="aggregations" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#analysis">#</doc-anchor-trigger>
-        <span>Analysis</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#aggregations">#</doc-anchor-trigger>
+        <span>Aggregations</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="aggregations">
+<doc-anchor-target id="aggregations-1">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#aggregations">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#aggregations-1">#</doc-anchor-trigger>
         <span>Aggregations</span>
     </h2>
 </doc-anchor-target>
-<p>Elasticsearch is good at analysising data by using <strong>Aggreagation</strong> feature, for example: max, min, , mean or sum value etc. Aggregation has 3 aggregation categories, include: bucket, metrics and pipeline mode. </p>
+<p>Elasticsearch is good at analysising data by using <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html"><strong>Aggreagation</strong></a> feature, for example: max, min, , mean or sum value etc. Aggregation has 3 aggregation categories, include: bucket, metrics and pipeline mode. </p>
 <p>EDQL fully support Elasticsearch Aggregation syntax for quickly statistic data. and since it&#x27;s based on Intellij platform, have built a lot of Aggregation templates for quickly write aggregation term, for example: max, min etc. </p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">POST my-index/_search
@@ -264,6 +264,8 @@ sum(&quot;my-index&quot;, &quot;field&quot;)</code></pre>
   }
 }</code></pre>
 </doc-codeblock></div>
+<p>See more on:</p>
+<p><a href="../../visualization/visualize/">visualize.md</a></p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -330,6 +332,6 @@ sum(&quot;my-index&quot;, &quot;field&quot;)</code></pre>
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Analysis", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Aggregations", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
