@@ -11,7 +11,7 @@
 5. Query visualization: query documents as table, plot aggregations(line, bar, pie chart)
 6. Multi authorizations support: Auth header, Basic Auth, Api Key and AWS Opensearch ApiKey
 7. Support Elasticseaerch and AWS Opensearch connection
-8. Manage Elasticsearch and Opensearch cluster: create index, add index and import data etc
+8. Manage Elasticsearch and Opensearch cluster: create index, add index and import documents etc
 9. Intellij IDE language operations support: go to declaration, find usages, extract, autocomplete, highlight, live templates, folding/unfolding
 10. Intellij IDE run support: run single request or run multiple requests
 11. Program easily: Transfer/convert Query DSL to Java request cod
