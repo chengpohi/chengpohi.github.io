@@ -9,7 +9,7 @@
     <meta name="turbo-cache-control" content="no-cache">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 2.1">
+    <meta name="generator" content="Retype 2.2">
 
     <!-- Primary Meta Tags -->
     <title>Manage Cluster</title>
@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.1.701949879173" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.702059201421" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.1.701949879173" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=2.1" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.1.701949879173" defer></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702059201421" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702059201421" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -172,38 +172,112 @@
 </doc-anchor-target>
 <p>Elasticsearch Cluster has many <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster.html">metrics</a> need to observe all the time, Example we often need to check whether cluster health, index stats or tasks background running. </p>
 <p>EDQL has provided full features to manage Elasticsearch cluster by interactive action include: cluster, nodes, index, tasks etc. so we can simplily observe Elasticsearch metrics by EDQL without any extra effort.</p>
-<doc-anchor-target id="cluster-stats">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#cluster-stats">#</doc-anchor-trigger>
-        <span>Cluster Stats</span>
-    </h2>
-</doc-anchor-target>
 <doc-anchor-target id="index-manage">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#index-manage">#</doc-anchor-trigger>
         <span>Index Manage</span>
     </h2>
 </doc-anchor-target>
-<p>Add Index</p>
-<p>Delete Index</p>
-<p>Modify Index</p>
-<doc-anchor-target id="snapshot-manage">
+<p>Elasticsearch index with EDQL is very simple, all actions are interactive with Actions.</p>
+<doc-anchor-target id="indices">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#indices">#</doc-anchor-trigger>
+        <span>Indices</span>
+    </h3>
+</doc-anchor-target>
+<p>List of all indices of Elasticsearch, this action will query indices and display index details as table, include:</p>
+<ul>
+<li>name</li>
+<li>documents</li>
+<li>size</li>
+</ul>
+<doc-anchor-target id="create-index">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#create-index">#</doc-anchor-trigger>
+        <span>Create Index</span>
+    </h3>
+</doc-anchor-target>
+<p>EDQL has built an ui of create index table, we can configure new index by seting field name, field type and nest field type(properties or field), for nest field we can use &quot;a.b&quot; for nest field path. when executing the index creation, EDQL will automatically expand nest field path as nest document</p>
+<p>Also EDQL support creating index by copying from another index, we can use <strong>copy from index action</strong> to import other index mapping</p>
+<p>By default EDQL create index action use default index type _doc, if want specify other type, you need set the custom index type on index type field</p>
+<p>After creating index successfu, the create index table will be closed and redirect to Indices table, if create failed, such as index name duplicate or name is illegal, the error popup dialog will show up</p>
+<doc-anchor-target id="delete-index">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#delete-index">#</doc-anchor-trigger>
+        <span>Delete Index</span>
+    </h3>
+</doc-anchor-target>
+<p>When using <strong>Indices</strong> table we can use delete action for deleting index with selected index</p>
+<doc-anchor-target id="modify-index">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#modify-index">#</doc-anchor-trigger>
+        <span>Modify Index</span>
+    </h3>
+</doc-anchor-target>
+<p>When using Indices table we can modify an existed index by using modify action, modify action will open a new table dialog with all indiex fields will be displayed, in the modify table dialog we can add new fields, since Elasticsearch cannot support modify exist fields</p>
+<doc-anchor-target id="reindex">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#reindex">#</doc-anchor-trigger>
+        <span>Reindex</span>
+    </h3>
+</doc-anchor-target>
+<p>EDQL support reindex index by using Reindex action, so if need to switch new index, we can use this action for quickly reindex data to new index.</p>
+<doc-anchor-target id="import-index">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#import-index">#</doc-anchor-trigger>
+        <span>Import Index</span>
+    </h3>
+</doc-anchor-target>
+<p>In some times, maybe need to index data into index, EDQL support import an csv data with header, it will use header as field name, index line by line as documents into Elasticsearch index</p>
+<doc-anchor-target id="templates">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#templates">#</doc-anchor-trigger>
+        <span>Templates</span>
+    </h3>
+</doc-anchor-target>
+<p>Templates action display Elasticsearch all templates in a table. for manage Templates, <strong>TODO</strong></p>
+<doc-anchor-target id="snapshots">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#snapshots">#</doc-anchor-trigger>
+        <span>Snapshots</span>
+    </h3>
+</doc-anchor-target>
+<p>Snapshots action display Elasticsearch all snapshots in a table. for manage snapshots, <strong>TODO</strong></p>
+<doc-anchor-target id="cluster">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#snapshot-manage">#</doc-anchor-trigger>
-        <span>Snapshot Manage</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cluster">#</doc-anchor-trigger>
+        <span>Cluster</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="task-manage">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#task-manage">#</doc-anchor-trigger>
-        <span>Task Manage</span>
-    </h2>
+<doc-anchor-target id="health">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#health">#</doc-anchor-trigger>
+        <span>Health</span>
+    </h3>
 </doc-anchor-target>
-<doc-anchor-target id="import-data-in-index">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#import-data-in-index">#</doc-anchor-trigger>
-        <span>Import Data in Index</span>
-    </h2>
+<doc-anchor-target id="stats">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#stats">#</doc-anchor-trigger>
+        <span>Stats</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="state">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#state">#</doc-anchor-trigger>
+        <span>State</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="nodes">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#nodes">#</doc-anchor-trigger>
+        <span>Nodes</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="tasks">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tasks">#</doc-anchor-trigger>
+        <span>Tasks</span>
+    </h3>
 </doc-anchor-target>
 
                                 
