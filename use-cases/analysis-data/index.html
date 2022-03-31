@@ -14,27 +14,27 @@
     <!-- Primary Meta Tags -->
     <title>Aggregations</title>
     <meta name="title" content="Aggregations">
-    <meta name="description" content="Analysis Elasticsearch data: aggregations and plot" />
+    <meta name="description" content="Analysis Elasticsearch documents: aggregations and plot" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chengpohi.github.io/use-cases/analysis-data/">
     <meta property="og:title" content="Aggregations">
-    <meta property="og:description" content="Analysis Elasticsearch data: aggregations and plot">
+    <meta property="og:description" content="Analysis Elasticsearch documents: aggregations and plot">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://chengpohi.github.io/use-cases/analysis-data/">
     <meta property="twitter:title" content="Aggregations">
-    <meta property="twitter:description" content="Analysis Elasticsearch data: aggregations and plot">
+    <meta property="twitter:description" content="Analysis Elasticsearch documents: aggregations and plot">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702059474624" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.702059557196" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702059474624" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702059557196" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702059474624" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702059557196" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -176,8 +176,8 @@
         <span>Aggregations</span>
     </h2>
 </doc-anchor-target>
-<p>Elasticsearch is good at analysising data by using <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html"><strong>Aggreagation</strong></a> feature, for example: max, min, , mean or sum value etc. Aggregation has 3 aggregation categories, include: bucket, metrics and pipeline mode. </p>
-<p>EDQL fully support Elasticsearch Aggregation syntax for quickly statistic data. and since it&#x27;s based on Intellij platform, have built a lot of Aggregation templates for quickly write aggregation term, for example: max, min etc. </p>
+<p>Elasticsearch is good at analysising documents by using <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html"><strong>Aggreagation</strong></a> feature, for example: max, min, , mean or sum value etc. Aggregation has 3 aggregation categories, include: bucket, metrics and pipeline mode. </p>
+<p>EDQL fully support Elasticsearch Aggregation syntax for quickly statistic documents. and since it&#x27;s based on Intellij platform, have built a lot of Aggregation templates for quickly write aggregation term, for example: max, min etc. </p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">POST my-index/_search
 {
@@ -215,7 +215,7 @@ sum(&quot;my-index&quot;, &quot;field&quot;)</code></pre>
         <span>Plot and Visualize</span>
     </h2>
 </doc-anchor-target>
-<p>In most time, we not only just want to statistic data, also need to plot data, especially for time series, buckets or range aggregation result. EDQL support the plot syntax in Query Action, we can easily to plot Aggregation result with the custom chart parameters. also the chart is interactive, can be used to deeper analysis or mark.</p>
+<p>In most time, we not only just want to statistic documents, also need to plot data, especially for time series, buckets or range aggregation result. EDQL support the plot syntax in Query Action, we can easily to plot Aggregation result with the custom chart parameters. also the chart is interactive, can be used to deeper analysis or mark.</p>
 <blockquote>
 <p>This example aggregation by time with week and month interval, we configure visualization by plot configure, include two line: ff and tt with x axis and y axis, set the chart type as line. after  run this Query Action, we can use the Run Result window to display these charts and interactive include: zoom, selective, filter or marker etc</p>
 </blockquote>
