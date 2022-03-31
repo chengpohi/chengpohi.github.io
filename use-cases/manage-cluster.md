@@ -10,7 +10,7 @@ EDQL has provided full features to manage Elasticsearch cluster by interactive a
 
 ## Index Manage
 
-Elasticsearch index with EDQL is very simple, all actions are interactive with Actions.
+Manage Elasticsearch index with EDQL is very simple, all actions are interactive without any extra effort.
 
 ### Indices
 
