@@ -1,14 +1,14 @@
 ---
-description: 'Analysis Elasticsearch data: aggregations and plot'
+description: 'Analysis Elasticsearch documents: aggregations and plot'
 ---
 
 # Aggregations
 
 ## Aggregations
 
-Elasticsearch is good at analysising data by using [**Aggreagation**](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html) feature, for example: max, min, , mean or sum value etc. Aggregation has 3 aggregation categories, include: bucket, metrics and pipeline mode.&#x20;
+Elasticsearch is good at analysising documents by using [**Aggreagation**](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html) feature, for example: max, min, , mean or sum value etc. Aggregation has 3 aggregation categories, include: bucket, metrics and pipeline mode.&#x20;
 
-EDQL fully support Elasticsearch Aggregation syntax for quickly statistic data. and since it's based on Intellij platform, have built a lot of Aggregation templates for quickly write aggregation term, for example: max, min etc.&#x20;
+EDQL fully support Elasticsearch Aggregation syntax for quickly statistic documents. and since it's based on Intellij platform, have built a lot of Aggregation templates for quickly write aggregation term, for example: max, min etc.&#x20;
 
 ```
 POST my-index/_search
@@ -46,7 +46,7 @@ sum("my-index", "field")
 
 ## Plot and Visualize
 
-In most time, we not only just want to statistic data, also need to plot data, especially for time series, buckets or range aggregation result. EDQL support the plot syntax in Query Action, we can easily to plot Aggregation result with the custom chart parameters. also the chart is interactive, can be used to deeper analysis or mark.
+In most time, we not only just want to statistic documents, also need to plot data, especially for time series, buckets or range aggregation result. EDQL support the plot syntax in Query Action, we can easily to plot Aggregation result with the custom chart parameters. also the chart is interactive, can be used to deeper analysis or mark.
 
 > This example aggregation by time with week and month interval, we configure visualization by plot configure, include two line: ff and tt with x axis and y axis, set the chart type as line. after  run this Query Action, we can use the Run Result window to display these charts and interactive include: zoom, selective, filter or marker etc
 
