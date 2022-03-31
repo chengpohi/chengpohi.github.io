@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702059229704" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.702059474624" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702059229704" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702059474624" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702059229704" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702059474624" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -176,32 +176,32 @@
         <span>Search Documents</span>
     </h2>
 </doc-anchor-target>
-<p>Elasticsearch is a powerful search engine and has complex and features <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html">query dsl syntax</a> for search and analysis data. but the query syntax it&#x27;s complex and have a hard curve to learn. EDQL is try to improve learn curve with supporting primitive Elasticsearch query syntax and IDE support(highlight, autocomplete, document etc).</p>
+<p>Elasticsearch is a powerful search engine and has complex and features <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html">query dsl syntax</a> for search and analysis documents. but the query syntax it&#x27;s complex and have a hard curve to learn. EDQL is try to improve learn curve with supporting primitive Elasticsearch query syntax and IDE support(highlight, autocomplete, document etc).</p>
 <p>We can just copy the query demo from Elasticsearch document website, paste to EDQL script and run for quickly verify the result.  Also we can try to test Elasticsearch new features by using EDQL script.</p>
 <p>Since EDQL is a script file, we can create EDQL scripts for daily search and search shortcuts. and these scripts can be shared by projects and team, help other people for quickly search from Elasticsearch without extra effort.</p>
-<p>With search result can be displayed compact data table, it&#x27;s easy to filter data, highlight data and  modify data.</p>
-<p>Also EDQL has a powerful Visual Editor, it can help quickly to search data by configure queries without writing code, the Visual Editor has the Layout mode, we can just run queries to search data, for example: team share EDQL scripts for search data</p>
+<p>With search result can be displayed compact data table, it&#x27;s easy to filter document, highlight document and  modify document.</p>
+<p>Also EDQL has a powerful Visual Editor, it can help quickly to search document by configure queries without writing code, the Visual Editor has the Layout mode, we can just run queries to search document, for example: team share EDQL scripts for search document</p>
 <doc-anchor-target id="export-documents">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#export-documents">#</doc-anchor-trigger>
         <span>Export Documents</span>
     </h2>
 </doc-anchor-target>
-<p>In some cases we want to export Elasticsearch documents for analysis or sharing, EDQL support two modes export Elasticsearch data, for now both modes only support download as CSV file</p>
-<doc-anchor-target id="export-search-result-set">
+<p>In some cases we want to download Elasticsearch documents for analysis or sharing, EDQL support two modes download Elasticsearch documents, for now both modes only support download as CSV file</p>
+<doc-anchor-target id="download-search-result-set">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#export-search-result-set">#</doc-anchor-trigger>
-        <span>Export Search Result-Set</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#download-search-result-set">#</doc-anchor-trigger>
+        <span>Download Search Result-Set</span>
     </h3>
 </doc-anchor-target>
-<p>Export search result-set is for when run the EDQL query action, want to export current data table, the export data only limit the EDQL query action return current result size determined by query action: &quot;size&quot; parameter</p>
-<doc-anchor-target id="export-by-query">
+<p>Download search result-set is for when run the EDQL query action, want to download current documents table, the download documents only limit the EDQL query action return current result size determined by query action: &quot;size&quot; parameter</p>
+<doc-anchor-target id="download-by-query">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#export-by-query">#</doc-anchor-trigger>
-        <span>Export by Query</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#download-by-query">#</doc-anchor-trigger>
+        <span>Download by Query</span>
     </h3>
 </doc-anchor-target>
-<p>Export by query is based on Visual Editor, it default will use scroll download the query action whole data, when start downloading you can configure the scroll size. it will download whole data that match the query action, it maybe take a long time to export determined by the query hits. EDQL also has support to cancel the long time exporting on progress bar</p>
+<p>Download by query is based on Visual Editor, it default will use scroll download the query action whole documents, when start downloading you can configure the scroll size. it will download whole documents that match the query action, it maybe take a long time to export determined by the query hits. EDQL also has support to cancel the long time downloading on progress bar with <strong>Cancel</strong> button</p>
 <doc-anchor-target id="edql-syntax-could-find-on">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#edql-syntax-could-find-on">#</doc-anchor-trigger>
