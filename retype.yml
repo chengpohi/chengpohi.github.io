@@ -5,6 +5,8 @@ branding:
   title: EDQL
   label: Wiki
 links:
+  - text: Download EDQL
+    link: https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/
   - text: Install EDQL on Intellij
     link: https://chengpohi.github.io/guides/install-edql-on-intellij/
 footer:
