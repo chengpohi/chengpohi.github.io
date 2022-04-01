@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702059557196" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.702094041364" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702059557196" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702094041364" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702059557196" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702094041364" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -221,7 +221,10 @@
         <span>Reindex</span>
     </h3>
 </doc-anchor-target>
-<p>EDQL support reindex index by using Reindex action, so if need to switch new index, we can use this action for quickly reindex data to new index.</p>
+<p>EDQL support reindex index by using Reindex action, so if need to switch new index, we can use this action for quickly reindex data to new index. </p>
+<blockquote>
+<p>Run Async config used to control Reindex aciton task whether run in background</p>
+</blockquote>
 <doc-anchor-target id="import-index">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#import-index">#</doc-anchor-trigger>
@@ -249,36 +252,44 @@
         <span>Cluster</span>
     </h2>
 </doc-anchor-target>
+<p>EDQL has cluster observer ablility for us to monitor cluster states.</p>
 <doc-anchor-target id="health">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#health">#</doc-anchor-trigger>
         <span>Health</span>
     </h3>
 </doc-anchor-target>
+<p>Health action can view current cluster health state</p>
 <doc-anchor-target id="stats">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#stats">#</doc-anchor-trigger>
         <span>Stats</span>
     </h3>
 </doc-anchor-target>
+<p>Stats action show up current cluster stats</p>
 <doc-anchor-target id="state">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#state">#</doc-anchor-trigger>
         <span>State</span>
     </h3>
 </doc-anchor-target>
+<p>State action show up current cluster state</p>
 <doc-anchor-target id="nodes">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#nodes">#</doc-anchor-trigger>
         <span>Nodes</span>
     </h3>
 </doc-anchor-target>
+<p>Nodes action show up cluster all nodes with ip, heap, ram, cpu, load, role metrics etc</p>
+<p>We can use this action quickly view current cluster nodes states</p>
 <doc-anchor-target id="tasks">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#tasks">#</doc-anchor-trigger>
         <span>Tasks</span>
     </h3>
 </doc-anchor-target>
+<p>Tasks action show up cluster current tasks with action, task_id, type, starttime, runningtime, ip and node metrics.</p>
+<p>We can use this action quickly find current running tasks with their state</p>
 
                                 
                                 <!-- Required only on API pages -->
