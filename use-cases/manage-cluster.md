@@ -40,7 +40,9 @@ When using Indices table we can modify an existed index by using modify action, 
 
 ### Reindex
 
-EDQL support reindex index by using Reindex action, so if need to switch new index, we can use this action for quickly reindex data to new index.
+EDQL support reindex index by using Reindex action, so if need to switch new index, we can use this action for quickly reindex data to new index.&#x20;
+
+> Run Async config used to control Reindex aciton task whether run in background
 
 ### Import Index
 
@@ -56,15 +58,31 @@ Snapshots action display Elasticsearch all snapshots in a table. for manage snap
 
 ## Cluster
 
+EDQL has cluster observer ablility for us to monitor cluster states.
+
 ### Health
+
+Health action can view current cluster health state
 
 ### Stats
 
+Stats action show up current cluster stats
+
 ### State
+
+State action show up current cluster state
 
 ### Nodes
 
+Nodes action show up cluster all nodes with ip, heap, ram, cpu, load, role metrics etc
+
+We can use this action quickly view current cluster nodes states
+
 ### Tasks
+
+Tasks action show up cluster current tasks with action, task\_id, type, starttime, runningtime, ip and node metrics.
+
+We can use this action quickly find current running tasks with their state
 
 
 
