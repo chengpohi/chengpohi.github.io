@@ -84,14 +84,14 @@ EDQL is not only target for query also can help solve multi scenarios problems, 
 
 EDQL is a full features of script with compatible Elasticsearch Query DSL, and also support: function, variable, collection, type and iteration etc. explore more :
 
-{% content-ref url="language-specification/basic-syntax.md" %}
-[basic-syntax.md](language-specification/basic-syntax.md)
+{% content-ref url="language-specifications/basic-syntax.md" %}
+[basic-syntax.md](language-specifications/basic-syntax.md)
 {% endcontent-ref %}
 
-{% content-ref url="language-specification/script-syntax.md" %}
-[script-syntax.md](language-specification/script-syntax.md)
+{% content-ref url="language-specifications/script-syntax.md" %}
+[script-syntax.md](language-specifications/script-syntax.md)
 {% endcontent-ref %}
 
-{% content-ref url="language-specification/glossary.md" %}
-[glossary.md](language-specification/glossary.md)
+{% content-ref url="language-specifications/glossary.md" %}
+[glossary.md](language-specifications/glossary.md)
 {% endcontent-ref %}

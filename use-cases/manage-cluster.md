@@ -76,7 +76,7 @@ State action show up current cluster state
 
 Nodes action show up cluster all nodes with ip, heap, ram, cpu, load, role metrics etc
 
-We can use this action quickly view current cluster nodes states
+We can use this action quickly view current cluster node states
 
 ### Tasks
 

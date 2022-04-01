@@ -34,6 +34,6 @@ Download by query is based on Visual Editor, it default will use scroll download
 
 ## EDQL syntax could find on:
 
-{% content-ref url="../language-specification/basic-syntax.md" %}
-[basic-syntax.md](../language-specification/basic-syntax.md)
+{% content-ref url="../language-specifications/basic-syntax.md" %}
+[basic-syntax.md](../language-specifications/basic-syntax.md)
 {% endcontent-ref %}

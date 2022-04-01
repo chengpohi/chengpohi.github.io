@@ -14,11 +14,11 @@
 * [Aggregations](use-cases/analysis-data.md)
 * [Manage Cluster](use-cases/manage-cluster.md)
 
-## Language Specification
+## Language SpecificationS
 
-* [Basic Syntax](language-specification/basic-syntax.md)
-* [Script Syntax](language-specification/script-syntax.md)
-* [Glossary](language-specification/glossary.md)
+* [Basic Syntax](language-specifications/basic-syntax.md)
+* [Script Syntax](language-specifications/script-syntax.md)
+* [Glossary](language-specifications/glossary.md)
 
 ## Visualization
 
