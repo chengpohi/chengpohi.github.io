@@ -14,27 +14,27 @@
     <!-- Primary Meta Tags -->
     <title>Visual Editor</title>
     <meta name="title" content="Visual Editor">
-    <meta name="description" content="Visual Editor for help quickly write Query Action" />
+    <meta name="description" content="Visual Editor for Help Quickly Generate Elasticsearch Query DSL in EDQL" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chengpohi.github.io/ide-supporting/visual-editor/">
     <meta property="og:title" content="Visual Editor">
-    <meta property="og:description" content="Visual Editor for help quickly write Query Action">
+    <meta property="og:description" content="Visual Editor for Help Quickly Generate Elasticsearch Query DSL in EDQL">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://chengpohi.github.io/ide-supporting/visual-editor/">
     <meta property="twitter:title" content="Visual Editor">
-    <meta property="twitter:description" content="Visual Editor for help quickly write Query Action">
+    <meta property="twitter:description" content="Visual Editor for Help Quickly Generate Elasticsearch Query DSL in EDQL">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702094041364" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.702095143387" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702094041364" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702095143387" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702094041364" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702095143387" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -170,6 +170,18 @@
         <span>Visual Editor</span>
     </h1>
 </doc-anchor-target>
+<p>Always complex Query DSL syntax is hard to learn and remember, DSL is also not easy to view if we only want to query by some simple conditions, example: must, must_not, term, terms, range etc.</p>
+<p>So EDQL has implemented a powerful feature for visualize write query conditions by using interactive Visual Editor. </p>
+<p>EDQL visual editor can help quickly generate Elasticsearch Query DSL with visual configurations, we just need to set the query type, filed name and field value. after these we can directly run this Query Action on Visual Editor, also if we switch back to script mode, the generated Query DSL also will be synced.</p>
+<doc-anchor-target id="switch-in-visual-editor">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#switch-in-visual-editor">#</doc-anchor-trigger>
+        <span>Switch in Visual Editor</span>
+    </h2>
+</doc-anchor-target>
+<p>Create Visual Action</p>
+<p>Add Query Condition</p>
+<p>Delete Query Condition</p>
 
                                 
                                 <!-- Required only on API pages -->
