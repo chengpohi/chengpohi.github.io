@@ -102,8 +102,35 @@ quickly aggregation current my index title keywords
 
 ## Import
 
-## For Loop
+import keyword is used to import other edql script as  a library, we use this feature to design or create default functions. for import, there are two path could be used
+
+```
+import "library.edql"
+import "https://raw.github.io/xxx"
+```
+
+### From Local File
+
+EDQL will find import script by absolute path to load import file.
+
+### From Github
+
+EDQL will load import script from github when use a HTTP url in import
+
+## Iteration
+
+EDQL support iterate collection by for loop, so in some times we want query results from a collection, it's easy to achieve this
+
+```
+for(a in [1, 2]) {
+  echo $a
+}
+```
 
 ## Comment
 
-## Terms
+comment in edql script by **#**
+
+```
+#mycomment
+```
