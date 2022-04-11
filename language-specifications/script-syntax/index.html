@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702631582546" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.702973594098" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702631582546" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702973594098" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702631582546" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702973594098" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -286,24 +286,47 @@ for (i in $p) {
         <span>Import</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="for-loop">
+<p>import keyword is used to import other edql script as  a library, we use this feature to design or create default functions. for import, there are two path could be used</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">import &quot;library.edql&quot;
+import &quot;https://raw.github.io/xxx&quot;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="from-local-file">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#from-local-file">#</doc-anchor-trigger>
+        <span>From Local File</span>
+    </h3>
+</doc-anchor-target>
+<p>EDQL will find import script by absolute path to load import file.</p>
+<doc-anchor-target id="from-github">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#from-github">#</doc-anchor-trigger>
+        <span>From Github</span>
+    </h3>
+</doc-anchor-target>
+<p>EDQL will load import script from github when use a HTTP url in import</p>
+<doc-anchor-target id="iteration">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#for-loop">#</doc-anchor-trigger>
-        <span>For Loop</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#iteration">#</doc-anchor-trigger>
+        <span>Iteration</span>
     </h2>
 </doc-anchor-target>
+<p>EDQL support iterate collection by for loop, so in some times we want query results from a collection, it&#x27;s easy to achieve this</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">for(a in [1, 2]) {
+  echo $a
+}</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="comment">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#comment">#</doc-anchor-trigger>
         <span>Comment</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="terms">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#terms">#</doc-anchor-trigger>
-        <span>Terms</span>
-    </h2>
-</doc-anchor-target>
+<p>comment in edql script by <strong>#</strong></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">#mycomment</code></pre>
+</doc-codeblock></div>
 
                                 
                                 <!-- Required only on API pages -->
