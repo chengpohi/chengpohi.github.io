@@ -7,6 +7,7 @@
 * [Installation](guides/install-edql-on-intellij.md)
 * [Write Script](guides/create-edql-script.md)
 * [Run Query](guides/run-edql-request.md)
+* [Connection](guides/connection.md)
 
 ## IDE ACTIONS
 
@@ -18,7 +19,7 @@
 ## USE CASES
 
 * [Query](use-cases/query-data.md)
-* [Aggregations](use-cases/analysis-data.md)
+* [Aggregation](use-cases/analysis-data.md)
 * [Manage Cluster](use-cases/manage-cluster.md)
 
 ## Syntax
@@ -33,7 +34,7 @@
 
 ## Extras
 
-* [Keyboard Shortcuts](extras/keyboard-shortcuts.md)
+* [Keyboard Shortcut](extras/keyboard-shortcuts.md)
 
 ## Elasticsearch Blogs
 
