@@ -15,7 +15,7 @@
 * [Source Editor](ide-actions/language-support.md)
 * [Visual Editor](ide-actions/visual-editor.md)
 * [Dock Manager](ide-actions/dock-manager.md)
-* [Visualize](ide-actions/visualize.md)
+* [Data Viewer](ide-actions/visualize.md)
 
 ## USE CASES
 

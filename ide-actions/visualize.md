@@ -2,9 +2,9 @@
 description: Visualization is useful for analysis data and find data value
 ---
 
-# Visualize
+# Data Viewer
 
-## Source Data Table
+## Table View
 
 ### Single Response
 
@@ -20,7 +20,7 @@ description: Visualization is useful for analysis data and find data value
 
 ### Commit
 
-## Source Data JSON View
+## JSON View
 
 ## Aggregation Data Table
 
