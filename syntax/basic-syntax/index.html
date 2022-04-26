@@ -12,29 +12,29 @@
     <meta name="generator" content="Retype 2.2">
 
     <!-- Primary Meta Tags -->
-    <title>Actions</title>
-    <meta name="title" content="Actions">
-    <meta name="description" content="EDQL Intellij IDE Actions for Query, Download, Management or Convertor" />
+    <title>Basic Syntax</title>
+    <meta name="title" content="Basic Syntax">
+    <meta name="description" content="basic EDQL syntax for help quickly use EDQL" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://chengpohi.github.io/ide-supporting/actions/">
-    <meta property="og:title" content="Actions">
-    <meta property="og:description" content="EDQL Intellij IDE Actions for Query, Download, Management or Convertor">
+    <meta property="og:url" content="https://chengpohi.github.io/syntax/basic-syntax/">
+    <meta property="og:title" content="Basic Syntax">
+    <meta property="og:description" content="basic EDQL syntax for help quickly use EDQL">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://chengpohi.github.io/ide-supporting/actions/">
-    <meta property="twitter:title" content="Actions">
-    <meta property="twitter:description" content="EDQL Intellij IDE Actions for Query, Download, Management or Convertor">
+    <meta property="twitter:url" content="https://chengpohi.github.io/syntax/basic-syntax/">
+    <meta property="twitter:title" content="Basic Syntax">
+    <meta property="twitter:description" content="basic EDQL syntax for help quickly use EDQL">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702973594098" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.704306207591" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702973594098" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.704306207591" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702973594098" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.704306207591" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -170,79 +170,141 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="actions" class="break-words">
+<doc-anchor-target id="basic-syntax" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#actions">#</doc-anchor-trigger>
-        <span>Actions</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#basic-syntax">#</doc-anchor-trigger>
+        <span>Basic Syntax</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="query">
+<doc-anchor-target id="connection">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#query">#</doc-anchor-trigger>
-        <span>Query</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#connection">#</doc-anchor-trigger>
+        <span>Connection</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="download">
+<p>When firstly prepare to query from <strong>Elasticsearch</strong>, we need to configure how to connect the <strong>Elasticsearch cluster</strong></p>
+<doc-anchor-target id="host">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#host">#</doc-anchor-trigger>
+        <span>Host</span>
+    </h3>
+</doc-anchor-target>
+<p>The api point to <strong>Elasticsearch Cluster</strong>, include: ip, port and http protocol, such as:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:9200</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="authorization">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#authorization">#</doc-anchor-trigger>
+        <span>Authorization</span>
+    </h3>
+</doc-anchor-target>
+<p>If the <strong>Elasticsearch Cluster</strong> need <strong>authorization</strong> to connect, configure authorization there are 3 ways to achieve it.</p>
+<doc-anchor-target id="authorization-header">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#authorization-header">#</doc-anchor-trigger>
+        <span>Authorization Header</span>
+    </h4>
+</doc-anchor-target>
+<p>If <strong>Elasticsearch Cluster</strong> support http basic <strong>Authorization</strong> header, we can configure <strong>Authorization</strong> header directly by:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Authorization &quot;Basic &lt;token&gt;&quot;</code></pre>
+</doc-codeblock></div>
+<p>The <strong>token</strong> should compute by base64 with username and password, see more: <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/security-clients-integrations.html">HTTP/REST clients and security</a> and <a href="https://www.elastic.co/guide/en/elasticsearch/client/java-rest/current/_other_authentication_methods.html#_elasticsearch_token_service_tokens">Elasticsearch Token Service tokens</a></p>
+<doc-anchor-target id="basic-username-and-password">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#basic-username-and-password">#</doc-anchor-trigger>
+        <span>Basic Username and Password</span>
+    </h4>
+</doc-anchor-target>
+<p>For if you don’t want use <strong>Authorization</strong> header, you can directly use the reserverd words <strong>Username</strong> and <strong>Password</strong> to configure the <strong>Authorization</strong>:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Username &quot;username&quot;
+Password &quot;password&quot;</code></pre>
+</doc-codeblock></div>
+<p>see more: <a href="https://www.elastic.co/guide/en/elasticsearch/client/java-rest/current/_basic_authentication.html">Basic Authentication</a></p>
+<doc-anchor-target id="apikeyid-and-apikeysecret">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#apikeyid-and-apikeysecret">#</doc-anchor-trigger>
+        <span>ApiKeyId and ApiKeySecret</span>
+    </h4>
+</doc-anchor-target>
+<p>If you are using the <strong>Elastic Cloud</strong>, you can use the <strong>ApiKeyId</strong> and <strong>ApiKeySecret</strong> to connect Elastic Cloud by:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">ApiKeyId &quot;&quot;
+ApiKeySecret &quot;&quot;</code></pre>
+</doc-codeblock></div>
+<p>see more: <a href="https://www.elastic.co/guide/en/elasticsearch/client/java-rest/current/_other_authentication_methods.html#_elasticsearch_api_keys">ApiKeySecret</a></p>
+<doc-anchor-target id="aws-iam-apikeyid-apikeysecret-and-apisessiontoken">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#aws-iam-apikeyid-apikeysecret-and-apisessiontoken">#</doc-anchor-trigger>
+        <span>AWS IAM: ApiKeyId, ApiKeySecret and ApiSessionToken</span>
+    </h4>
+</doc-anchor-target>
+<p>If you are using the <strong>AWS Opensearch</strong>, you can use the <strong>AWSRegion</strong> to activate aws credential:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">AWSRegion &quot;us-east&quot; # if want to use system env or default aws credential, just only set AWSRegion
+ApiKeyId &quot;&quot;
+ApiKeySecret &quot;&quot;
+ApiSessionToken &quot;&quot;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="timeout">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#timeout">#</doc-anchor-trigger>
+        <span>Timeout</span>
+    </h3>
+</doc-anchor-target>
+<p><strong>Timeout</strong> is used to control the query actions timeout for <strong>Elasticsearch Cluster</strong>, it will apply to every action in current context. set <strong>Timeout</strong> by:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Timeout 1000</code></pre>
+</doc-codeblock></div>
+<p>this will set timeout for action 1 second.</p>
+<doc-anchor-target id="query-actions">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#download">#</doc-anchor-trigger>
-        <span>Download</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#query-actions">#</doc-anchor-trigger>
+        <span>Query Actions</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="management">
+<p><strong>Query Actions</strong> is same with <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-apis.html">Elasticsearch REST APIs</a>, but in edql context defined it as <strong>Query Actions</strong>. so we can copy from <strong>Elascticsearch</strong> offical sample requests and execute these directly. such as:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">POST my-index/_search
+{
+  &quot;query&quot;: {
+    &quot;bool&quot;: {
+      &quot;filter&quot;: [
+      ]
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+<p>query from <strong>my-index</strong> with <strong>bool</strong> query and <strong>filter</strong>.</p>
+<p>why called it as <strong>REST Actions</strong> not <strong>REST APIS</strong>? since have enhanced the apis such as variables and functions etc, maybe call it as <strong>Action</strong> maybe better.</p>
+<doc-anchor-target id="query-dsl-json-block">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#management">#</doc-anchor-trigger>
-        <span>Management</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#query-dsl-json-block">#</doc-anchor-trigger>
+        <span>Query DSL: JSON Block</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="create-index">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-index">#</doc-anchor-trigger>
-        <span>Create Index</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="delete-index">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#delete-index">#</doc-anchor-trigger>
-        <span>Delete Index</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="import-data">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#import-data">#</doc-anchor-trigger>
-        <span>Import Data</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="reindex">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#reindex">#</doc-anchor-trigger>
-        <span>Reindex</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="templates">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#templates">#</doc-anchor-trigger>
-        <span>Templates</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="tasks">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tasks">#</doc-anchor-trigger>
-        <span>Tasks</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="plot">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#plot">#</doc-anchor-trigger>
-        <span>Plot</span>
-    </h2>
-</doc-anchor-target>
-<p><a href="../../visualization/visualize/">visualize.md</a></p>
-<doc-anchor-target id="convert-query-action-to-java">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#convert-query-action-to-java">#</doc-anchor-trigger>
-        <span>Convert Query Action to Java</span>
-    </h2>
-</doc-anchor-target>
+<p><strong>Query DSL JSON Block</strong> is same as <strong>Elasticsearch</strong> query DSL definition, we can write these query contexts in current block. such as <strong>bool</strong> query, <strong>aggregation</strong> etc. Example:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">POST my-index/_search
+{
+  &quot;query&quot;: {
+    &quot;bool&quot;: {
+      &quot;must&quot;: [
+
+      ]
+    }
+  },
+  &quot;aggs&quot;: {
+    &quot;maxValue&quot;: {
+      &quot;max&quot;: {
+        &quot;field&quot;: &quot;value&quot;
+      }
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -252,20 +314,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/visualization/visualize/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/use-cases/manage-cluster/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Visualize</span>
+                                                <span class="block mt-1">Manage Cluster</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/ide-supporting/language-support/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/syntax/script-syntax/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Language Support</span>
+                                                <span class="block mt-1">Script Syntax</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -309,6 +371,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Actions", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Basic Syntax", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>

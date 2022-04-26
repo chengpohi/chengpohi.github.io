@@ -32,11 +32,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702973594098" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.704306207591" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702973594098" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.704306207591" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702973594098" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.704306207591" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -178,7 +178,13 @@
         <span>What is EDQL?</span>
     </h1>
 </doc-anchor-target>
-<p><a href="https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/">Elasticsearch Query - EDQL </a>is a very useful Elasticsearch or AWS Opensearch GUI client for query and manage. Just run <a href="https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/versions">Elasticsearch Query - EDQL</a> plugin with the one-click install on Intellij. Since it is script language, you can not only build your own query templates with function, variable, libraries, but also can do many types of simple or complex Elasticsearch queries with it. and EDQL is full compatible with official DSL API for all Elasticsearch versions, so it&#x27;s easy for quick start.</p>
+<p><a href="https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/">Elasticsearch Query - EDQL </a>is a very useful Elasticsearch GUI client for query and manage Elasticsearch or Opesearch cluster. Just run <a href="https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/versions">Elasticsearch Query - EDQL</a> plugin with the one-click install on Intellij. Since it is script language, you can not only build your own query templates with function, variable, libraries, but also can do many types of simple or complex Elasticsearch queries with it. and EDQL is full compatible with official DSL API for all Elasticsearch versions, so it&#x27;s easy for quick start.</p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://plugins.jetbrains.com/embeddable/card/16364" allowfullscreen></iframe>
+    </div>
+</figure>
+<p>Install EDQL</p>
 <doc-anchor-target id="core-features">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#core-features">#</doc-anchor-trigger>
@@ -205,10 +211,10 @@
         <span>Getting Started</span>
     </h2>
 </doc-anchor-target>
-<p>Quickly Review an Query Example: </p>
+<p>Quickly review an Elasticsearch query example: </p>
 <ul>
-<li>Query from localhost cluster with port <em>9200</em> </li>
-<li>Query index <em>myindex</em> with custom source fields</li>
+<li>Query from localhost with port <em>9200</em> </li>
+<li>Query index <em><strong>myindex</strong></em> with custom source fields</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">#elasticsearch host
@@ -261,9 +267,9 @@ POST $myindex/_search
     </h3>
 </doc-anchor-target>
 <p>EDQL is a full features of script with compatible Elasticsearch Query DSL, and also support: function, variable, collection, type and iteration etc. explore more :</p>
-<p><a href="language-specifications/basic-syntax/">basic-syntax.md</a></p>
-<p><a href="language-specifications/script-syntax/">script-syntax.md</a></p>
-<p><a href="language-specifications/glossary/">glossary.md</a></p>
+<p><a href="syntax/basic-syntax/">basic-syntax.md</a></p>
+<p><a href="syntax/script-syntax/">script-syntax.md</a></p>
+<p><a href="syntax/glossary/">glossary.md</a></p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -279,7 +285,7 @@ POST $myindex/_search
                                         <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/guides/install-edql-on-intellij/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Install EDQL on Intellij</span>
+                                                <span class="block mt-1">Installation</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>

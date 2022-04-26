@@ -12,29 +12,29 @@
     <meta name="generator" content="Retype 2.2">
 
     <!-- Primary Meta Tags -->
-    <title>Visual Editor</title>
-    <meta name="title" content="Visual Editor">
-    <meta name="description" content="Visual Editor for Help Quickly Generate Elasticsearch Query DSL in EDQL" />
+    <title>Visualize</title>
+    <meta name="title" content="Visualize">
+    <meta name="description" content="Visualization is useful for analysis data and find data value" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://chengpohi.github.io/ide-supporting/visual-editor/">
-    <meta property="og:title" content="Visual Editor">
-    <meta property="og:description" content="Visual Editor for Help Quickly Generate Elasticsearch Query DSL in EDQL">
+    <meta property="og:url" content="https://chengpohi.github.io/data-vievwer/visualize/">
+    <meta property="og:title" content="Visualize">
+    <meta property="og:description" content="Visualization is useful for analysis data and find data value">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://chengpohi.github.io/ide-supporting/visual-editor/">
-    <meta property="twitter:title" content="Visual Editor">
-    <meta property="twitter:description" content="Visual Editor for Help Quickly Generate Elasticsearch Query DSL in EDQL">
+    <meta property="twitter:url" content="https://chengpohi.github.io/data-vievwer/visualize/">
+    <meta property="twitter:title" content="Visualize">
+    <meta property="twitter:description" content="Visualization is useful for analysis data and find data value">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702973594098" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.704306207591" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702973594098" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.704306207591" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702973594098" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.704306207591" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -170,24 +170,156 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="visual-editor" class="break-words">
+<doc-anchor-target id="visualize" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#visual-editor">#</doc-anchor-trigger>
-        <span>Visual Editor</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#visualize">#</doc-anchor-trigger>
+        <span>Visualize</span>
     </h1>
 </doc-anchor-target>
-<p>Always complex Query DSL syntax is hard to learn and remember, DSL is also not easy to view if we only want to query by some simple conditions, example: must, must_not, term, terms, range etc.</p>
-<p>So EDQL has implemented a powerful feature for visualize write query conditions by using interactive Visual Editor. </p>
-<p>EDQL visual editor can help quickly generate Elasticsearch Query DSL with visual configurations, we just need to set the query type, filed name and field value. after these we can directly run this Query Action on Visual Editor, also if we switch back to script mode, the generated Query DSL also will be synced.</p>
-<doc-anchor-target id="switch-in-visual-editor">
+<doc-anchor-target id="source-data-table">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#switch-in-visual-editor">#</doc-anchor-trigger>
-        <span>Switch in Visual Editor</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#source-data-table">#</doc-anchor-trigger>
+        <span>Source Data Table</span>
     </h2>
 </doc-anchor-target>
-<p>Create Visual Action</p>
-<p>Add Query Condition</p>
-<p>Delete Query Condition</p>
+<doc-anchor-target id="single-response">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#single-response">#</doc-anchor-trigger>
+        <span>Single Response</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="multi-responses">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#multi-responses">#</doc-anchor-trigger>
+        <span>Multi Responses</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="source-data-modification">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#source-data-modification">#</doc-anchor-trigger>
+        <span>Source Data Modification</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="modify-data">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#modify-data">#</doc-anchor-trigger>
+        <span>Modify Data</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="add-row">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#add-row">#</doc-anchor-trigger>
+        <span>Add Row</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="delete-row">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#delete-row">#</doc-anchor-trigger>
+        <span>Delete Row</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="commit">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#commit">#</doc-anchor-trigger>
+        <span>Commit</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="source-data-json-view">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#source-data-json-view">#</doc-anchor-trigger>
+        <span>Source Data JSON View</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="aggregation-data-table">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#aggregation-data-table">#</doc-anchor-trigger>
+        <span>Aggregation Data Table</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="aggregation-data-json-view">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#aggregation-data-json-view">#</doc-anchor-trigger>
+        <span>Aggregation Data JSON View</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="aggregation-data-plot">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#aggregation-data-plot">#</doc-anchor-trigger>
+        <span>Aggregation Data Plot</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="index-mapping-view">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#index-mapping-view">#</doc-anchor-trigger>
+        <span>Index Mapping View</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="cluster-response-view">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#cluster-response-view">#</doc-anchor-trigger>
+        <span>Cluster Response View</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="execute-details">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#execute-details">#</doc-anchor-trigger>
+        <span>Execute Details</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="source-data-export">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#source-data-export">#</doc-anchor-trigger>
+        <span>Source Data Export</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="diagram-export">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#diagram-export">#</doc-anchor-trigger>
+        <span>Diagram Export</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="fields-filter">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#fields-filter">#</doc-anchor-trigger>
+        <span>Fields Filter</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="table-search">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#table-search">#</doc-anchor-trigger>
+        <span>Table Search</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="fit-pane">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#fit-pane">#</doc-anchor-trigger>
+        <span>Fit Pane</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="profile">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#profile">#</doc-anchor-trigger>
+        <span>Profile</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="explain">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#explain">#</doc-anchor-trigger>
+        <span>Explain</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="details">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#details">#</doc-anchor-trigger>
+        <span>Details</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="commit-1">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#commit-1">#</doc-anchor-trigger>
+        <span>Commit</span>
+    </h2>
+</doc-anchor-target>
 
                                 
                                 <!-- Required only on API pages -->
@@ -197,11 +329,11 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/ide-supporting/language-support/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/syntax/glossary/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Language Support</span>
+                                                <span class="block mt-1">Glossary</span>
                                             </span>
                                         </a>
                                     </div>
@@ -254,6 +386,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Visual Editor", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Visualize", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>

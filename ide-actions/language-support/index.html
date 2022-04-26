@@ -12,29 +12,29 @@
     <meta name="generator" content="Retype 2.2">
 
     <!-- Primary Meta Tags -->
-    <title>Visualize</title>
-    <meta name="title" content="Visualize">
-    <meta name="description" content="Visualization is useful for analysis data and find data value" />
+    <title>Source Editor</title>
+    <meta name="title" content="Source Editor">
+    <meta name="description" content="Intellij IDE support for EDQL source editor" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://chengpohi.github.io/visualization/visualize/">
-    <meta property="og:title" content="Visualize">
-    <meta property="og:description" content="Visualization is useful for analysis data and find data value">
+    <meta property="og:url" content="https://chengpohi.github.io/ide-actions/language-support/">
+    <meta property="og:title" content="Source Editor">
+    <meta property="og:description" content="Intellij IDE support for EDQL source editor">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://chengpohi.github.io/visualization/visualize/">
-    <meta property="twitter:title" content="Visualize">
-    <meta property="twitter:description" content="Visualization is useful for analysis data and find data value">
+    <meta property="twitter:url" content="https://chengpohi.github.io/ide-actions/language-support/">
+    <meta property="twitter:title" content="Source Editor">
+    <meta property="twitter:description" content="Intellij IDE support for EDQL source editor">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.702973594098" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.704306207591" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.702973594098" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.704306207591" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.702973594098" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.704306207591" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -170,156 +170,410 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="visualize" class="break-words">
+<doc-anchor-target id="source-editor" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#visualize">#</doc-anchor-trigger>
-        <span>Visualize</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#source-editor">#</doc-anchor-trigger>
+        <span>Source Editor</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="source-data-table">
+<doc-anchor-target id="file-template">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#source-data-table">#</doc-anchor-trigger>
-        <span>Source Data Table</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#file-template">#</doc-anchor-trigger>
+        <span>File Template</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="single-response">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#single-response">#</doc-anchor-trigger>
-        <span>Single Response</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="multi-responses">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#multi-responses">#</doc-anchor-trigger>
-        <span>Multi Responses</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="source-data-modification">
+<doc-anchor-target id="live-templates">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#source-data-modification">#</doc-anchor-trigger>
-        <span>Source Data Modification</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#live-templates">#</doc-anchor-trigger>
+        <span>Live Templates</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="modify-data">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#modify-data">#</doc-anchor-trigger>
-        <span>Modify Data</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="add-row">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#add-row">#</doc-anchor-trigger>
-        <span>Add Row</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="delete-row">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#delete-row">#</doc-anchor-trigger>
-        <span>Delete Row</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="commit">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#commit">#</doc-anchor-trigger>
-        <span>Commit</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="source-data-json-view">
+<p><strong>EDQL</strong> plugin already defined the common used Live Templates for intelligence, easily and quickly to write the request action or query conditions, so when input the below keyword, the Live Template will automatically expand.</p>
+<p>Defined Live Templates:</p>
+<ul>
+<li><p>search</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">POST $EXPR$/_search
+{
+  &quot;query&quot;: {
+    &quot;bool&quot;: {
+      &quot;must&quot;: [
+      ]
+    }
+  }
+}
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>term</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">{
+  &quot;term&quot;: {
+    &quot;$EXPR$&quot;: &quot;$V$&quot;
+  }
+},
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>clusterHealth</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">GET _cluster/health
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>clusterStats</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">GET _cluster/stats
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>catIndices</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">GET _cat/indices?v
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>catHealth</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">GET _cat/health?v
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>catNodes</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">GET _cat/nodes?v
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>aggs</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&quot;aggs&quot;: {
+  &quot;$E$&quot;: {
+    $P$
+  }
+}
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>term</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">{
+  &quot;term&quot;: {
+    &quot;$EXPR$&quot;: &quot;$V$&quot;
+  }
+},
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>terms</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">{
+  &quot;terms&quot;: {
+    &quot;$EXPR$&quot;: [$V$]
+  }
+}
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>bool</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&quot;bool&quot;: {
+  $EXPR$
+}
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>avg</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&quot;aggregations&quot;: {
+  &quot;$P1$&quot;: {
+    &quot;avg&quot;: {
+      &quot;field&quot;: &quot;$EXPR$&quot;
+   }
+  }
+}
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>count</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">GET $E$/_count
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>from</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&quot;from&quot;: $EXPR$,
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>size</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&quot;size&quot;: $EXPR$,
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>qbm</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">{
+  &quot;query&quot;: {
+    &quot;bool&quot;: {
+      &quot;must&quot;: [
+        $EXPR$
+      ]
+    }
+  }
+}
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>qbf</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">{
+  &quot;query&quot;: {
+    &quot;bool&quot;: {
+      &quot;filter&quot;: [
+        $EXPR$
+      ]
+    }
+  }
+}
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>script</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">{
+  &quot;script&quot;: {
+     &quot;script&quot;: &quot;$EXPR$&quot;
+  }
+},
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>range</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">{
+  &quot;range&quot;: {
+   &quot;$EXPR$&quot;: {
+    &quot;gt&quot;: $E$,
+    &quot;lt&quot;: $A$,
+   }
+  }
+},
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>wildcard</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">{
+  &quot;wildcard&quot;: {
+    &quot;$EXPR$&quot;: {
+        &quot;value&quot;: &quot;*$K$*&quot;,
+        &quot;boost&quot;: 1.0,
+    }
+  }
+}
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>regexp</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">{
+  &quot;regexp&quot; : {
+     &quot;$EXPR$&quot; : {
+        &quot;value&quot; : &quot;$V$&quot;,
+      }
+  }
+}
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>profile</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&quot;profile&quot;: true,
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>explain</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&quot;explain&quot;: true,
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>mapping</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">GET $E$/_mapping
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>from</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&quot;from&quot;: $EXPR$,
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>field</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&quot;field&quot;: &quot;$EXPR$&quot;
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>sort</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&quot;sort&quot;: [
+  {
+    &quot;$EXPR$&quot;: {
+      &quot;order&quot;: &quot;$F1$&quot;
+    }
+  }
+]
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>exists</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&quot;exists&quot;: {
+  &quot;field&quot;: &quot;$EXPR$&quot;
+}
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>createIndex</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">PUT /$EXPR$
+{
+  &quot;settings&quot;: {
+  },
+  &quot;mappings&quot;: {
+    &quot;properties&quot;: {
+        $A$
+    }
+  }
+}
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>getNodes</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">GET /_nodes
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>source</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&quot;_source&quot;: [&quot;$EXPR$&quot;],
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>tasks</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">GET /_tasks
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>notEmpty</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">{
+  &quot;regexp&quot;: {
+    &quot;$EXPR$&quot;: {
+      &quot;value&quot;: &quot;.+&quot;,
+    }
+  }
+}
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>mustNot</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&quot;must_not&quot; : [
+  $EXPR$
+],
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>must</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&quot;must&quot; : [
+  $EXPR$
+],
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>filter</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&quot;filter&quot; : [
+  $EXPR$
+],
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>should</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">&quot;should&quot; : [
+  $EXPR$
+],
+</code></pre>
+</doc-codeblock></div>
+</li>
+</ul>
+<doc-anchor-target id="highlight">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#source-data-json-view">#</doc-anchor-trigger>
-        <span>Source Data JSON View</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#highlight">#</doc-anchor-trigger>
+        <span>Highlight</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="aggregation-data-table">
+<p><strong>Highlight</strong> include two parts for edql, for now it supports:</p>
+<ol>
+<li>highlight for reservered words
+<ul>
+<li>HOST</li>
+<li>Authorization</li>
+<li>local</li>
+<li>…</li>
+</ul>
+</li>
+<li>highlight for key characters
+<ul>
+<li>brackets</li>
+<li>number</li>
+<li>comment</li>
+<li>colon</li>
+<li>…</li>
+</ul>
+</li>
+</ol>
+<p><strong>TODO</strong>: In next step will try to support semantics hilightling</p>
+<doc-anchor-target id="autocomplete">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#aggregation-data-table">#</doc-anchor-trigger>
-        <span>Aggregation Data Table</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#autocomplete">#</doc-anchor-trigger>
+        <span>Autocomplete</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="aggregation-data-json-view">
+<p><strong>Autocomplete</strong> include two ways autocomplete for edql:</p>
+<ol>
+<li><p>Keywords autocomplete</p>
+<p>Usally include the reservered words and keywords for edql, example: HOST, Authorization, POST, GET, DELETE, PUT, local etc</p>
+</li>
+<li><p>Live Templates autocomplete</p>
+<p>Live Templates is defined for autocomplete the query dsl, example: qbm, qbf, size, terms, term, queryString, search etc</p>
+</li>
+</ol>
+<p><strong>TODO</strong>: autocomplete auto integrate with the current dsl, such as remove extra bracket</p>
+<doc-anchor-target id="refactor">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#aggregation-data-json-view">#</doc-anchor-trigger>
-        <span>Aggregation Data JSON View</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#refactor">#</doc-anchor-trigger>
+        <span>Refactor</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="aggregation-data-plot">
+<p><strong>Refactor</strong> is an import way for coding, for now edql supports: rename variable, rename function name</p>
+<doc-anchor-target id="format">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#aggregation-data-plot">#</doc-anchor-trigger>
-        <span>Aggregation Data Plot</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#format">#</doc-anchor-trigger>
+        <span>Format</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="index-mapping-view">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#index-mapping-view">#</doc-anchor-trigger>
-        <span>Index Mapping View</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="cluster-response-view">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#cluster-response-view">#</doc-anchor-trigger>
-        <span>Cluster Response View</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="execute-details">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#execute-details">#</doc-anchor-trigger>
-        <span>Execute Details</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="source-data-export">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#source-data-export">#</doc-anchor-trigger>
-        <span>Source Data Export</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="diagram-export">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#diagram-export">#</doc-anchor-trigger>
-        <span>Diagram Export</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="fields-filter">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#fields-filter">#</doc-anchor-trigger>
-        <span>Fields Filter</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="table-search">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#table-search">#</doc-anchor-trigger>
-        <span>Table Search</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="fit-pane">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#fit-pane">#</doc-anchor-trigger>
-        <span>Fit Pane</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="profile">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#profile">#</doc-anchor-trigger>
-        <span>Profile</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="explain">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#explain">#</doc-anchor-trigger>
-        <span>Explain</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="details">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#details">#</doc-anchor-trigger>
-        <span>Details</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="commit-1">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#commit-1">#</doc-anchor-trigger>
-        <span>Commit</span>
-    </h2>
-</doc-anchor-target>
+<p><strong>Format</strong> support to format <strong>Query DSL</strong> blocks, includes: function, variable, JSON block, array block etc. it’s a simple way to make code is clean</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -329,20 +583,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/language-specifications/glossary/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/ide-actions/actions/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Glossary</span>
+                                                <span class="block mt-1">Action</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/ide-supporting/actions/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/ide-actions/visual-editor/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Actions</span>
+                                                <span class="block mt-1">Visual Editor</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -386,6 +640,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Visualize", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Source Editor", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>

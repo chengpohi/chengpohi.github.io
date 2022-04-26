@@ -12,21 +12,21 @@
     <meta name="generator" content="Retype 2.2">
 
     <!-- Primary Meta Tags -->
-    <title>Manage Cluster</title>
-    <meta name="title" content="Manage Cluster">
-    <meta name="description" content="Elasticsearch cluster: observerlity and management settings, index and tasks" />
+    <title>Script Syntax</title>
+    <meta name="title" content="Script Syntax">
+    <meta name="description" content="with script syntax, support abstract and create common functions" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://chengpohi.github.io/use-cases/manage-cluster/">
-    <meta property="og:title" content="Manage Cluster">
-    <meta property="og:description" content="Elasticsearch cluster: observerlity and management settings, index and tasks">
+    <meta property="og:url" content="https://chengpohi.github.io/syntax/script-syntax/">
+    <meta property="og:title" content="Script Syntax">
+    <meta property="og:description" content="with script syntax, support abstract and create common functions">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://chengpohi.github.io/use-cases/manage-cluster/">
-    <meta property="twitter:title" content="Manage Cluster">
-    <meta property="twitter:description" content="Elasticsearch cluster: observerlity and management settings, index and tasks">
+    <meta property="twitter:url" content="https://chengpohi.github.io/syntax/script-syntax/">
+    <meta property="twitter:title" content="Script Syntax">
+    <meta property="twitter:description" content="with script syntax, support abstract and create common functions">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -170,132 +170,163 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="manage-cluster" class="break-words">
+<doc-anchor-target id="script-syntax" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#manage-cluster">#</doc-anchor-trigger>
-        <span>Manage Cluster</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#script-syntax">#</doc-anchor-trigger>
+        <span>Script Syntax</span>
     </h1>
 </doc-anchor-target>
-<p>Elasticsearch Cluster has many <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster.html">metrics</a> need to observe all the time, Example we often need to check whether cluster health, index stats or tasks background running. </p>
-<p>EDQL has provided full features to manage Elasticsearch cluster by interactive action include: cluster, nodes, index, tasks etc. so we can simplily observe Elasticsearch metrics by EDQL without any extra effort.</p>
-<doc-anchor-target id="index-manage">
+<doc-anchor-target id="variable">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#index-manage">#</doc-anchor-trigger>
-        <span>Index Manage</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#variable">#</doc-anchor-trigger>
+        <span>Variable</span>
     </h2>
 </doc-anchor-target>
-<p>Manage Elasticsearch index with EDQL is very simple, all actions are interactive without any extra effort.</p>
-<doc-anchor-target id="indices">
+<p>In <strong>edql</strong> we can define variable to control the context logics, if we need to query multi indexes with same query conditions, we can use variable as a <strong>Query DSL Block</strong> for these multiple actions, example:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">function extractCodes() {
+  POST my-index/_search
+  {
+    &quot;size&quot;: 0,
+    &quot;aggs&quot;: {
+      &quot;t&quot;: {
+        &quot;terms&quot;: {
+          &quot;field&quot;: &quot;title.keyword&quot;
+        }
+      }
+    }
+  }
+}
+var p = jq(extractCodes(), &quot;$.aggregations.t.buckets[*].key&quot;)
+for (i in $p) {
+  POST my-index/_search
+  {
+    &quot;query&quot;: {
+      &quot;bool&quot;: {
+        &quot;must&quot;: [
+          {
+            &quot;term&quot;: {
+              &quot;title.keyword&quot;: $i
+            }
+          }
+        ]
+      }
+    },
+  }
+}</code></pre>
+</doc-codeblock></div>
+<p>we define p variable for title keywords and extract it as array by <strong>jq</strong>, in for loop we iterate all keywords</p>
+<doc-anchor-target id="function">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#function">#</doc-anchor-trigger>
+        <span>Function</span>
+    </h2>
+</doc-anchor-target>
+<p><strong>Function</strong> is used to <strong>abstract</strong> the common logics and for building custom library for your own projects. such as data dictionary, common query logics for quickly query data and locate data issues.</p>
+<doc-anchor-target id="system-function">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#indices">#</doc-anchor-trigger>
-        <span>Indices</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#system-function">#</doc-anchor-trigger>
+        <span>System Function</span>
     </h3>
 </doc-anchor-target>
-<p>List of all indices of Elasticsearch, this action will query indices and display index details as table, include:</p>
+<p><strong>System Function</strong> is edql already defined functions for supporting file IO etc. example:</p>
 <ul>
-<li>name</li>
-<li>documents</li>
-<li>size</li>
+<li><p>readJSON</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">local p = readJSON(&quot;filename&quot;)
+</code></pre>
+</doc-codeblock></div>
+<p>read json file from file path</p>
+</li>
+<li><p>writeJSON</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">writeJSON($p, &quot;filename&quot;)
+</code></pre>
+</doc-codeblock></div>
+<p>write variable to file path</p>
+</li>
+<li><p>jq</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">jq({&quot;name&quot;: &quot;edql&quot;}, &quot;$.name&quot;)
+</code></pre>
+</doc-codeblock></div>
+<p>used to extract json value as json type variable</p>
+</li>
+<li><p><strong>TODO</strong> readExcel</p>
+</li>
+<li><p><strong>TODO</strong> writeExcel</p>
+</li>
 </ul>
-<doc-anchor-target id="create-index">
+<doc-anchor-target id="define-function">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-index">#</doc-anchor-trigger>
-        <span>Create Index</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#define-function">#</doc-anchor-trigger>
+        <span>Define Function</span>
     </h3>
 </doc-anchor-target>
-<p>EDQL has built an ui of create index table, we can configure new index by seting field name, field type and nest field type(properties or field), for nest field we can use &quot;a.b&quot; for nest field path. when executing the index creation, EDQL will automatically expand nest field path as nest document</p>
-<p>Also EDQL support creating index by copying from another index, we can use <strong>copy from index action</strong> to import other index mapping</p>
-<p>By default EDQL create index action use default index type _doc, if want specify other type, you need set the custom index type on index type field</p>
-<p>After creating index successfu, the create index table will be closed and redirect to Indices table, if create failed, such as index name duplicate or name is illegal, the error popup dialog will show up</p>
-<doc-anchor-target id="delete-index">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#delete-index">#</doc-anchor-trigger>
-        <span>Delete Index</span>
-    </h3>
-</doc-anchor-target>
-<p>When using <strong>Indices</strong> table we can use delete action for deleting index with selected index</p>
-<doc-anchor-target id="modify-index">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#modify-index">#</doc-anchor-trigger>
-        <span>Modify Index</span>
-    </h3>
-</doc-anchor-target>
-<p>When using Indices table we can modify an existed index by using modify action, modify action will open a new table dialog with all indiex fields will be displayed, in the modify table dialog we can add new fields, since Elasticsearch cannot support modify exist fields</p>
-<doc-anchor-target id="reindex">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#reindex">#</doc-anchor-trigger>
-        <span>Reindex</span>
-    </h3>
-</doc-anchor-target>
-<p>EDQL support reindex index by using Reindex action, so if need to switch new index, we can use this action for quickly reindex data to new index. </p>
-<blockquote>
-<p>Run Async config used to control Reindex aciton task whether run in background</p>
-</blockquote>
-<doc-anchor-target id="import-index">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#import-index">#</doc-anchor-trigger>
-        <span>Import Index</span>
-    </h3>
-</doc-anchor-target>
-<p>In some times, maybe need to index data into index, EDQL support import an csv data with header, it will use header as field name, index line by line as documents into Elasticsearch index</p>
-<doc-anchor-target id="templates">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#templates">#</doc-anchor-trigger>
-        <span>Templates</span>
-    </h3>
-</doc-anchor-target>
-<p>Templates action display Elasticsearch all templates in a table. for manage Templates, <strong>TODO</strong></p>
-<doc-anchor-target id="snapshots">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#snapshots">#</doc-anchor-trigger>
-        <span>Snapshots</span>
-    </h3>
-</doc-anchor-target>
-<p>Snapshots action display Elasticsearch all snapshots in a table. for manage snapshots, <strong>TODO</strong></p>
-<doc-anchor-target id="cluster">
+<p><strong>Define Function</strong> this is for user abstract common query logics, example:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">function extractCodes() {
+  POST my-index/_search
+  {
+    &quot;size&quot;: 0,
+    &quot;aggs&quot;: {
+      &quot;t&quot;: {
+        &quot;terms&quot;: {
+          &quot;field&quot;: &quot;title.keyword&quot;
+        }
+      }
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+<p>quickly aggregation current my index title keywords</p>
+<doc-anchor-target id="import">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#cluster">#</doc-anchor-trigger>
-        <span>Cluster</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#import">#</doc-anchor-trigger>
+        <span>Import</span>
     </h2>
 </doc-anchor-target>
-<p>EDQL has cluster observer ablility for us to monitor cluster states.</p>
-<doc-anchor-target id="health">
+<p>import keyword is used to import other edql script as  a library, we use this feature to design or create default functions. for import, there are two path could be used</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">import &quot;library.edql&quot;
+import &quot;https://raw.github.io/xxx&quot;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="from-local-file">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#health">#</doc-anchor-trigger>
-        <span>Health</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#from-local-file">#</doc-anchor-trigger>
+        <span>From Local File</span>
     </h3>
 </doc-anchor-target>
-<p>Health action can view current cluster health state</p>
-<doc-anchor-target id="stats">
+<p>EDQL will find import script by absolute path to load import file.</p>
+<doc-anchor-target id="from-github">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#stats">#</doc-anchor-trigger>
-        <span>Stats</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#from-github">#</doc-anchor-trigger>
+        <span>From Github</span>
     </h3>
 </doc-anchor-target>
-<p>Stats action show up current cluster stats</p>
-<doc-anchor-target id="state">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#state">#</doc-anchor-trigger>
-        <span>State</span>
-    </h3>
+<p>EDQL will load import script from github when use a HTTP url in import</p>
+<doc-anchor-target id="iteration">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#iteration">#</doc-anchor-trigger>
+        <span>Iteration</span>
+    </h2>
 </doc-anchor-target>
-<p>State action show up current cluster state</p>
-<doc-anchor-target id="nodes">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#nodes">#</doc-anchor-trigger>
-        <span>Nodes</span>
-    </h3>
+<p>EDQL support iterate collection by for loop, so in some times we want query results from a collection, it&#x27;s easy to achieve this</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">for(a in [1, 2]) {
+  echo $a
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="comment">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#comment">#</doc-anchor-trigger>
+        <span>Comment</span>
+    </h2>
 </doc-anchor-target>
-<p>Nodes action show up cluster all nodes with ip, heap, ram, cpu, load, role metrics etc</p>
-<p>We can use this action quickly view current cluster node states</p>
-<doc-anchor-target id="tasks">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tasks">#</doc-anchor-trigger>
-        <span>Tasks</span>
-    </h3>
-</doc-anchor-target>
-<p>Tasks action show up cluster current tasks with action, task_id, type, starttime, runningtime, ip and node metrics.</p>
-<p>We can use this action quickly find current running tasks with their state</p>
+<p>comment in edql script by <strong>#</strong></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">#mycomment</code></pre>
+</doc-codeblock></div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -305,20 +336,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/use-cases/analysis-data/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/syntax/basic-syntax/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Aggregations</span>
+                                                <span class="block mt-1">Basic Syntax</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/syntax/basic-syntax/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/syntax/glossary/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Basic Syntax</span>
+                                                <span class="block mt-1">Glossary</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -362,6 +393,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Manage Cluster", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Script Syntax", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
