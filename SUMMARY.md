@@ -4,9 +4,16 @@
 
 ## Guides
 
-* [Install EDQL on Intellij](guides/install-edql-on-intellij.md)
-* [Write EDQL Script](guides/create-edql-script.md)
-* [Run EDQL Query](guides/run-edql-request.md)
+* [Installation](guides/install-edql-on-intellij.md)
+* [Write Script](guides/create-edql-script.md)
+* [Run Query](guides/run-edql-request.md)
+
+## IDE ACTIONS
+
+* [Action](ide-actions/actions.md)
+* [Source Editor](ide-actions/language-support.md)
+* [Visual Editor](ide-actions/visual-editor.md)
+* [Dock Manager](ide-actions/dock-manager.md)
 
 ## USE CASES
 
@@ -14,21 +21,15 @@
 * [Aggregations](use-cases/analysis-data.md)
 * [Manage Cluster](use-cases/manage-cluster.md)
 
-## Language SpecificationS
+## Syntax
 
-* [Basic Syntax](language-specifications/basic-syntax.md)
-* [Script Syntax](language-specifications/script-syntax.md)
-* [Glossary](language-specifications/glossary.md)
+* [Basic Syntax](syntax/basic-syntax.md)
+* [Script Syntax](syntax/script-syntax.md)
+* [Glossary](syntax/glossary.md)
 
-## Visualization
+## DATA VIEVWER
 
-* [Visualize](visualization/visualize.md)
-
-## IDE SUPPORTING
-
-* [Actions](ide-supporting/actions.md)
-* [Language Support](ide-supporting/language-support.md)
-* [Visual Editor](ide-supporting/visual-editor.md)
+* [Visualize](data-vievwer/visualize.md)
 
 ## Extras
 

@@ -4,7 +4,11 @@ description: Elasticsearch GUI Client and Intellij Elasticsearch Plugin
 
 # What is EDQL?
 
-[Elasticsearch Query - EDQL ](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/)is a very useful Elasticsearch or AWS Opensearch GUI client for query and manage. Just run [Elasticsearch Query - EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/versions) plugin with the one-click install on Intellij. Since it is script language, you can not only build your own query templates with function, variable, libraries, but also can do many types of simple or complex Elasticsearch queries with it. and EDQL is full compatible with official DSL API for all Elasticsearch versions, so it's easy for quick start.
+[Elasticsearch Query - EDQL ](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/)is a very useful Elasticsearch GUI client for query and manage Elasticsearch or Opesearch cluster. Just run [Elasticsearch Query - EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/versions) plugin with the one-click install on Intellij. Since it is script language, you can not only build your own query templates with function, variable, libraries, but also can do many types of simple or complex Elasticsearch queries with it. and EDQL is full compatible with official DSL API for all Elasticsearch versions, so it's easy for quick start.
+
+{% embed url="https://plugins.jetbrains.com/embeddable/card/16364" %}
+Install EDQL
+{% endembed %}
 
 ## Core Features
 
@@ -23,10 +27,10 @@ description: Elasticsearch GUI Client and Intellij Elasticsearch Plugin
 
 ## Getting Started
 
-Quickly Review an Query Example:&#x20;
+Quickly review an Elasticsearch query example:&#x20;
 
-* Query from localhost cluster with port _9200_&#x20;
-* Query index _myindex_ with custom source fields
+* Query from localhost with port _9200_&#x20;
+* Query index _**myindex**_ with custom source fields
 
 ```
 #elasticsearch host
@@ -88,14 +92,14 @@ EDQL is not only target for query also can help solve multi scenarios problems, 
 
 EDQL is a full features of script with compatible Elasticsearch Query DSL, and also support: function, variable, collection, type and iteration etc. explore more :
 
-{% content-ref url="language-specifications/basic-syntax.md" %}
-[basic-syntax.md](language-specifications/basic-syntax.md)
+{% content-ref url="syntax/basic-syntax.md" %}
+[basic-syntax.md](syntax/basic-syntax.md)
 {% endcontent-ref %}
 
-{% content-ref url="language-specifications/script-syntax.md" %}
-[script-syntax.md](language-specifications/script-syntax.md)
+{% content-ref url="syntax/script-syntax.md" %}
+[script-syntax.md](syntax/script-syntax.md)
 {% endcontent-ref %}
 
-{% content-ref url="language-specifications/glossary.md" %}
-[glossary.md](language-specifications/glossary.md)
+{% content-ref url="syntax/glossary.md" %}
+[glossary.md](syntax/glossary.md)
 {% endcontent-ref %}

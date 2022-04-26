@@ -1,8 +1,8 @@
 ---
-description: Firstly install EDQL on Intellij and start
+description: install EDQL on on Jetbrains IDE platform(Intellij etc)
 ---
 
-# Install EDQL on Intellij
+# Installation
 
 ## The Basics
 
@@ -10,9 +10,9 @@ description: Firstly install EDQL on Intellij and start
 
 ## Install
 
-For different users, there are 2 ways to install EDQL on Intellij IDE Platform
+For different use cases, there are two ways to install EDQL on Intellij IDE Platform
 
-### Download EDQL from Marketspace
+### Download EDQL from Marketplace
 
 Open the Intellij plugins and search **EDQL**, Download install and restart IDE
 
