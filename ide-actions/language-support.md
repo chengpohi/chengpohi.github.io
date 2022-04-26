@@ -1,22 +1,14 @@
 ---
-description: Intellij IDE for EDQL language syntax
+description: Intellij IDE support for EDQL source editor
 ---
 
-# Language Support
+# Source Editor
 
-## Run
+## File Template
 
-**EDQL** script support run request action directly on **Intellij** by click right **Run** icon or use the **Run shortcut**.
 
-### Run Single Query Action
 
-We can run single request by click the request right icon directly or when cursor stay on the request action block use the Run shortcut directly. it will only run current request action and return current request action response.
-
-### Run EDQL Script
-
-If EDQL script has multiple request actions, we can run all request actions when cursor not stay on any request action block and use Run shortcut to run whole requests. For multiple request actions, multiple responses will return.
-
-### Live Templates
+## Live Templates
 
 **EDQL** plugin already defined the common used Live Templates for intelligence, easily and quickly to write the request action or query conditions, so when input the below keyword, the Live Template will automatically expand.
 

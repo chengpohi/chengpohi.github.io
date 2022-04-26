@@ -98,6 +98,6 @@ POST my-index/_search
 
 See more on:
 
-{% content-ref url="../visualization/visualize.md" %}
-[visualize.md](../visualization/visualize.md)
+{% content-ref url="../data-vievwer/visualize.md" %}
+[visualize.md](../data-vievwer/visualize.md)
 {% endcontent-ref %}
