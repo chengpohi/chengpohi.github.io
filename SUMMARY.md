@@ -15,6 +15,7 @@
 * [Source Editor](ide-actions/language-support.md)
 * [Visual Editor](ide-actions/visual-editor.md)
 * [Dock Manager](ide-actions/dock-manager.md)
+* [Visualize](ide-actions/visualize.md)
 
 ## USE CASES
 
@@ -27,10 +28,6 @@
 * [Basic Syntax](syntax/basic-syntax.md)
 * [Script Syntax](syntax/script-syntax.md)
 * [Glossary](syntax/glossary.md)
-
-## DATA VIEVWER
-
-* [Visualize](data-vievwer/visualize.md)
 
 ## Extras
 

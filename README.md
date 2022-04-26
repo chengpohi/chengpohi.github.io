@@ -7,8 +7,6 @@ description: Elasticsearch GUI Client and Intellij Elasticsearch Plugin
 [Elasticsearch Query - EDQL ](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/)is a very useful Elasticsearch GUI client for query and manage Elasticsearch or Opesearch cluster. Just run [Elasticsearch Query - EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/versions) plugin with the one-click install on Intellij. Since it is script language, you can not only build your own query templates with function, variable, libraries, but also can do many types of simple or complex Elasticsearch queries with it. and EDQL is full compatible with official DSL API for all Elasticsearch versions, so it's easy for quick start.
 
 {% embed url="https://plugins.jetbrains.com/embeddable/card/16364" %}
-Install EDQL
-{% endembed %}
 
 ## Core Features
 
