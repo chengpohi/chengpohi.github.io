@@ -21,7 +21,7 @@
 
 * [Query](use-cases/query-data.md)
 * [Aggregation](use-cases/analysis-data.md)
-* [Manage Cluster](use-cases/manage-cluster.md)
+* [Management](use-cases/manage-cluster.md)
 
 ## Syntax
 
