@@ -36,8 +36,8 @@ If EDQL script has multiple request actions, we can run whole request actions wh
 
 ## Plot
 
-{% content-ref url="../data-vievwer/visualize.md" %}
-[visualize.md](../data-vievwer/visualize.md)
+{% content-ref url="visualize.md" %}
+[visualize.md](visualize.md)
 {% endcontent-ref %}
 
 ## Convert Query Action to Java

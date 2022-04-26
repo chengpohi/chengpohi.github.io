@@ -2,7 +2,7 @@
 description: 'Analysis Elasticsearch documents: aggregations and plot'
 ---
 
-# Aggregations
+# Aggregation
 
 ## Aggregations
 
@@ -98,6 +98,6 @@ POST my-index/_search
 
 See more on:
 
-{% content-ref url="../data-vievwer/visualize.md" %}
-[visualize.md](../data-vievwer/visualize.md)
+{% content-ref url="../ide-actions/visualize.md" %}
+[visualize.md](../ide-actions/visualize.md)
 {% endcontent-ref %}
