@@ -33,6 +33,6 @@
 
 * [Keyboard Shortcut](extras/keyboard-shortcuts.md)
 
-## Elasticsearch Blogs
+## Blogs
 
-* [Wildcard Query cause Cluster Crash](elasticsearch-blogs/wildcard-query-cause-cluster-crash.md)
+* [Wildcard Query cause Cluster Crash](blogs/wildcard-query-cause-cluster-crash.md)

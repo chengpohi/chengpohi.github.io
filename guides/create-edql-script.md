@@ -1,5 +1,5 @@
 ---
-description: Write an EDQL script, connect to Elasticsearch cluster and configurations
+description: Write EDQL script, connect to Elastiscearch cluster
 ---
 
 # Write Script
