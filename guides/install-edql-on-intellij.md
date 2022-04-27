@@ -1,5 +1,5 @@
 ---
-description: install EDQL on on Jetbrains IDE platform(Intellij etc)
+description: Install Elasticsearch GUI Client on Intellij
 ---
 
 # Installation
