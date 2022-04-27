@@ -31,4 +31,4 @@ jobs:
         env:
           key: main
           branches: retype
-          files: google380e3aaa82ba1c1f.html pagemap.xml sitemap.xml sitemap.txt
+          files: google380e3aaa82ba1c1f.html pagemap.xml sitemap.xml resources/sitemap.xml
