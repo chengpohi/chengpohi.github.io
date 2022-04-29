@@ -3,7 +3,7 @@ output: .retype
 url: https://chengpohi.github.io/
 branding:
   title: EDQL
-  label: Wiki
+  label: Doc
 links:
   - text: Download EDQL
     link: https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/

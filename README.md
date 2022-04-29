@@ -1,4 +1,5 @@
 ---
+icon: home
 description: Elasticsearch GUI Client and Intellij Elasticsearch Plugin
 ---
 
