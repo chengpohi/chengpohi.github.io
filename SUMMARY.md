@@ -4,10 +4,10 @@
 
 ## Guides
 
-* [Installation](guides/install-edql-on-intellij.md)
-* [Write Script](guides/create-edql-script.md)
-* [Run Query](guides/run-edql-request.md)
-* [Connection](guides/connection.md)
+* [Install EDQL on Intellij](guides/install-edql-on-intellij.md)
+* [Connect Elasticsearch and Write EDQL Script](guides/create-edql-script.md)
+* [Run EDQL Query Action with Data Viewer](guides/run-edql-request.md)
+* [Connect to Elasticsearch Cluster and Manage Connections](guides/connect-to-elasticsearch-cluster-and-manage-connections.md)
 
 ## IDE ACTIONS
 
