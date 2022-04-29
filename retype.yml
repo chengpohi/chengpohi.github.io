@@ -14,6 +14,9 @@ links:
   - text: Install EDQL on Intellij
     link: https://chengpohi.github.io/introduction/install-edql-on-intellij/
     icon: gear
+  - text: Github
+    link: https://github.com/chengpohi/edql
+    icon: mark-github
 footer:
   copyright: "&copy; Copyright . All rights reserved."
   
