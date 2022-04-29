@@ -2,7 +2,7 @@
 description: Intellij IDE support for EDQL source editor
 ---
 
-# Source Editor
+# Code Editor
 
 ## File Template
 

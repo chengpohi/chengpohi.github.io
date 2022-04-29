@@ -2,7 +2,7 @@
 description: EDQL Intellij IDE Actions for Query, Download, Management or Convertor
 ---
 
-# Action
+# Intellij Actions
 
 ## Run
 
