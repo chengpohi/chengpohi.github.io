@@ -12,29 +12,31 @@
     <meta name="generator" content="Retype 2.2">
 
     <!-- Primary Meta Tags -->
-    <title>Connection</title>
-    <meta name="title" content="Connection">
-    <meta name="description" content="Connect to Elasticsearch cluster or Opensearch cluster" />
+    <title>Installation</title>
+    <meta name="title" content="Installation">
+    <meta name="description" content="Install Elasticsearch GUI Client on Intellij" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://chengpohi.github.io/guides/connect-to-elasticsearch-cluster-and-manage-connections/">
-    <meta property="og:title" content="Connection">
-    <meta property="og:description" content="Connect to Elasticsearch cluster or Opensearch cluster">
+    <meta property="og:url" content="https://chengpohi.github.io/introduction/install-edql-on-intellij/">
+    <meta property="og:title" content="Installation">
+    <meta property="og:description" content="Install Elasticsearch GUI Client on Intellij">
+    <meta property="og:image" content="https://chengpohi.github.io/.gitbook/assets/install-edql.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://chengpohi.github.io/guides/connect-to-elasticsearch-cluster-and-manage-connections/">
-    <meta property="twitter:title" content="Connection">
-    <meta property="twitter:description" content="Connect to Elasticsearch cluster or Opensearch cluster">
+    <meta property="twitter:url" content="https://chengpohi.github.io/introduction/install-edql-on-intellij/">
+    <meta property="twitter:title" content="Installation">
+    <meta property="twitter:description" content="Install Elasticsearch GUI Client on Intellij">
+    <meta property="twitter:image" content="https://chengpohi.github.io/.gitbook/assets/install-edql.png">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.704561532724" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.704562367930" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.704561532724" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.704562367930" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.704561532724" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.704562367930" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -170,25 +172,56 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="connection" class="break-words">
+<doc-anchor-target id="installation" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#connection">#</doc-anchor-trigger>
-        <span>Connection</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installation">#</doc-anchor-trigger>
+        <span>Installation</span>
     </h1>
 </doc-anchor-target>
-<p>Quickly and easily create, organize, access multiple Elasticsearch clusters. also these clusters can be used on EDQL script for quickly switch query env context.</p>
-<doc-anchor-target id="connection-configuration">
+<doc-anchor-target id="the-basics">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#connection-configuration">#</doc-anchor-trigger>
-        <span>Connection Configuration</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#the-basics">#</doc-anchor-trigger>
+        <span>The Basics</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="query-console">
+<p><strong>EDQL</strong> plugin is based on Jetbrains IDE platform, and support version &gt;= 203, so we can install it on Intellij, Webstorm, Go Land IDE etc. it&#x27;s very easy to do this. after install Intellij IDE can auto recognize the edql script file for supporting: Run, Highlight, Autocomplete, Format, Fold &amp; Unfold…</p>
+<doc-anchor-target id="install">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#query-console">#</doc-anchor-trigger>
-        <span>Query Console</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#install">#</doc-anchor-trigger>
+        <span>Install</span>
     </h2>
 </doc-anchor-target>
+<p>For different use cases, there are two ways to install EDQL on Intellij IDE Platform</p>
+<doc-anchor-target id="download-edql-from-marketplace">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#download-edql-from-marketplace">#</doc-anchor-trigger>
+        <span>Download EDQL from Marketplace</span>
+    </h3>
+</doc-anchor-target>
+<p>Open the Intellij plugins and search <strong>EDQL</strong>, Download install and restart IDE</p>
+<p><figure class="content-center">
+    <img src="../../.gitbook/assets/install-edql.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="download-edql-from-website">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#download-edql-from-website">#</doc-anchor-trigger>
+        <span>Download EDQL from website</span>
+    </h3>
+</doc-anchor-target>
+<p>Open <a href="https://plugins.jetbrains.com/plugin/16364-edql-elasticsearch-data-query-language">EDQL Plugin</a> website, select the <strong>newest</strong> version and download plugin zip</p>
+<p><figure class="content-center">
+    <img src="../../.gitbook/assets/manual-install.png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Open IDE plugin dialog, and select install plugin from disk with <strong>downloaded zip</strong></p>
+<p><figure class="content-center">
+    <img src="../../.gitbook/assets/install-edql-(1).png" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -198,20 +231,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/guides/run-edql-request/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Run EDQL Query</span>
+                                                <span class="block mt-1">What is EDQL?</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/ide-actions/actions/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/introduction/create-edql-script/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Action</span>
+                                                <span class="block mt-1">Write Script</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -255,6 +288,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Connection", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Installation", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
