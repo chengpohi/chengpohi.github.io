@@ -7,8 +7,10 @@ branding:
 links:
   - text: Download EDQL
     link: https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/
+    icon: download
   - text: Install EDQL on Intellij
     link: https://chengpohi.github.io/guides/install-edql-on-intellij/
+    icon: gear
 footer:
   copyright: "&copy; Copyright . All rights reserved."
   
