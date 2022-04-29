@@ -5,11 +5,14 @@ branding:
   title: EDQL
   label: Doc
 links:
+  - text: Home
+    link: https://chengpohi.github.io/
+    icon: home
   - text: Download EDQL
     link: https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/
     icon: download
   - text: Install EDQL on Intellij
-    link: https://chengpohi.github.io/guides/install-edql-on-intellij/
+    link: https://chengpohi.github.io/introduction/install-edql-on-intellij/
     icon: gear
 footer:
   copyright: "&copy; Copyright . All rights reserved."
