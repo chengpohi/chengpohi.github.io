@@ -17,9 +17,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: retypeapp/action-build@v2
+      - uses: retypeapp/action-build@latest
 
-      - uses: retypeapp/action-github-pages@v2
+      - uses: retypeapp/action-github-pages@latest
         with:
           update-branch: true
 
