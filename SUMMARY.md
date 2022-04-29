@@ -11,8 +11,8 @@
 
 ## IDE ACTIONS
 
-* [Action](ide-actions/actions.md)
-* [Source Editor](ide-actions/language-support.md)
+* [Intellij Actions](ide-actions/actions.md)
+* [Code Editor](ide-actions/language-support.md)
 * [Visual Editor](ide-actions/visual-editor.md)
 * [Dock Manager](ide-actions/dock-manager.md)
 * [Data Viewer](ide-actions/visualize.md)
