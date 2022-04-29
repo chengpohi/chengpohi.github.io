@@ -8,7 +8,19 @@ EDQL has a Dock Manager default on right side of intellij, Dock Manager support 
 
 ## Manage Connection
 
+### Add Connection
 
+### Test Connection
+
+### Cluster Info
+
+Indices
+
+Aliases
+
+Tasks
+
+Snapshots
 
 ## Manage  Script
 
