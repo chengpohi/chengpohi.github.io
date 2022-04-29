@@ -56,16 +56,16 @@ POST $myindex/_search
 
 Follow our handy guides to get started on the basics as quickly as possible:
 
-{% content-ref url="guides/install-edql-on-intellij.md" %}
-[install-edql-on-intellij.md](guides/install-edql-on-intellij.md)
+{% content-ref url="introduction/install-edql-on-intellij.md" %}
+[install-edql-on-intellij.md](introduction/install-edql-on-intellij.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides/create-edql-script.md" %}
-[create-edql-script.md](guides/create-edql-script.md)
+{% content-ref url="introduction/create-edql-script.md" %}
+[create-edql-script.md](introduction/create-edql-script.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides/run-edql-request.md" %}
-[run-edql-request.md](guides/run-edql-request.md)
+{% content-ref url="introduction/run-edql-request.md" %}
+[run-edql-request.md](introduction/run-edql-request.md)
 {% endcontent-ref %}
 
 ### Use cases with EDQL
