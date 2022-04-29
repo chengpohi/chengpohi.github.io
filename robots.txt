@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://chengpohi.github.io/sitemap.xml
-Sitemap: https://chengpohi.github.io/sitemap.txt
-
