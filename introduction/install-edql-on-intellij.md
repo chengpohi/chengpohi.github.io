@@ -2,7 +2,7 @@
 description: Install Elasticsearch GUI Client on Intellij
 ---
 
-# Installation
+# Install EDQL Plugin on Intellij
 
 ## The Basics
 
