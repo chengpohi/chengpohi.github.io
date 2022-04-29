@@ -2,12 +2,12 @@
 
 * [What is EDQL?](README.md)
 
-## Guides
+## Introduction
 
-* [Install EDQL on Intellij](guides/install-edql-on-intellij.md)
-* [Connect Elasticsearch and Write EDQL Script](guides/create-edql-script.md)
-* [Run EDQL Query Action with Data Viewer](guides/run-edql-request.md)
-* [Connect to Elasticsearch Cluster and Manage Connections](guides/connect-to-elasticsearch-cluster-and-manage-connections.md)
+* [Install EDQL on Intellij](introduction/install-edql-on-intellij.md)
+* [Connect Elasticsearch and Write EDQL Script](introduction/create-edql-script.md)
+* [Run EDQL Query Action with Data Viewer](introduction/run-edql-request.md)
+* [Connect to Elasticsearch Cluster and Manage Connections](introduction/connect-to-elasticsearch-cluster-and-manage-connections.md)
 
 ## IDE ACTIONS
 
