@@ -12,29 +12,29 @@
     <meta name="generator" content="Retype 2.2">
 
     <!-- Primary Meta Tags -->
-    <title>EDQL: Elasticsearch GUI with Intellij Plugin</title>
-    <meta name="title" content="EDQL: Elasticsearch GUI with Intellij Plugin">
-    <meta name="description" content="Elasticsearch GUI with Intellij Plugin" />
+    <title>EDQL: Elasticsearch GUI on Intellij Plugin</title>
+    <meta name="title" content="EDQL: Elasticsearch GUI on Intellij Plugin">
+    <meta name="description" content="Elasticsearch GUI on Intellij Plugin" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chengpohi.github.io/">
-    <meta property="og:title" content="EDQL: Elasticsearch GUI with Intellij Plugin">
-    <meta property="og:description" content="Elasticsearch GUI with Intellij Plugin">
+    <meta property="og:title" content="EDQL: Elasticsearch GUI on Intellij Plugin">
+    <meta property="og:description" content="Elasticsearch GUI on Intellij Plugin">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://chengpohi.github.io/">
-    <meta property="twitter:title" content="EDQL: Elasticsearch GUI with Intellij Plugin">
-    <meta property="twitter:description" content="Elasticsearch GUI with Intellij Plugin">
+    <meta property="twitter:title" content="EDQL: Elasticsearch GUI on Intellij Plugin">
+    <meta property="twitter:description" content="Elasticsearch GUI on Intellij Plugin">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.705068228532" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.705068356050" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.705068228532" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.705068356050" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.705068228532" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.705068356050" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -210,15 +210,15 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="edql-elasticsearch-gui-with-intellij-plugin" class="break-words">
+<doc-anchor-target id="edql-elasticsearch-gui-on-intellij-plugin" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#edql-elasticsearch-gui-with-intellij-plugin">#</doc-anchor-trigger>
-        <span>EDQL: Elasticsearch GUI with Intellij Plugin</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#edql-elasticsearch-gui-on-intellij-plugin">#</doc-anchor-trigger>
+        <span>EDQL: Elasticsearch GUI on Intellij Plugin</span>
     </h1>
 </doc-anchor-target>
 <p><a href="https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/">EDQL</a> is <strong>Elasticsearch</strong> management and query tool based on Intellij plugin system. It has a simple  graphical user interface for manage Elasticsearch connections and query from Elasticsearch.  </p>
-<p><strong>EDQL is full compatible with official Query DSL</strong>, can just copy query DSL and run on EDQL without any extra effort. also EDQL has visual editor for quickly write query conditions with interactive UI.</p>
-<p><strong>EDQL</strong> has powerful script engine: support function, variable and iteration etc. with smart Intellij you can easily write query DSL(refactor, extract etc).</p>
+<p><strong>It is full compatible with official Query DSL</strong>, can just copy query DSL and run on EDQL without any extra effort. also EDQL has visual editor for quickly write query conditions with interactive UI.</p>
+<p><strong>It</strong> has powerful script engine: support function, variable and iteration etc. with smart Intellij you can easily write query DSL(refactor, extract etc).</p>
 <p>For analysis aggregations, <strong>EDQL</strong> support plotting these aggregation results under intellij(find more: <a href="ide-actions/visualize/" title="mention">visualize.md</a>).</p>
 <figure>
     <div class="relative w-full mb-6 overflow-hidden pt-9/16">
@@ -251,11 +251,20 @@
         <span>Getting Started</span>
     </h2>
 </doc-anchor-target>
-<p>Quickly review an Elasticsearch query example:</p>
-<ul>
-<li>Query from localhost with port <em>9200</em></li>
-<li>Query index <em><strong>myindex</strong></em> with custom source fields</li>
-</ul>
+<p>Quick start on EDQL</p>
+<doc-anchor-target id="create-connection-by-edql-dock-manager">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#create-connection-by-edql-dock-manager">#</doc-anchor-trigger>
+        <span>Create Connection by EDQL Dock Manager</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="create-edql-query-console">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#create-edql-query-console">#</doc-anchor-trigger>
+        <span>Create EDQL Query Console</span>
+    </h2>
+</doc-anchor-target>
+<p>Query index <em><strong>myindex</strong></em> with custom source fields</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">local myindex = &quot;myindex&quot;
 #fields
@@ -366,6 +375,6 @@ POST $myindex/_search
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "EDQL: Elasticsearch GUI with Intellij Plugin", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "EDQL: Elasticsearch GUI on Intellij Plugin", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
