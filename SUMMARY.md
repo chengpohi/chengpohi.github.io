@@ -1,6 +1,6 @@
 # Table of contents
 
-* [EDQL: Elasticsearch GUI Client and Intellij Plugin](README.md)
+* [EDQL: Elasticsearch GUI on Intellij Plugin](README.md)
 
 ## Introduction
 

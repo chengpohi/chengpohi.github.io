@@ -1,10 +1,10 @@
 ---
-description: Elasticsearch GUI Client and Intellij Elasticsearch Plugin
+description: Elasticsearch GUI by Intellij Plugin
 ---
 
-# EDQL: Elasticsearch GUI Client and Intellij Plugin
+# EDQL: Elasticsearch GUI on Intellij Plugin
 
-[Elasticsearch Query - EDQL ](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/)is a very useful Elasticsearch GUI client for query and manage Elasticsearch or Opesearch cluster. Just run [Elasticsearch Query - EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/versions) plugin with the one-click install on Intellij. Since it is script language, you can not only build your own query templates with function, variable, libraries, but also can do many types of simple or complex Elasticsearch queries with it. and EDQL is full compatible with official DSL API for all Elasticsearch versions, so it's easy for quick start.
+[EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/) is Elasticsearch management and query tool based on Intellij plugin system. It has a simple  graphical user interface for manage Elasticsearch connections and query from Elasticsearch.  **EDQL** is full compatible with official Query DSL, can just copy query dsl and run on EDQL. also **EDQL** has powerful script engine: support function, variable and iteration etc. with smart Intellij you can easily write query DSL(refactor, extract etc) and analysis aggregations, we can simply plot these aggregation results under intellij(find more: [visualize.md](ide-actions/visualize.md "mention")).
 
 {% embed url="https://plugins.jetbrains.com/embeddable/card/16364" %}
 
@@ -25,9 +25,9 @@ description: Elasticsearch GUI Client and Intellij Elasticsearch Plugin
 
 ## Getting Started
 
-Quickly review an Elasticsearch query example:&#x20;
+Quickly review an Elasticsearch query example:
 
-* Query from localhost with port _9200_&#x20;
+* Query from localhost with port _9200_
 * Query index _**myindex**_ with custom source fields
 
 ```
@@ -50,7 +50,7 @@ POST $myindex/_search
 }
 ```
 
-![](.gitbook/assets/new-demo.gif)
+![](<.gitbook/assets/new-demo (1).gif>)
 
 ### Guides: Jump right in
 
@@ -83,8 +83,6 @@ EDQL is not only target for query also can help solve multi scenarios problems, 
 {% content-ref url="use-cases/manage-cluster.md" %}
 [manage-cluster.md](use-cases/manage-cluster.md)
 {% endcontent-ref %}
-
-
 
 ### Explore More about EDQL Syntax
 
