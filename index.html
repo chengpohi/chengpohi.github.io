@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.705074237359" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.705075059612" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.705074237359" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.705075059612" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.705074237359" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.705075059612" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -259,14 +259,15 @@
 </details>
 <details>
 <summary>Data Viewer</summary>
-<p>management</p>
+<p>View query result as table mode, JSON mode, search, highlight, fields selection etc. and  modify, delete, new and export(scroll) documents on Data Viewer.</p>
 </details>
 <details>
 <summary>Management</summary>
-<p>plot</p>
+<p>Manage Elasticsearch connections: add, delete and modify connection, view index, templates, tasks and nodes etc. also can modify index and create new index.</p>
 </details>
 <details>
 <summary>Script Function</summary>
+<p>Works like a script with function, variable or iteration etc, so can quickly create your own query template or library for handling common use cases</p>
 </details>
 <doc-anchor-target id="getting-started">
     <h2>
@@ -282,10 +283,10 @@
     </h3>
 </doc-anchor-target>
 <doc-anchor-target id="create-edql-query-console">
-    <h2>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#create-edql-query-console">#</doc-anchor-trigger>
         <span>Create EDQL Query Console</span>
-    </h2>
+    </h3>
 </doc-anchor-target>
 <p>Query index <em><strong>myindex</strong></em> with custom source fields</p>
 <div class="codeblock-wrapper"><doc-codeblock>
