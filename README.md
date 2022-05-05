@@ -39,7 +39,7 @@ Query directly with official Query DSL without any other extra effort. so can qu
 
 <summary>Data Viewer</summary>
 
-management
+View query result as table mode, JSON mode, search, highlight, fields selection etc. and  modify, delete, new and export(scroll) documents on Data Viewer.
 
 </details>
 
@@ -47,7 +47,7 @@ management
 
 <summary>Management</summary>
 
-plot
+Manage Elasticsearch connections: add, delete and modify connection, view index, templates, tasks and nodes etc. also can modify index and create new index.
 
 </details>
 
@@ -55,11 +55,9 @@ plot
 
 <summary>Script Function</summary>
 
-
+Works like a script with function, variable or iteration etc, so can quickly create your own query template or library for handling common use cases
 
 </details>
-
-
 
 ## Getting Started
 
@@ -67,7 +65,7 @@ Quick start on EDQL
 
 ### Create Connection by EDQL Dock Manager
 
-## Create EDQL Query Console
+### Create EDQL Query Console
 
 Query index _**myindex**_ with custom source fields
 
