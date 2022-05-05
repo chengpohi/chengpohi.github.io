@@ -26,7 +26,7 @@ For analysis aggregations, **EDQL** support plotting these aggregation results i
 
 <summary>Query</summary>
 
-Query
+Query directly with official Query DSL without any other extra effort. so can quickly verify query conditions and examine data
 
 </details>
 
