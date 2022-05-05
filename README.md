@@ -64,19 +64,11 @@ plot
 ## Getting Started
 
 Quick start on EDQL
-<<<<<<< HEAD
 
 ### Create Connection by EDQL Dock Manager
 
 ## Create EDQL Query Console
 
-=======
-
-### Create Connection by EDQL Dock Manager
-
-## Create EDQL Query Console
-
->>>>>>> origin/gitbook
 Query index _**myindex**_ with custom source fields
 
 ```
