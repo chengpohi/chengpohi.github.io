@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.705073284268" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.705073934577" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.705073284268" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.705073934577" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.705073284268" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.705073934577" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -216,42 +216,66 @@
         <span>EDQL: Elasticsearch GUI on Intellij Plugin</span>
     </h1>
 </doc-anchor-target>
-<p><a href="https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/">EDQL</a> is <strong>Elasticsearch</strong> management and query tool based on Intellij plugin system. It has a simple  graphical user interface for manage Elasticsearch connections and query from Elasticsearch.  </p>
+<p><a href="https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/">EDQL</a> is a management and query tool based on Intellij plugin platform for Elasticsearch. It has a simple graphical user interface for manage Elasticsearch clusters and query from Elasticsearch.  </p>
 <p><strong>It is full compatible with official Query DSL</strong>, can just copy query DSL and run on EDQL without any extra effort. also EDQL has visual editor for quickly write query conditions with interactive UI.</p>
 <p><strong>It</strong> has powerful script engine: support function, variable and iteration etc. with smart Intellij you can easily write query DSL(refactor, extract etc).</p>
-<p>For analysis aggregations, <strong>EDQL</strong> support plotting these aggregation results under intellij(find more: <a href="ide-actions/visualize/" title="mention">visualize.md</a>).</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>EDQL is cross platform since it&#x27;s based on cross platform</p>
+        </div>
+    </div>
+</div>
+<p><strong>It&#x27;s full compatible with official Query DSL</strong>, just copy query DSL and run on EDQL without any extra effort. also EDQL has visual editor for quickly write query conditions with interactive UI.</p>
+<blockquote>
+<p>Elasticsearch Query DSL is complex, although we can use SQL or simple DSL directly query Elasticsearch, but in some time if we want to aggs data, further analysis or share Query DSL, it&#x27;s hard to achieve.</p>
+</blockquote>
+<p><strong>It</strong> has powerful script engine: support function, variable and iteration etc. with intelligent Intellij you can easily write query DSL(autocomplete, refactor, live templates, extract etc).</p>
+<p>For analysis aggregations, <strong>EDQL</strong> support plotting these aggregation results in intellij(find more: <a href="ide-actions/visualize/" title="mention">visualize.md</a>).</p>
 <figure>
     <div class="relative w-full mb-6 overflow-hidden pt-9/16">
         <iframe class="w-full h-full border-0 absolute inset-0" src="https://plugins.jetbrains.com/embeddable/card/16364" allowfullscreen></iframe>
     </div>
 </figure>
-<doc-anchor-target id="core-features">
+<doc-anchor-target id="feature-overview">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#core-features">#</doc-anchor-trigger>
-        <span>Core Features</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#feature-overview">#</doc-anchor-trigger>
+        <span>Feature Overview</span>
     </h2>
 </doc-anchor-target>
-<ol>
-<li>Easy to Use: query by official DSL syntax</li>
-<li>Visual query editor: visual query conditions and contexts</li>
-<li>Manage query documents: add, delete, update and search document</li>
-<li>Export query documents: download current query results or scroll download by query DSL</li>
-<li>Query visualization: query documents as table, plot aggregations(line, bar, pie chart)</li>
-<li>Multi authorizations support: Auth header, Basic Auth, Api Key and AWS Opensearch ApiKey</li>
-<li>Support Elasticseaerch and AWS Opensearch connection</li>
-<li>Manage Elasticsearch and Opensearch cluster: create index, add index and import documents etc</li>
-<li>Intellij IDE language operations support: go to declaration, find usages, extract, autocomplete, highlight, live templates, folding/unfolding</li>
-<li>Intellij IDE run support: run single request or run multiple requests</li>
-<li>Program easily: Transfer/convert Query DSL to Java request cod</li>
-<li>Script syntax: variable, function, iteration, collection, type</li>
-</ol>
+<details>
+<summary>Query</summary>
+<p>Query</p>
+</details>
+<details>
+<summary>Data Viewer</summary>
+<p>management</p>
+</details>
+<details>
+<summary>Management</summary>
+<p>plot</p>
+</details>
+<details>
+<summary>Script Function</summary>
+</details>
 <doc-anchor-target id="getting-started">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#getting-started">#</doc-anchor-trigger>
         <span>Getting Started</span>
     </h2>
 </doc-anchor-target>
-<p>Quick start on EDQL</p>
+<p>Quick start on EDQL
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <doc-anchor-target id="create-connection-by-edql-dock-manager">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#create-connection-by-edql-dock-manager">#</doc-anchor-trigger>
@@ -264,7 +288,35 @@
         <span>Create EDQL Query Console</span>
     </h2>
 </doc-anchor-target>
-<p>Query index <em><strong>myindex</strong></em> with custom source fields</p>
+<p>=======</p>
+<doc-anchor-target id="create-connection-by-edql-dock-manager-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#create-connection-by-edql-dock-manager-1">#</doc-anchor-trigger>
+        <span>Create Connection by EDQL Dock Manager</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="create-edql-query-console-1">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#create-edql-query-console-1">#</doc-anchor-trigger>
+        <span>Create EDQL Query Console</span>
+    </h2>
+</doc-anchor-target>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>origin/gitbook
+Query index <em><strong>myindex</strong></em> with custom source fields</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">local myindex = &quot;myindex&quot;
 #fields
