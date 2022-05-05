@@ -5,39 +5,78 @@ description: Elasticsearch GUI on Intellij Plugin
 
 # EDQL: Elasticsearch GUI on Intellij Plugin
 
-[EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/) is **Elasticsearch** management and query tool based on Intellij plugin system. It has a simple  graphical user interface for manage Elasticsearch connections and query from Elasticsearch. &#x20;
+[EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/) is a management and query tool based on Intellij plugin platform for Elasticsearch. It has a simple graphical user interface for manage Elasticsearch clusters and query from Elasticsearch. &#x20;
 
 **It is full compatible with official Query DSL**, can just copy query DSL and run on EDQL without any extra effort. also EDQL has visual editor for quickly write query conditions with interactive UI.
 
 **It** has powerful script engine: support function, variable and iteration etc. with smart Intellij you can easily write query DSL(refactor, extract etc).
 
-For analysis aggregations, **EDQL** support plotting these aggregation results under intellij(find more: [visualize.md](ide-actions/visualize.md "mention")).
+{% hint style="info" %}
+EDQL is cross platform since it's based on cross platform
+{% endhint %}
+
+**It's full compatible with official Query DSL**, just copy query DSL and run on EDQL without any extra effort. also EDQL has visual editor for quickly write query conditions with interactive UI.
+
+> Elasticsearch Query DSL is complex, although we can use SQL or simple DSL directly query Elasticsearch, but in some time if we want to aggs data, further analysis or share Query DSL, it's hard to achieve.
+
+**It** has powerful script engine: support function, variable and iteration etc. with intelligent Intellij you can easily write query DSL(autocomplete, refactor, live templates, extract etc).
+
+For analysis aggregations, **EDQL** support plotting these aggregation results in intellij(find more: [visualize.md](ide-actions/visualize.md "mention")).
 
 {% embed url="https://plugins.jetbrains.com/embeddable/card/16364" %}
 
-## Core Features
+## Feature Overview
 
-1. Easy to Use: query by official DSL syntax
-2. Visual query editor: visual query conditions and contexts
-3. Manage query documents: add, delete, update and search document
-4. Export query documents: download current query results or scroll download by query DSL
-5. Query visualization: query documents as table, plot aggregations(line, bar, pie chart)
-6. Multi authorizations support: Auth header, Basic Auth, Api Key and AWS Opensearch ApiKey
-7. Support Elasticseaerch and AWS Opensearch connection
-8. Manage Elasticsearch and Opensearch cluster: create index, add index and import documents etc
-9. Intellij IDE language operations support: go to declaration, find usages, extract, autocomplete, highlight, live templates, folding/unfolding
-10. Intellij IDE run support: run single request or run multiple requests
-11. Program easily: Transfer/convert Query DSL to Java request cod
-12. Script syntax: variable, function, iteration, collection, type
+<details>
+
+<summary>Query</summary>
+
+Query
+
+</details>
+
+<details>
+
+<summary>Data Viewer</summary>
+
+management
+
+</details>
+
+<details>
+
+<summary>Management</summary>
+
+plot
+
+</details>
+
+<details>
+
+<summary>Script Function</summary>
+
+
+
+</details>
+
+
 
 ## Getting Started
 
 Quick start on EDQL
+<<<<<<< HEAD
 
 ### Create Connection by EDQL Dock Manager
 
 ## Create EDQL Query Console
 
+=======
+
+### Create Connection by EDQL Dock Manager
+
+## Create EDQL Query Console
+
+>>>>>>> origin/gitbook
 Query index _**myindex**_ with custom source fields
 
 ```
