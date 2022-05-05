@@ -2,9 +2,15 @@
 description: Elasticsearch GUI by Intellij Plugin
 ---
 
-# EDQL: Elasticsearch GUI on Intellij Plugin
+# EDQL: Elasticsearch GUI by Intellij Plugin
 
-[EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/) is Elasticsearch management and query tool based on Intellij plugin system. It has a simple  graphical user interface for manage Elasticsearch connections and query from Elasticsearch.  **EDQL** is full compatible with official Query DSL, can just copy query dsl and run on EDQL. also **EDQL** has powerful script engine: support function, variable and iteration etc. with smart Intellij you can easily write query DSL(refactor, extract etc) and analysis aggregations, we can simply plot these aggregation results under intellij(find more: [visualize.md](ide-actions/visualize.md "mention")).
+[EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/) is **Elasticsearch** management and query tool based on Intellij plugin system. It has a simple  graphical user interface for manage Elasticsearch connections and query from Elasticsearch. &#x20;
+
+**EDQL is full compatible with official Query DSL**, can just copy query DSL and run on EDQL without any extra effort. also EDQL has visual editor for quickly write query conditions with interactive UI.
+
+**EDQL** has powerful script engine: support function, variable and iteration etc. with smart Intellij you can easily write query DSL(refactor, extract etc).
+
+For analysis aggregations, **EDQL** support plotting these aggregation results under intellij(find more: [visualize.md](ide-actions/visualize.md "mention")).
 
 {% embed url="https://plugins.jetbrains.com/embeddable/card/16364" %}
 
@@ -31,11 +37,8 @@ Quickly review an Elasticsearch query example:
 * Query index _**myindex**_ with custom source fields
 
 ```
-#elasticsearch host
-HOST http://localhost:9200
-Authorization "Basic xxx"
 local myindex = "myindex"
-#display fields
+#fields
 local fields = [
   "a",
   "b",
