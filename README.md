@@ -1,8 +1,8 @@
 ---
-description: Elasticsearch GUI by Intellij Plugin
+description: Elasticsearch GUI with Intellij Plugin
 ---
 
-# EDQL: Elasticsearch GUI by Intellij Plugin
+# EDQL: Elasticsearch GUI on Intellij Plugin
 
 [EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/) is **Elasticsearch** management and query tool based on Intellij plugin system. It has a simple  graphical user interface for manage Elasticsearch connections and query from Elasticsearch. &#x20;
 
@@ -31,10 +31,13 @@ For analysis aggregations, **EDQL** support plotting these aggregation results u
 
 ## Getting Started
 
-Quickly review an Elasticsearch query example:
+Quick start on EDQL
 
-* Query from localhost with port _9200_
-* Query index _**myindex**_ with custom source fields
+### Create Connection by EDQL Dock Manager
+
+## Create EDQL Query Console
+
+Query index _**myindex**_ with custom source fields
 
 ```
 local myindex = "myindex"
