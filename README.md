@@ -63,11 +63,13 @@ Works like a script with function, variable or iteration etc, so can quickly cre
 
 Quick start on EDQL
 
-### Create Connection by EDQL Dock Manager
+### 1. Connect to Elasticsearch
 
-### Create EDQL Query Console
+Connect to Elasticsearch by using EDQL Dock Manage default **on the Intellij right side**. In the EDQL Dock Manager, you can **add new connection to connect Elasticsearch and Test connection**.
 
-Query index _**myindex**_ with custom source fields
+### 2. Start New Query Console
+
+After create and test a connection of Elasticsearch, you can create new query console on the Dock Toolbar with terminal icon:
 
 ```
 local myindex = "myindex"
@@ -85,6 +87,8 @@ POST $myindex/_search
   }
 }
 ```
+
+> Query index _**myindex**_ with custom source fields
 
 ![](<.gitbook/assets/new-demo (1).gif>)
 
@@ -120,7 +124,7 @@ EDQL is not only target for query also can help solve multi scenarios problems, 
 [manage-cluster.md](use-cases/manage-cluster.md)
 {% endcontent-ref %}
 
-### Explore More about EDQL Syntax
+### Explore More about EDQL Script Syntax
 
 EDQL is a full features of script with compatible Elasticsearch Query DSL, and also support: function, variable, collection, type and iteration etc. explore more :
 
