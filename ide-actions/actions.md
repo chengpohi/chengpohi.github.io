@@ -16,9 +16,13 @@ We can run single request by click the request right icon directly or when curso
 
 If EDQL script has multiple request actions, we can run whole request actions when cursor not stay on any request action block and use Run shortcut to run whole requests. For multiple request actions, multiple responses will return and display separated by tab
 
-## Query
-
 ## Download
+
+### Download Result
+
+### Scroll Download Whole Result
+
+
 
 ## Management
 
@@ -41,4 +45,3 @@ If EDQL script has multiple request actions, we can run whole request actions wh
 {% endcontent-ref %}
 
 ## Convert Query Action to Java
-
