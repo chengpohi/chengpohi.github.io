@@ -7,7 +7,7 @@
 * [Install EDQL Plugin on Intellij](introduction/install-edql-on-intellij.md)
 * [Connect Elasticsearch and EDQL Script](introduction/create-edql-script.md)
 * [Run EDQL Query and Data Viewer](introduction/run-edql-request.md)
-* [Connect to Elasticsearch Cluster and Manage Connections](introduction/connect-to-elasticsearch-cluster-and-manage-connections.md)
+* [Connect to Elasticsearch and Manage Connections](introduction/connect-to-elasticsearch-cluster-and-manage-connections.md)
 
 ## IDE ACTIONS
 
