@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.705075063472" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.705159307454" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.705075063472" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.705159307454" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.705075063472" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.705159307454" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -276,19 +276,20 @@
     </h2>
 </doc-anchor-target>
 <p>Quick start on EDQL</p>
-<doc-anchor-target id="create-connection-by-edql-dock-manager">
+<doc-anchor-target id="1-connect-to-elasticsearch">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-connection-by-edql-dock-manager">#</doc-anchor-trigger>
-        <span>Create Connection by EDQL Dock Manager</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-connect-to-elasticsearch">#</doc-anchor-trigger>
+        <span>1. Connect to Elasticsearch</span>
     </h3>
 </doc-anchor-target>
-<doc-anchor-target id="create-edql-query-console">
+<p>Connect to Elasticsearch by using EDQL Dock Manage default <strong>on the Intellij right side</strong>. In the EDQL Dock Manager, you can <strong>add new connection to connect Elasticsearch and Test connection</strong>.</p>
+<doc-anchor-target id="2-start-new-query-console">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-edql-query-console">#</doc-anchor-trigger>
-        <span>Create EDQL Query Console</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-start-new-query-console">#</doc-anchor-trigger>
+        <span>2. Start New Query Console</span>
     </h3>
 </doc-anchor-target>
-<p>Query index <em><strong>myindex</strong></em> with custom source fields</p>
+<p>After create and test a connection of Elasticsearch, you can create new query console on the Dock Toolbar with terminal icon:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">local myindex = &quot;myindex&quot;
 #fields
@@ -305,6 +306,9 @@ POST $myindex/_search
   }
 }</code></pre>
 </doc-codeblock></div>
+<blockquote>
+<p>Query index <em><strong>myindex</strong></em> with custom source fields</p>
+</blockquote>
 <p><figure class="content-center">
     <img src=".gitbook/assets/new-demo-(1).gif" alt="" />
     <figcaption class="caption"></figcaption>
@@ -330,10 +334,10 @@ POST $myindex/_search
 <p><a href="use-cases/query-data/">query-data.md</a></p>
 <p><a href="use-cases/analysis-data/">analysis-data.md</a></p>
 <p><a href="use-cases/manage-cluster/">manage-cluster.md</a></p>
-<doc-anchor-target id="explore-more-about-edql-syntax">
+<doc-anchor-target id="explore-more-about-edql-script-syntax">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#explore-more-about-edql-syntax">#</doc-anchor-trigger>
-        <span>Explore More about EDQL Syntax</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#explore-more-about-edql-script-syntax">#</doc-anchor-trigger>
+        <span>Explore More about EDQL Script Syntax</span>
     </h3>
 </doc-anchor-target>
 <p>EDQL is a full features of script with compatible Elasticsearch Query DSL, and also support: function, variable, collection, type and iteration etc. explore more :</p>
