@@ -30,11 +30,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.705162050561" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.705162277345" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.705162050561" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.705162277345" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.705162050561" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.705162277345" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -237,17 +237,23 @@
     </h3>
 </doc-anchor-target>
 <p>If EDQL script has multiple request actions, we can run whole request actions when cursor not stay on any request action block and use Run shortcut to run whole requests. For multiple request actions, multiple responses will return and display separated by tab</p>
-<doc-anchor-target id="query">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#query">#</doc-anchor-trigger>
-        <span>Query</span>
-    </h2>
-</doc-anchor-target>
 <doc-anchor-target id="download">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#download">#</doc-anchor-trigger>
         <span>Download</span>
     </h2>
+</doc-anchor-target>
+<doc-anchor-target id="download-result">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#download-result">#</doc-anchor-trigger>
+        <span>Download Result</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="scroll-download-whole-result">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#scroll-download-whole-result">#</doc-anchor-trigger>
+        <span>Scroll Download Whole Result</span>
+    </h3>
 </doc-anchor-target>
 <doc-anchor-target id="management">
     <h2>
