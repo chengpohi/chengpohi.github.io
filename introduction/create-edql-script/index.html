@@ -12,31 +12,31 @@
     <meta name="generator" content="Retype 2.2">
 
     <!-- Primary Meta Tags -->
-    <title>Write Script</title>
-    <meta name="title" content="Write Script">
-    <meta name="description" content="Write EDQL script, connect to Elastiscearch cluster" />
+    <title>Connect Elasticsearch and Query</title>
+    <meta name="title" content="Connect Elasticsearch and Query">
+    <meta name="description" content="Connect Elasticsearch and Query by EDQL" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chengpohi.github.io/introduction/create-edql-script/">
-    <meta property="og:title" content="Write Script">
-    <meta property="og:description" content="Write EDQL script, connect to Elastiscearch cluster">
-    <meta property="og:image" content="https://chengpohi.github.io/.gitbook/assets/new-edql-by-file.gif">
+    <meta property="og:title" content="Connect Elasticsearch and Query">
+    <meta property="og:description" content="Connect Elasticsearch and Query by EDQL">
+    <meta property="og:image" content="https://chengpohi.github.io/.gitbook/assets/configure-by-dashboard.gif">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://chengpohi.github.io/introduction/create-edql-script/">
-    <meta property="twitter:title" content="Write Script">
-    <meta property="twitter:description" content="Write EDQL script, connect to Elastiscearch cluster">
-    <meta property="twitter:image" content="https://chengpohi.github.io/.gitbook/assets/new-edql-by-file.gif">
+    <meta property="twitter:title" content="Connect Elasticsearch and Query">
+    <meta property="twitter:description" content="Connect Elasticsearch and Query by EDQL">
+    <meta property="twitter:image" content="https://chengpohi.github.io/.gitbook/assets/configure-by-dashboard.gif">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.705161378722" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.705162050561" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.705161378722" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.705162050561" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.705161378722" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.705162050561" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -212,34 +212,56 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="write-script" class="break-words">
+<doc-anchor-target id="connect-elasticsearch-and-query" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#write-script">#</doc-anchor-trigger>
-        <span>Write Script</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#connect-elasticsearch-and-query">#</doc-anchor-trigger>
+        <span>Connect Elasticsearch and Query</span>
     </h1>
 </doc-anchor-target>
-<p>EDQL is based on <strong>Intellij</strong>, for different use cases there are two places to save new edql file:</p>
-<ul>
-<li>store on current project directory</li>
-<li>store on EDQL dock manager</li>
-</ul>
-<doc-anchor-target id="new-edql-file-by-new-file">
+<doc-anchor-target id="connect-to-elasticsearch">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#new-edql-file-by-new-file">#</doc-anchor-trigger>
-        <span>New EDQL file by New File</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#connect-to-elasticsearch">#</doc-anchor-trigger>
+        <span>Connect to Elasticsearch</span>
     </h2>
 </doc-anchor-target>
-<p>New EDQL file by New file, it will automatically load the EDQL file template, include: HOST, Timeout , Authorization and with a simple EDQL Query Action. this file will be stored on the current directory</p>
+<p>Connect to Elasticsearch by using EDQL Dock Manage default <strong>on the Intellij right side</strong>. In the EDQL Dock Manager, you can <strong>add new connection to connect Elasticsearch and Test connection</strong>.</p>
+<p>View more on:</p>
+<p><a href="../../ide-actions/dock-manager/">dock-manager.md</a></p>
+<doc-anchor-target id="query-console">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#query-console">#</doc-anchor-trigger>
+        <span>Query Console</span>
+    </h2>
+</doc-anchor-target>
+<p>After create and test a connection of Elasticsearch, you can create new query console on the Dock Toolbar with terminal icon</p>
+<doc-anchor-target id="query-by-visual-editor">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#query-by-visual-editor">#</doc-anchor-trigger>
+        <span>Query by Visual Editor</span>
+    </h3>
+</doc-anchor-target>
+<p>After EDQL file is created, we can use the <strong>Visual Editor</strong> to configure an query action, since the common query conditions are annoying and boring.  Visual Editor is a powerful tool to visual query conditions and configurations, example: term match, range query, wildcard query and size, explan etc.</p>
 <p><figure class="content-center">
-    <img src="../../.gitbook/assets/new-edql-by-file.gif" alt="" />
+    <img src="../../.gitbook/assets/configure-by-dashboard.gif" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<doc-anchor-target id="new-edql-by-the-manager-dashboard">
+<doc-anchor-target id="edql-script">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#new-edql-by-the-manager-dashboard">#</doc-anchor-trigger>
-        <span>New EDQL by the Manager Dashboard</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#edql-script">#</doc-anchor-trigger>
+        <span>EDQL Script</span>
     </h2>
+</doc-anchor-target>
+<p>EDQL is based on <strong>Intellij</strong>, for different use cases there are two places to save new edql script:</p>
+<ul>
+<li>store on EDQL dock manager</li>
+<li>store on current project directory</li>
+</ul>
+<doc-anchor-target id="new-edql-by-dock-manager">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#new-edql-by-dock-manager">#</doc-anchor-trigger>
+        <span>New EDQL by Dock Manager</span>
+    </h3>
 </doc-anchor-target>
 <p>EDQL manager dashboard is used to manage the EDQL files, it will share cross projects, so we can use this place to store the EDQL files that will be used anywhere.</p>
 <p>it will auto fill the HOST, Timeout and Authorization with a simple EDQL Action, the EDQL file will be stored in the Manager like the Scratches files.</p>
@@ -248,22 +270,22 @@
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<doc-anchor-target id="write-by-visual-editor">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#write-by-visual-editor">#</doc-anchor-trigger>
-        <span>Write by Visual Editor</span>
-    </h2>
+<doc-anchor-target id="new-edql-by-new-file">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#new-edql-by-new-file">#</doc-anchor-trigger>
+        <span>New EDQL by New file</span>
+    </h3>
 </doc-anchor-target>
-<p>After EDQL file is created, we can use the <strong>Visual Editor</strong> to configure an query action, since the common query conditions are annoying and boring.  Visual Editor is a powerful tool to visual query conditions and configurations, example: term match, range query, wildcard query and size, explan etc.</p>
+<p>it will automatically load the EDQL file template, include: HOST, Timeout , Authorization and with a simple EDQL Query Action. this file will be stored on the current directory</p>
 <p><figure class="content-center">
-    <img src="../../.gitbook/assets/configure-by-dashboard.gif" alt="" />
+    <img src="../../.gitbook/assets/new-edql-by-file.gif" alt="" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<doc-anchor-target id="basic-configuration">
+<doc-anchor-target id="configurations">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#basic-configuration">#</doc-anchor-trigger>
-        <span>Basic Configuration</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#configurations">#</doc-anchor-trigger>
+        <span>Configurations</span>
     </h2>
 </doc-anchor-target>
 <doc-anchor-target id="host">
@@ -431,7 +453,7 @@ GET _cluster/stats</code></pre>
                                         <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/introduction/run-edql-request/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Run EDQL Query</span>
+                                                <span class="block mt-1">Run EDQL Query and Data Viewer</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -475,6 +497,6 @@ GET _cluster/stats</code></pre>
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Write Script", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Connect Elasticsearch and Query", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
