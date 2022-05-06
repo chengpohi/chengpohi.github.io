@@ -1,10 +1,10 @@
 ---
 description: >-
-  Run EDQL query on Elasticsearch: execute EDQL query action and visualize
-  result-set
+  Run EDQL query on Elasticsearch: execute EDQL query action and visualize data
+  result
 ---
 
-# Run EDQL Query
+# Run EDQL Query and Data Viewer
 
 ## Run with Intellij IDE
 
