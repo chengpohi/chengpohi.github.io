@@ -4,7 +4,7 @@ description: Visual Editor for Help Quickly Generate Elasticsearch Query DSL in 
 
 # Visual Editor
 
-Always complex Query DSL syntax is hard to learn and remember, DSL is also not easy to view if we only want to query by some simple conditions, example: must, must\_not, term, terms, range etc.
+Always complex Query DSL syntax is hard to learn and remember, also not easy to view if we only want to query by some simple conditions, example: must, must\_not, term, terms, range etc.
 
 So EDQL has implemented a powerful feature for visualize write query conditions by using interactive Visual Editor.&#x20;
 
@@ -14,6 +14,6 @@ EDQL visual editor can help quickly generate Elasticsearch Query DSL with visual
 
 Create Visual Action
 
-Add Query Condition
+Configure Query
 
 Delete Query Condition
