@@ -16,7 +16,7 @@ We can run single action by click action left icon directly or when cursor stay 
 
 ![](../.gitbook/assets/new-single-requests.gif)
 
-### Run Whole Script
+### Run Script File
 
 when EDQL script has multiple actions, we can run all actions when cursor not on any request action block and use Run shortcut to run whole requests also you can use right mouse for run. For multiple request actions, multiple responses will return, and display with multiple tabs for every result:
 

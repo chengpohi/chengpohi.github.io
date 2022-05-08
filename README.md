@@ -62,6 +62,8 @@ Quick start on EDQL
 
 Connect to Elasticsearch by using EDQL Dock Manage default **on the Intellij right side**. In the EDQL Dock Manager, you can **add new connection to connect Elasticsearch and Test connection**.
 
+![](.gitbook/assets/new-connection.gif)
+
 ### 2. Start New Query Console
 
 After create and test a connection of Elasticsearch, you can create new query console on the Dock Toolbar with terminal icon:
