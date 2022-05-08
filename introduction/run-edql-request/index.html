@@ -32,11 +32,11 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=2.2.705320483201" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=2.2.705322081543" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=2.2.705320483201" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=2.2.705322081543" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/resources/js/retype.js?v=2.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.705320483201" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/resources/js/lunr.js?v=2.2.705322081543" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -225,10 +225,10 @@
     </h2>
 </doc-anchor-target>
 <p>EDQL is a script, it&#x27;s easy to run and execute on Intellij IDE, the EDQL minimum run block is Query Action, also support run whole script. The following 3 ways to run EDQL script by Intellij. </p>
-<doc-anchor-target id="run-single-action">
+<doc-anchor-target id="run-query-action">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#run-single-action">#</doc-anchor-trigger>
-        <span>Run Single Action</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#run-query-action">#</doc-anchor-trigger>
+        <span>Run Query Action</span>
     </h3>
 </doc-anchor-target>
 <p>We can run single action by click action left icon directly or when cursor stay on the request action block use the Run shortcut directly, also you can use click right mouse with run to run. it will only run current request action and return current request action response:</p>
@@ -237,10 +237,10 @@
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<doc-anchor-target id="run-script-file">
+<doc-anchor-target id="run-script">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#run-script-file">#</doc-anchor-trigger>
-        <span>Run Script File</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#run-script">#</doc-anchor-trigger>
+        <span>Run Script</span>
     </h3>
 </doc-anchor-target>
 <p>when EDQL script has multiple actions, we can run all actions when cursor not on any request action block and use Run shortcut to run whole requests also you can use right mouse for run. For multiple request actions, multiple responses will return, and display with multiple tabs for every result:</p>
