@@ -51,3 +51,7 @@ description: Visualization is useful for analysis data and find data value
 ## Details
 
 ## Commit
+
+
+
+![](../.gitbook/assets/display-chart.gif)
