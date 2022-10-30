@@ -1,4 +1,10 @@
+---
+description: EDQL Script File
+---
+
 # EDQL Script Usage
+
+EDQL script is used for creating a standlone script file, for connect Elasticseach and run query, it's context base, so we can use function variable to do some complex queries.
 
 EDQL is based on **Intellij**, for different use cases there are two places to save new edql script:
 
