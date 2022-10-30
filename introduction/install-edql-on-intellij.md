@@ -1,8 +1,8 @@
 ---
-description: Install Elasticsearch GUI Client on Intellij
+description: Install EDQL Elasticsearch GUI Client on Intellij
 ---
 
-# Install EDQL Plugin on Intellij
+# Install on Intellij
 
 **EDQL** plugin is based on Jetbrains IDE platform, and support version >= 203, it can be installed on Intellij, Webstorm, Go Land Jetbrains IDE. Also since Jetbrains IDE platform is cross platform, it can be installed on Windows, MacOS and Linux operating systems.
 
