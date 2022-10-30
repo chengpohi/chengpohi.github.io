@@ -12,24 +12,26 @@
     <meta name="generator" content="Retype 2.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>Intellij Actions</title>
-    <meta name="title" content="Intellij Actions">
-    <meta name="description" content="EDQL Intellij IDE Actions for Query, Download, Management or Convertor" />
+    <title>EDQL Script Usage</title>
+    <meta name="title" content="EDQL Script Usage">
+    <meta name="description" content="EDQL is based on Intellij, for different use cases there are two places to save new edql script:" />
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://chengpohi.github.io/ide-actions/actions/" />
+    <link rel="canonical" href="https://chengpohi.github.io/introduction/edql-script-usage/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://chengpohi.github.io/ide-actions/actions/">
-    <meta property="og:title" content="Intellij Actions">
-    <meta property="og:description" content="EDQL Intellij IDE Actions for Query, Download, Management or Convertor">
+    <meta property="og:url" content="https://chengpohi.github.io/introduction/edql-script-usage/">
+    <meta property="og:title" content="EDQL Script Usage">
+    <meta property="og:description" content="EDQL is based on Intellij, for different use cases there are two places to save new edql script:">
+    <meta property="og:image" content="https://chengpohi.github.io/.gitbook/assets/new-edql-by-manager.gif">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://chengpohi.github.io/ide-actions/actions/">
-    <meta property="twitter:title" content="Intellij Actions">
-    <meta property="twitter:description" content="EDQL Intellij IDE Actions for Query, Download, Management or Convertor">
+    <meta property="twitter:url" content="https://chengpohi.github.io/introduction/edql-script-usage/">
+    <meta property="twitter:title" content="EDQL Script Usage">
+    <meta property="twitter:description" content="EDQL is based on Intellij, for different use cases there are two places to save new edql script:">
+    <meta property="twitter:image" content="https://chengpohi.github.io/.gitbook/assets/new-edql-by-manager.gif">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -243,106 +245,191 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="intellij-actions" class="break-words">
+<doc-anchor-target id="edql-script-usage" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#intellij-actions">#</doc-anchor-trigger>
-        <span>Intellij Actions</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#edql-script-usage">#</doc-anchor-trigger>
+        <span>EDQL Script Usage</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="run">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#run">#</doc-anchor-trigger>
-        <span>Run</span>
-    </h2>
-</doc-anchor-target>
-<p><strong>EDQL</strong> script support run request action directly on <strong>Intellij</strong> by click right <strong>Run</strong> button or use the <strong>Run shortcut</strong>.</p>
-<doc-anchor-target id="run-query-action">
+<p>EDQL is based on <strong>Intellij</strong>, for different use cases there are two places to save new edql script:</p>
+<ul>
+<li>store on EDQL dock manager</li>
+<li>store on current project directory</li>
+</ul>
+<doc-anchor-target id="new-edql-by-dock-manager">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#run-query-action">#</doc-anchor-trigger>
-        <span>Run Query Action</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#new-edql-by-dock-manager">#</doc-anchor-trigger>
+        <span>New EDQL by Dock Manager</span>
     </h3>
 </doc-anchor-target>
-<p>We can run single request by click the request right icon directly or when cursor stay on the request action block use the Run shortcut directly. it will only run current request action and return current request action response.</p>
-<doc-anchor-target id="run-script">
+<p>EDQL manager dashboard is used to manage the EDQL files, it will share cross projects, so we can use this place to store the EDQL files that will be used anywhere.</p>
+<p>it will auto fill the HOST, Timeout and Authorization with a simple EDQL Action, the EDQL file will be stored in the Manager like the Scratches files.</p>
+<p><figure class="content-center">
+    <img src="../../.gitbook/assets/new-edql-by-manager.gif" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="new-edql-by-new-file">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#run-script">#</doc-anchor-trigger>
-        <span>Run Script</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#new-edql-by-new-file">#</doc-anchor-trigger>
+        <span>New EDQL by New file</span>
     </h3>
 </doc-anchor-target>
-<p>If EDQL script has multiple request actions, we can run whole request actions when cursor not stay on any request action block and use Run shortcut to run whole requests. For multiple request actions, multiple responses will return and display separated by tab</p>
-<doc-anchor-target id="download">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#download">#</doc-anchor-trigger>
-        <span>Download</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="download-query-result">
+<p>it will automatically load the EDQL file template, include: HOST, Timeout , Authorization and with a simple EDQL Query Action. this file will be stored on the current directory</p>
+<p><figure class="content-center">
+    <img src="../../.gitbook/assets/new-edql-by-file.gif" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="configurations">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#download-query-result">#</doc-anchor-trigger>
-        <span>Download Query Result</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#configurations">#</doc-anchor-trigger>
+        <span>Configurations</span>
     </h3>
 </doc-anchor-target>
-<doc-anchor-target id="scroll-download-by-query">
+<doc-anchor-target id="host">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#host">#</doc-anchor-trigger>
+        <span>HOST</span>
+    </h4>
+</doc-anchor-target>
+<p>HOST is target to Elasticsearch/Opensearch cluster <strong>master host endpoint or gateway</strong></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:9200</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="kibana_host">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#kibana_host">#</doc-anchor-trigger>
+        <span>KIBANA_HOST</span>
+    </h4>
+</doc-anchor-target>
+<p>In some cases we can&#x27;t directly connect to Elasticsearch Cluster host, only <strong>Kibana</strong> is exposed to use, in this case we can configure the KIBANA_HOST to proxy query from Elasticsearch</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">KIBANA_HOST http://localhost:5601/</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="timeout">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#timeout">#</doc-anchor-trigger>
+        <span>Timeout</span>
+    </h4>
+</doc-anchor-target>
+<p>Timeout is used to configure every action request timeout, like query, write and delete etc</p>
+<blockquote>
+<p><strong>Caution</strong>: this only limit the request timeout, not this action execute time.</p>
+</blockquote>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Timeout 3000</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="authorization">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#authorization">#</doc-anchor-trigger>
+        <span>Authorization</span>
+    </h4>
+</doc-anchor-target>
+<p>If Elasticsearch/Opensearch cluster has configured <strong>Authorization</strong>, we need to configure the Authorization to connect Elasticsearch Cluster</p>
+<blockquote>
+<p>basic authorization, elastic cloud authorization, AWS credentials</p>
+</blockquote>
+<doc-anchor-target id="authorization-header">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#authorization-header">#</doc-anchor-trigger>
+        <span>Authorization header</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:9200
+Authorization &quot;Bear xxx&quot;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="basic-username-and-password">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#basic-username-and-password">#</doc-anchor-trigger>
+        <span>Basic Username and Password</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:9200
+Username &quot;u&quot;
+Password &quot;p&quot;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="apikey-credential">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#apikey-credential">#</doc-anchor-trigger>
+        <span>ApiKey Credential</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:9200
+ApiKeyId &quot;a&quot;
+ApiKeySecret &quot;c&quot;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="aws-credential">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#aws-credential">#</doc-anchor-trigger>
+        <span>AWS Credential</span>
+    </h4>
+</doc-anchor-target>
+<blockquote>
+<p>aws has another configuration of aws region</p>
+</blockquote>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:9200
+AWSRegion &quot;us-east&quot;
+ApiKeyId &quot;c&quot;
+ApiKeySecret &quot;c&quot;
+ApiSessionToken &quot;c&quot;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="query-action">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#scroll-download-by-query">#</doc-anchor-trigger>
-        <span>Scroll Download by Query</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#query-action">#</doc-anchor-trigger>
+        <span>Query Action</span>
     </h3>
 </doc-anchor-target>
-<doc-anchor-target id="management">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#management">#</doc-anchor-trigger>
-        <span>Management</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="create-index">
+<p>Elasticsearch query action include 4 parts:</p>
+<ul>
+<li>Query Methods: GET, POST, DELETE and PUT</li>
+<li>Query Index: the index name for query</li>
+<li>Query Type: <em>search,</em> mapping</li>
+<li>Query Body: the JSON body for query conditions</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">POST my-index/_search
+
+#OR
+
+GET my-index/_mapping
+
+#OR
+
+GET _cluster/stats</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="query-dsl-body">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-index">#</doc-anchor-trigger>
-        <span>Create Index</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#query-dsl-body">#</doc-anchor-trigger>
+        <span>Query DSL Body</span>
     </h3>
 </doc-anchor-target>
-<doc-anchor-target id="delete-index">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#delete-index">#</doc-anchor-trigger>
-        <span>Delete Index</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="import-data">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#import-data">#</doc-anchor-trigger>
-        <span>Import Data</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="reindex">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#reindex">#</doc-anchor-trigger>
-        <span>Reindex</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="templates">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#templates">#</doc-anchor-trigger>
-        <span>Templates</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="tasks">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tasks">#</doc-anchor-trigger>
-        <span>Tasks</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="plot">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#plot">#</doc-anchor-trigger>
-        <span>Plot</span>
-    </h2>
-</doc-anchor-target>
-<p><a href="../visualize/">visualize.md</a></p>
-<doc-anchor-target id="convert-query-action-to-java">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#convert-query-action-to-java">#</doc-anchor-trigger>
-        <span>Convert Query Action to Java</span>
-    </h2>
-</doc-anchor-target>
+<p>Query DSL body is same as the offcial Query DSL block: <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html">QueryDSL</a>, it&#x27;s a <strong>JSON</strong> format with the query configurations. since EDQL is based on Intellij, it supports autocomplete, format and live templates, example: qbm, range, wildcard etc.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">POST my-index/_search
+{
+  &quot;query&quot;: {
+    &quot;bool&quot;: {
+      &quot;must&quot;: [
+        {
+          &quot;term&quot;: {
+            &quot;title.keyword&quot;: &quot;DGS10&quot;
+          }
+        }
+      ]
+    }
+  }
+}</code></pre>
+</doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="../../.gitbook/assets/new-visual.gif" alt="" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -352,20 +439,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../introduction/edql-script-usage/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../introduction/run-edql-request/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">EDQL Script Usage</span>
+                                                <span class="block mt-1">Run EDQL Query and Data Viewer</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../ide-actions/language-support/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../ide-actions/actions/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Code Editor</span>
+                                                <span class="block mt-1">Intellij Actions</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -409,6 +496,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Intellij Actions", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "EDQL Script Usage", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>

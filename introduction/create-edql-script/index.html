@@ -6,14 +6,14 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.720455327665">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.720455676024">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>Connect Elasticsearch and Query</title>
-    <meta name="title" content="Connect Elasticsearch and Query">
+    <title>Connect and Query</title>
+    <meta name="title" content="Connect and Query">
     <meta name="description" content="Connect Elasticsearch and Query by EDQL" />
 
     <!-- Canonical -->
@@ -22,24 +22,24 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chengpohi.github.io/introduction/create-edql-script/">
-    <meta property="og:title" content="Connect Elasticsearch and Query">
+    <meta property="og:title" content="Connect and Query">
     <meta property="og:description" content="Connect Elasticsearch and Query by EDQL">
     <meta property="og:image" content="https://chengpohi.github.io/.gitbook/assets/new-connection.gif">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://chengpohi.github.io/introduction/create-edql-script/">
-    <meta property="twitter:title" content="Connect Elasticsearch and Query">
+    <meta property="twitter:title" content="Connect and Query">
     <meta property="twitter:description" content="Connect Elasticsearch and Query by EDQL">
     <meta property="twitter:image" content="https://chengpohi.github.io/.gitbook/assets/new-connection.gif">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.720455327665" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.720455676024" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.720455327665" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.720455676024" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.720455327665" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.720455676024" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -245,10 +245,10 @@
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="connect-elasticsearch-and-query" class="break-words">
+<doc-anchor-target id="connect-and-query" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#connect-elasticsearch-and-query">#</doc-anchor-trigger>
-        <span>Connect Elasticsearch and Query</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#connect-and-query">#</doc-anchor-trigger>
+        <span>Connect and Query</span>
     </h1>
 </doc-anchor-target>
 <doc-anchor-target id="connection">
@@ -331,185 +331,8 @@
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<doc-anchor-target id="advanced-script-usage">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#advanced-script-usage">#</doc-anchor-trigger>
-        <span>Advanced Script Usage</span>
-    </h2>
-</doc-anchor-target>
-<p>EDQL is based on <strong>Intellij</strong>, for different use cases there are two places to save new edql script:</p>
-<ul>
-<li>store on EDQL dock manager</li>
-<li>store on current project directory</li>
-</ul>
-<doc-anchor-target id="new-edql-by-dock-manager">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#new-edql-by-dock-manager">#</doc-anchor-trigger>
-        <span>New EDQL by Dock Manager</span>
-    </h3>
-</doc-anchor-target>
-<p>EDQL manager dashboard is used to manage the EDQL files, it will share cross projects, so we can use this place to store the EDQL files that will be used anywhere.</p>
-<p>it will auto fill the HOST, Timeout and Authorization with a simple EDQL Action, the EDQL file will be stored in the Manager like the Scratches files.</p>
-<p><figure class="content-center">
-    <img src="../../.gitbook/assets/new-edql-by-manager.gif" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<doc-anchor-target id="new-edql-by-new-file">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#new-edql-by-new-file">#</doc-anchor-trigger>
-        <span>New EDQL by New file</span>
-    </h3>
-</doc-anchor-target>
-<p>it will automatically load the EDQL file template, include: HOST, Timeout , Authorization and with a simple EDQL Query Action. this file will be stored on the current directory</p>
-<p><figure class="content-center">
-    <img src="../../.gitbook/assets/new-edql-by-file.gif" alt="" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<doc-anchor-target id="configurations">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#configurations">#</doc-anchor-trigger>
-        <span>Configurations</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="host">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#host">#</doc-anchor-trigger>
-        <span>HOST</span>
-    </h4>
-</doc-anchor-target>
-<p>HOST is target to Elasticsearch/Opensearch cluster <strong>master host endpoint or gateway</strong></p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:9200</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="kibana_host">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#kibana_host">#</doc-anchor-trigger>
-        <span>KIBANA_HOST</span>
-    </h4>
-</doc-anchor-target>
-<p>In some cases we can&#x27;t directly connect to Elasticsearch Cluster host, only <strong>Kibana</strong> is exposed to use, in this case we can configure the KIBANA_HOST to proxy query from Elasticsearch</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">KIBANA_HOST http://localhost:5601/</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="timeout">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#timeout">#</doc-anchor-trigger>
-        <span>Timeout</span>
-    </h4>
-</doc-anchor-target>
-<p>Timeout is used to configure every action request timeout, like query, write and delete etc</p>
-<blockquote>
-<p><strong>Caution</strong>: this only limit the request timeout, not this action execute time.</p>
-</blockquote>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Timeout 3000</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="authorization-1">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#authorization-1">#</doc-anchor-trigger>
-        <span>Authorization</span>
-    </h4>
-</doc-anchor-target>
-<p>If Elasticsearch/Opensearch cluster has configured <strong>Authorization</strong>, we need to configure the Authorization to connect Elasticsearch Cluster</p>
-<blockquote>
-<p>basic authorization, elastic cloud authorization, AWS credentials</p>
-</blockquote>
-<doc-anchor-target id="authorization-header">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#authorization-header">#</doc-anchor-trigger>
-        <span>Authorization header</span>
-    </h4>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:9200
-Authorization &quot;Bear xxx&quot;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="basic-username-and-password">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#basic-username-and-password">#</doc-anchor-trigger>
-        <span>Basic Username and Password</span>
-    </h4>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:9200
-Username &quot;u&quot;
-Password &quot;p&quot;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="apikey-credential">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#apikey-credential">#</doc-anchor-trigger>
-        <span>ApiKey Credential</span>
-    </h4>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:9200
-ApiKeyId &quot;a&quot;
-ApiKeySecret &quot;c&quot;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="aws-credential">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#aws-credential">#</doc-anchor-trigger>
-        <span>AWS Credential</span>
-    </h4>
-</doc-anchor-target>
-<blockquote>
-<p>aws has another configuration of aws region</p>
-</blockquote>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">HOST http://127.0.0.1:9200
-AWSRegion &quot;us-east&quot;
-ApiKeyId &quot;c&quot;
-ApiKeySecret &quot;c&quot;
-ApiSessionToken &quot;c&quot;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="query-action">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#query-action">#</doc-anchor-trigger>
-        <span>Query Action</span>
-    </h3>
-</doc-anchor-target>
-<p>Elasticsearch query action include 4 parts:</p>
-<ul>
-<li>Query Methods: GET, POST, DELETE and PUT</li>
-<li>Query Index: the index name for query</li>
-<li>Query Type: <em>search,</em> mapping</li>
-<li>Query Body: the JSON body for query conditions</li>
-</ul>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">POST my-index/_search
-
-#OR
-
-GET my-index/_mapping
-
-#OR
-
-GET _cluster/stats</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="query-dsl-body">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#query-dsl-body">#</doc-anchor-trigger>
-        <span>Query DSL Body</span>
-    </h3>
-</doc-anchor-target>
-<p>Query DSL body is same as the offcial Query DSL block: <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html">QueryDSL</a>, it&#x27;s a <strong>JSON</strong> format with the query configurations. since EDQL is based on Intellij, it supports autocomplete, format and live templates, example: qbm, range, wildcard etc.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">POST my-index/_search
-{
-  &quot;query&quot;: {
-    &quot;bool&quot;: {
-      &quot;must&quot;: [
-        {
-          &quot;term&quot;: {
-            &quot;title.keyword&quot;: &quot;DGS10&quot;
-          }
-        }
-      ]
-    }
-  }
-}</code></pre>
+<pre class="language-none"><code v-pre class="language-none"></code></pre>
 </doc-codeblock></div>
 <p><figure class="content-center">
     <img src="../../.gitbook/assets/new-visual.gif" alt="" />
@@ -582,6 +405,6 @@ GET _cluster/stats</code></pre>
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Connect Elasticsearch and Query", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Connect and Query", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
