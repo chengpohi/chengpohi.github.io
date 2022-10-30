@@ -4,7 +4,7 @@ description: Connect Elasticsearch and Query by EDQL
 
 # Connect Elasticsearch and Query
 
-## Connect to Elasticsearch
+## Connection
 
 Connect to Elasticsearch by using EDQL Dock Manage default **on the Intellij right side**. In the EDQL Dock Manager, you can **add new connection to connect Elasticsearch and Test connection**.
 
@@ -16,19 +16,43 @@ View more on:
 [dock-manager.md](../ide-actions/dock-manager.md)
 {% endcontent-ref %}
 
+## Authorization
+
+### Authorization Token
+
+Use authorization token to connect Elasticsearch cluster, such as basic token, bearer token or custom token
+
+### Username & Password
+
+Basic username, password
+
+### AWS
+
+Use aws region, api key id, api key secret to connect aws Elasticsearch
+
+### General ApiKey
+
+User general api key to connect Elasticsearch cluster, such as Elastic cloud
+
+### SSH Tunnel
+
+Use SSH tunnel encrypt a connection between a client and a server to connect Server, or make connections inside same VPC(Virtual Private Cloud), Example: connect aws server in same VPC.
+
+<figure><img src="../.gitbook/assets/ssh-tunnel.png" alt=""><figcaption></figcaption></figure>
+
 ## Query Console
 
 After create and test a connection of Elasticsearch, you can create new query console on the Dock Toolbar with terminal icon
 
 ![](../.gitbook/assets/query-console.gif)
 
-### Query by Visual Editor
+## Query by Visual Editor
 
 After EDQL file is created, we can use the **Visual Editor** to configure an query action, since the common query conditions are annoying and boring.  Visual Editor is a powerful tool to visual query conditions and configurations, example: term match, range query, wildcard query and size, explan etc.
 
 ![](../.gitbook/assets/configure-by-dashboard.gif)
 
-## EDQL Script
+## Advanced Script Usage
 
 EDQL is based on **Intellij**, for different use cases there are two places to save new edql script:
 
@@ -49,9 +73,9 @@ it will automatically load the EDQL file template, include: HOST, Timeout , Auth
 
 ![](../.gitbook/assets/new-edql-by-file.gif)
 
-## Configurations
+### Configurations
 
-### HOST
+#### HOST
 
 HOST is target to Elasticsearch/Opensearch cluster **master host endpoint or gateway**
 
@@ -59,7 +83,7 @@ HOST is target to Elasticsearch/Opensearch cluster **master host endpoint or gat
 HOST http://127.0.0.1:9200
 ```
 
-### KIBANA\_HOST
+#### KIBANA\_HOST
 
 In some cases we can't directly connect to Elasticsearch Cluster host, only **Kibana** is exposed to use, in this case we can configure the KIBANA\_HOST to proxy query from Elasticsearch
 
@@ -67,7 +91,7 @@ In some cases we can't directly connect to Elasticsearch Cluster host, only **Ki
 KIBANA_HOST http://localhost:5601/
 ```
 
-### Timeout
+#### Timeout
 
 Timeout is used to configure every action request timeout, like query, write and delete etc
 
@@ -77,7 +101,7 @@ Timeout is used to configure every action request timeout, like query, write and
 Timeout 3000
 ```
 
-### Authorization
+#### Authorization
 
 If Elasticsearch/Opensearch cluster has configured **Authorization**, we need to configure the Authorization to connect Elasticsearch Cluster
 
