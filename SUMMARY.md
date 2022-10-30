@@ -4,9 +4,10 @@
 
 ## Introduction
 
-* [Install EDQL Plugin on Intellij](introduction/install-edql-on-intellij.md)
-* [Connect Elasticsearch and Query](introduction/create-edql-script.md)
-* [Run EDQL Query and Data Viewer](introduction/run-edql-request.md)
+* [Install on Intellij](introduction/install-edql-on-intellij.md)
+* [Connect and Query](introduction/create-edql-script.md)
+* [Run Query and Data Viewer](introduction/run-edql-request.md)
+* [EDQL Script Usage](introduction/edql-script-usage.md)
 
 ## IDE ACTIONS
 
