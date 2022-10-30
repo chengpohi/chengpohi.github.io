@@ -24,19 +24,35 @@ If EDQL script has multiple request actions, we can run whole request actions wh
 
 
 
-## Management
+## Manage
 
 ### Create Index
 
 ### Delete Index
 
+### Export Data
+
 ### Import Data
 
+### Create Template
+
+### Create Alias
+
+### Create Script
+
+### Create Pipeline
+
 ### Reindex
+
+### Rebuild
 
 ### Templates
 
 ### Tasks
+
+### Ingests
+
+### Plugins
 
 ## Plot
 
@@ -44,4 +60,4 @@ If EDQL script has multiple request actions, we can run whole request actions wh
 [visualize.md](visualize.md)
 {% endcontent-ref %}
 
-## Convert Query Action to Java
+## Convert Query to Java

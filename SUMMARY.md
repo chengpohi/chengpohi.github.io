@@ -20,8 +20,8 @@
 ## USE CASES
 
 * [Query](use-cases/query-data.md)
-* [Aggregation](use-cases/analysis-data.md)
-* [Management](use-cases/manage-cluster.md)
+* [Aggregate](use-cases/analysis-data.md)
+* [Manage](use-cases/manage-cluster.md)
 
 ## Syntax
 
