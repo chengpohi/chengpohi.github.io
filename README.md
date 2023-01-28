@@ -92,7 +92,7 @@ POST $myindex/_search
 
 > Query index _**myindex**_ with custom source fields
 
-<figure><img src=".gitbook/assets/new-query-demo (1).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/new-query-demo (2).gif" alt=""><figcaption></figcaption></figure>
 
 ### Guides: Jump right in
 
