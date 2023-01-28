@@ -123,7 +123,7 @@ EDQL support iterate collection by for loop, so in some times we want query resu
 
 ```
 for(a in [1, 2]) {
-  echo $a
+  echo a
 }
 ```
 
