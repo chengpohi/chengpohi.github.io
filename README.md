@@ -19,6 +19,8 @@ EDQL is cross platform since it's based on intellij, so we can use it on windows
 For analysis aggregations, **EDQL** support plotting these aggregation results in intellij(find more: [visualize.md](ide-actions/visualize.md "mention")).
 
 {% embed url="https://plugins.jetbrains.com/embeddable/card/16364" %}
+Install It
+{% endembed %}
 
 ## Feature Overview
 
