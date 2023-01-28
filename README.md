@@ -1,21 +1,21 @@
 ---
 icon: home
-description: Elasticsearch GUI on Intellij Plugin
+description: Supercharge Elasticsearch query performance and manage Elasticsearch cluster.
 ---
 
-# EDQL: Elasticsearch GUI on Intellij Plugin
+# EDQL: Elasticsearch GUI Client by Intellij Plugin
 
-[EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/) is a management and query tool based on Intellij plugin platform for Elasticsearch. It has a simple graphical user interface for manage Elasticsearch clusters and query from Elasticsearch. &#x20;
+[EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/) is a query and management tool for Elasticsearch based on Intellij plugin platform. It has a simple graphical user interface for manage Elasticsearch clusters and query from Elasticsearch. &#x20;
 
 **It is full compatible with official Query DSL**, can just copy query DSL and run on EDQL without any extra effort. also EDQL has visual editor for quickly write query conditions with interactive UI.
 
 **It** has powerful script engine: support function, variable and iteration etc. with smart Intellij you can easily write query DSL(refactor, extract etc).
 
 {% hint style="info" %}
-EDQL is cross platform since it's based on cross platform
+EDQL is cross platform since it's based on intellij, so we can use it on windows, linux or macos.
 {% endhint %}
 
-**It's full compatible with official Query DSL**, just copy query DSL and run on EDQL without any extra effort. also EDQL has visual editor for quickly write query conditions with interactive UI.
+**The most important EDQL is full compatible with official Query DSL**, It means we can copy query DSL from tutorial and run without any extra effort. also EDQL has visual editor for quickly write query dsl with interactive UI.
 
 > Elasticsearch Query DSL is complex, although we can use SQL or simple DSL directly query Elasticsearch, but in some time if we want to aggs data, further analysis or share Query DSL, it's hard to achieve.
 
@@ -24,6 +24,8 @@ EDQL is cross platform since it's based on cross platform
 For analysis aggregations, **EDQL** support plotting these aggregation results in intellij(find more: [visualize.md](ide-actions/visualize.md "mention")).
 
 {% embed url="https://plugins.jetbrains.com/embeddable/card/16364" %}
+Install It
+{% endembed %}
 
 ## Feature Overview
 
@@ -61,11 +63,9 @@ Works like a script with function, variable or iteration etc, so can quickly cre
 
 ## Getting Started
 
-Quick start on EDQL
-
 ### 1. Connect to Elasticsearch
 
-Connect to Elasticsearch by using EDQL Dock Manage default **on the Intellij right side**. In the EDQL Dock Manager, you can **add new connection to connect Elasticsearch and Test connection**.
+Connect to Elasticsearch by using EDQL Dock Manager, it's default **on the Intellij right side**. In the EDQL Dock Manager, you can **add a new connection to connect Elasticsearch and Test connectivity**.
 
 ![](.gitbook/assets/new-connection.gif)
 
@@ -74,9 +74,20 @@ Connect to Elasticsearch by using EDQL Dock Manage default **on the Intellij rig
 After create and test a connection of Elasticsearch, you can create new query console on the Dock Toolbar with terminal icon:
 
 ```
-local myindex = "myindex"
+POST myindex/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+```
+
+or
+
+```
+var myindex = "myindex"
 #fields
-local fields = [
+var fields = [
   "a",
   "b",
   "c"
@@ -92,7 +103,7 @@ POST $myindex/_search
 
 > Query index _**myindex**_ with custom source fields
 
-![](<.gitbook/assets/new-demo (1).gif>)
+<figure><img src=".gitbook/assets/new-query-demo (1).gif" alt=""><figcaption></figcaption></figure>
 
 ### Guides: Jump right in
 
@@ -126,7 +137,7 @@ EDQL is not only target for query also can help solve multi scenarios problems, 
 [manage-cluster.md](use-cases/manage-cluster.md)
 {% endcontent-ref %}
 
-### Explore More about EDQL Script Syntax
+### Explore More about EDQL Syntax
 
 EDQL is a full features of script with compatible Elasticsearch Query DSL, and also support: function, variable, collection, type and iteration etc. explore more :
 
