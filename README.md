@@ -20,6 +20,14 @@ For aggregations, **EDQL** support plotting aggregation results in Intellij dire
 
 <details>
 
+<summary>Cluster Management</summary>
+
+Manage Elasticsearch connections: add, delete and modify connection, view index, templates, tasks and nodes etc. also can modify index and create new index.
+
+</details>
+
+<details>
+
 <summary>Query</summary>
 
 Query directly with official Query DSL without any other extra effort. so can quickly verify query conditions and examine data
@@ -28,17 +36,9 @@ Query directly with official Query DSL without any other extra effort. so can qu
 
 <details>
 
-<summary>Data Viewer</summary>
+<summary>Data Browser</summary>
 
 View query result as table mode, JSON mode, search, highlight, fields selection etc. and  modify, delete, new and export(scroll) documents on Data Viewer.
-
-</details>
-
-<details>
-
-<summary>Management</summary>
-
-Manage Elasticsearch connections: add, delete and modify connection, view index, templates, tasks and nodes etc. also can modify index and create new index.
 
 </details>
 
