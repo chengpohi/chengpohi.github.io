@@ -12,7 +12,7 @@ EDQL is cross platform since it's based on intellij, so we can use it on windows
 
 **It** has powerful script engine: support function, variable and iteration etc. with intelligent Intellij you can easily write query DSL(autocomplete, refactor, live templates, extract etc).
 
-For analysis aggregations, **EDQL** support plotting these aggregation results in intellij(find more: [visualize.md](ide-actions/visualize.md "mention")).
+For aggregations, **EDQL** support plotting aggregation results in Intellij directly for analysis data(find more: [visualize.md](ide-actions/visualize.md "mention")).
 
 {% embed url="https://plugins.jetbrains.com/embeddable/card/16364" %}
 

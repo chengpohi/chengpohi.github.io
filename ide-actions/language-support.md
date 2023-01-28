@@ -1,12 +1,10 @@
 ---
-description: Intellij IDE support for EDQL source editor
+description: Intellij IDE support for EDQL DSL editor
 ---
 
-# Code Editor
+# DSL Editor
 
 ## File Template
-
-
 
 ## Live Templates
 

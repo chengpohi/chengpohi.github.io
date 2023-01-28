@@ -1,8 +1,4 @@
----
-description: 'Analysis Elasticsearch documents: aggregations and plot'
----
-
-# Aggregation
+# Aggregate
 
 ## Aggregations
 

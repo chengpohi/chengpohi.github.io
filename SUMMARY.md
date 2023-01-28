@@ -6,16 +6,16 @@
 
 * [Install on Intellij](introduction/install-edql-on-intellij.md)
 * [Connect and Query](introduction/create-edql-script.md)
-* [Run and Data Viewer](introduction/run-edql-request.md)
+* [Run Query and Data Browser](introduction/run-edql-request.md)
 * [EDQL Script Usage](introduction/edql-script-usage.md)
 
 ## IDE ACTIONS
 
 * [Intellij Actions](ide-actions/actions.md)
-* [Code Editor](ide-actions/language-support.md)
-* [Visual Editor](ide-actions/visual-editor.md)
 * [Dock Manager](ide-actions/dock-manager.md)
-* [Data Viewer](ide-actions/visualize.md)
+* [DSL Editor](ide-actions/language-support.md)
+* [Visual Editor](ide-actions/visual-editor.md)
+* [Data Browser](ide-actions/visualize.md)
 
 ## USE CASES
 
@@ -31,7 +31,7 @@
 
 ## Extras
 
-* [Keyboard Shortcut](extras/keyboard-shortcuts.md)
+* [Keyboard Shortcuts](extras/keyboard-shortcuts.md)
 
 ## Blogs
 
