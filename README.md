@@ -2,7 +2,6 @@
 icon: home
 ---
 
-=======
 # EDQL: Elasticsearch GUI Client by Intellij Plugin
 
 [EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/) is a profressional query and management tool for Elasticsearch based on Intellij platform. It has a simple graphical user interface for manage Elasticsearch cluster and query from Elasticsearch. &#x20;
