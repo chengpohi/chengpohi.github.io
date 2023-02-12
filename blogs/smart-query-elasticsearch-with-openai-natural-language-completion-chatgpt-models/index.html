@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.729526557176">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.729526713298">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -14,7 +14,6 @@
     <!-- Primary Meta Tags -->
     <title>Smart Query Elasticsearch with Openai Natural Language Completion(ChatGPT models)</title>
     <meta name="title" content="Smart Query Elasticsearch with Openai Natural Language Completion(ChatGPT models)">
-    <meta name="description" content="Users often use Elasticsearch Query DSL to help them query data quickly." />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://chengpohi.github.io/blogs/smart-query-elasticsearch-with-openai-natural-language-completion-chatgpt-models/" />
@@ -23,21 +22,19 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chengpohi.github.io/blogs/smart-query-elasticsearch-with-openai-natural-language-completion-chatgpt-models/">
     <meta property="og:title" content="Smart Query Elasticsearch with Openai Natural Language Completion(ChatGPT models)">
-    <meta property="og:description" content="Users often use Elasticsearch Query DSL to help them query data quickly.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://chengpohi.github.io/blogs/smart-query-elasticsearch-with-openai-natural-language-completion-chatgpt-models/">
     <meta property="twitter:title" content="Smart Query Elasticsearch with Openai Natural Language Completion(ChatGPT models)">
-    <meta property="twitter:description" content="Users often use Elasticsearch Query DSL to help them query data quickly.">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=2.4.0.729526557176" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.729526713298" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.729526557176" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.729526713298" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.729526557176" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.729526713298" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -249,53 +246,6 @@
         <span>Smart Query Elasticsearch with Openai Natural Language Completion(ChatGPT models)</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="background">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#background">#</doc-anchor-trigger>
-        <span>Background</span>
-    </h2>
-</doc-anchor-target>
-<p>Users often use Elasticsearch Query DSL to help them query data quickly. But when querying with complex DSL syntax, there are still some problems, such as syntax errors or inaccuracies, leading to countless bugs in the code, and it is a real headache to find the bugs that have appeared in thousands of codes.</p>
-<p>To solve this problem, we innovatively adopt the hottest ChatGPT model now provided by OpenAI in the EDQL plugin, by combining ChatGPT with Elasticsearch DSL, to help people use natural language in Intellij IDE to query data easily and improve search efficiency. (In the test GPT3 model is able to convert natural language into most accurate queries)</p>
-<p>Install and Try it: <a href="https://github.com/chengpohi/edql/releases/tag/v1.9.16">https://github.com/chengpohi/edql/releases/tag/v1.9.16</a></p>
-<figure><img src="../.gitbook/assets/openai-query (1).gif" alt=""><figcaption></figcaption></figure>
-<figure><img src="../.gitbook/assets/openai-settings.gif" alt=""><figcaption></figcaption></figure>
-<doc-anchor-target id="what-is-edql">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-edql">#</doc-anchor-trigger>
-        <span>What is EDQL</span>
-    </h2>
-</doc-anchor-target>
-<p>EDQL is a professional query and management tool for Elasticsearch based on the Intellij platform. It is used to manage Elasticsearch clusters and query data from Elasticsearch with the following features.</p>
-<ol>
-<li>EDQL is fully compatible with the official Query DSL, and you can directly copy the Query DSL and run it on EDQL without any extra effort.</li>
-<li>EDQL has a visual editor that allows you to quickly write query conditions through an interactive UI.</li>
-<li>With a powerful scripting engine: support for functions, variables, iterations, etc. Using Smart Intellij, you can easily write query DSL (refactoring, extraction, etc.).</li>
-</ol>
-<doc-anchor-target id="what-is-the-chatgpt-model">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-the-chatgpt-model">#</doc-anchor-trigger>
-        <span>What is the ChatGPT model </span>
-    </h2>
-</doc-anchor-target>
-<p>OpenAI&#x27;s ChatGPT model is a pre-trained natural language processing model that generates natural language text. It is a large deep learning model that has been widely used for a variety of natural language processing tasks.</p>
-<p>What ChatGPT features are accessed in the EDQL plugin</p>
-<ol>
-<li>Support custom OpenAI ChatGPT api key Open EDQL plugin, you can set a custom api key, and then you can experience its powerful functions at will.</li>
-<li>Support stop words, prompt prefixes and suffixes Code-DaVinci-002, which we have access to in EDQL, is a chatbot model based on OpenAI&#x27;s GPT-3 technology. The Code-DaVinci-002 model has been rigorously trained and tested to provide accurate, timely, and professional knowledgeable answers and advice. In addition, the Code-DaVinci-002 model also supports custom dictionaries, stop words, hint prefixes and hint suffixes to improve query efficiency and accuracy.</li>
-<li>Intelligent recommendation of search terms ChatGPT can also intelligently recommend relevant search terms based on search history and other related information for faster and more convenient query data.</li>
-</ol>
-<doc-anchor-target id="what-are-the-benefits-of-using-chatgpt-in-edql-plugin">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-are-the-benefits-of-using-chatgpt-in-edql-plugin">#</doc-anchor-trigger>
-        <span>What are the benefits of using ChatGPT in EDQL plugin?</span>
-    </h2>
-</doc-anchor-target>
-<ol>
-<li>No need to remember complicated syntax or struggle to understand the characteristics of the language. Have you ever encountered a situation where you are writing code and can&#x27;t think of a certain syntax, making it impossible to continue writing? With ChatGPT, you only need a few words to tell it what you need, and it will write the code for you without having to memorize the syntax that is always being updated. </li>
-<li>ChatGPT can improve your work efficiency by answering your questions quickly and accurately, reducing the time spent on researching and finding information. In addition, using ChatGPT technology allows you to quickly generate code, save time on handwritten code, and check and modify code to ensure correctness and quality. chatGPT can also assist programmers in performing documentation and project management tasks, further improving productivity. </li>
-<li>Reduce or avoid code bugs. ChatGPT can help you find bugs quickly and provide the right code solution to reduce code errors.</li>
-</ol>
 
                                 
                                 <!-- Required only on API pages -->
