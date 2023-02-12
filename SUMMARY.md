@@ -35,6 +35,6 @@
 
 ## Blogs
 
-* [Intellij Smart Completion by OpenAI NLP Completion(ChatGPT: text-davinci-003, code-davinci-002)](blogs/intellij-smart-completion-by-openai-nlp-completion-chatgpt-text-davinci-003-code-davinci-002.md)
+* [Intellij Smart Completion by OpenAI NLP Completion(ChatGPT: text-davinci-003, code-davinci-002)](blogs/intellij-auto-completion-by-openai-completion-ai-chatgpt-text-davinci-003-code-davinci-002.md)
 * [Smart Query Elasticsearch with Openai Natural Language Completion(ChatGPT models)](blogs/smart-query-elasticsearch-with-openai-natural-language-completion-chatgpt-models.md)
 * [Wildcard Query cause Cluster Crash](blogs/wildcard-query-cause-cluster-crash.md)
