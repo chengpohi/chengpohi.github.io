@@ -12,8 +12,6 @@ Install and Try: [https://github.com/chengpohi/edql/releases/tag/v1.9.16](https:
 
 <figure><img src="../.gitbook/assets/openai-query.gif" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/filetype-settings.gif" alt=""><figcaption></figcaption></figure>
-
 EDQL is a plugin for Intellij platform, which integrates Intellij and ChatGPT's capabilities, and brings ChatGPT's intelligent complementary capabilities to Intellij, helping developers to realize the ability to generate executable code based on transforming natural language in annotations, in order to also try to introduce more capabilities, such as contextual analysis, test generation, code interpretation and more.&#x20;
 
 Also, EDQL supports users to configure their own OpenAI api key, stop words, prompt, etc., and use prompt to achieve more accurate code generation or completion. Usage:&#x20;
