@@ -8,6 +8,7 @@
 * [Connect and Query](introduction/create-edql-script.md)
 * [Run Query and Data Browser](introduction/run-edql-request.md)
 * [EDQL Script Usage](introduction/edql-script-usage.md)
+* [ChatGPT for query Elasticsearch](introduction/chatgpt-for-query-elasticsearch.md)
 
 ## IDE ACTIONS
 
