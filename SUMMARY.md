@@ -8,7 +8,6 @@
 * [Connect and Query](introduction/create-edql-script.md)
 * [Run Query and Data Browser](introduction/run-edql-request.md)
 * [EDQL Script Usage](introduction/edql-script-usage.md)
-* [ChatGPT for query Elasticsearch](introduction/chatgpt-for-query-elasticsearch.md)
 
 ## IDE ACTIONS
 
@@ -36,4 +35,6 @@
 
 ## Blogs
 
+* [Intellij Auto Completion by OpenAI Completion AI(ChatGPT: text-davinci-003, code-davinci-002)](blogs/intellij-auto-completion-by-openai-completion-ai-chatgpt-text-davinci-003-code-davinci-002.md)
+* [Smart Query Elasticsearch with Openai Natural Language Completion(ChatGPT models)](blogs/smart-query-elasticsearch-with-openai-natural-language-completion-chatgpt-models.md)
 * [Wildcard Query cause Cluster Crash](blogs/wildcard-query-cause-cluster-crash.md)
