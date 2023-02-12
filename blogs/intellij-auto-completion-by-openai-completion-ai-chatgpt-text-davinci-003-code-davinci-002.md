@@ -10,7 +10,7 @@ Install and Try: [https://github.com/chengpohi/edql/releases/tag/v1.9.16](https:
 
 <figure><img src="../.gitbook/assets/java-code-generation.gif" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/openai-query.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/openai-query (1).gif" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/filetype-settings.gif" alt=""><figcaption></figcaption></figure>
 
