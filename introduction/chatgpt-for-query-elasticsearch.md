@@ -1,2 +1,0 @@
-# ChatGPT for query Elasticsearch
-
