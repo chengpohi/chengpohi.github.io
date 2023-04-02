@@ -35,6 +35,7 @@
 
 ## Blogs
 
+* [Chat Query Elasticsearch and Run Chat Query Based on ChatGPT 3.5 Turbo Model](blogs/chat-query-elasticsearch-and-run-chat-query-based-on-chatgpt-3.5-turbo-model.md)
 * [Intellij Smart Completion by OpenAI NLP Completion(ChatGPT: text-davinci-003, code-davinci-002)](blogs/intellij-auto-completion-by-openai-completion-ai-chatgpt-text-davinci-003-code-davinci-002.md)
 * [Smart Query Elasticsearch with Openai Natural Language Completion(ChatGPT models)](blogs/smart-query-elasticsearch-with-openai-natural-language-completion-chatgpt-models.md)
 * [Wildcard Query cause Cluster Crash](blogs/wildcard-query-cause-cluster-crash.md)
