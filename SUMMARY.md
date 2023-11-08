@@ -57,6 +57,10 @@
 * [Script Syntax](syntax/script-syntax.md)
 * [Glossary](syntax/glossary.md)
 
+## Changelogs
+
+* [v1.10.0](changelog/v1.10.0.md)
+
 ## Blogs
 
 * [Chat Query Elasticsearch and Run Chat Query Based on ChatGPT 3.5 Turbo Model](blogs/chat-query-elasticsearch-and-run-chat-query-based-on-chatgpt-3.5-turbo-model.md)
