@@ -16,9 +16,9 @@
 * [OpenAPI API Key](configuration/openapi-api-key.md)
 * [Keyboard Shortcuts](configuration/keyboard-shortcuts.md)
 
-## Run Query
+## Run Queries
 
-* [RUN QUERIES](run-query/run-query.md)
+* [Run Query](run-queries/run-query.md)
 
 ## Editor
 
@@ -38,7 +38,7 @@
 
 * [EDQL Script](script/edql-script-usage.md)
 
-## [File management](file-management/README.md)
+## File management
 
 * [EDQL Files](file-management/edql-files.md)
 * [Chart Files](file-management/chart-files.md)
