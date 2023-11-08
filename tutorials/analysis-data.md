@@ -94,6 +94,6 @@ POST my-index/_search
 
 See more on:
 
-{% content-ref url="../ide-actions/visualize.md" %}
-[visualize.md](../ide-actions/visualize.md)
+{% content-ref url="../ide-actions/data-browser.md" %}
+[data-browser.md](../ide-actions/data-browser.md)
 {% endcontent-ref %}

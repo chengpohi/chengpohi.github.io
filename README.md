@@ -2,25 +2,35 @@
 icon: home
 ---
 
-# EDQL: Elasticsearch GUI Client by Intellij Plugin
+# EDQL: Elasticsearch GUI Client and QSharp Elasticsearch IDE
 
-[EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/) is a profressional query and management tool for Elasticsearch based on Intellij platform. It has a simple graphical user interface for manage Elasticsearch cluster and query from Elasticsearch. &#x20;
+[EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/) is a professional query and management
+tool for Elasticsearch. It's intelligent and powerful for manage Elasticsearch
+cluster and query from Elasticsearch. also It always follow Elasticsearch newest features. &#x20;
 
 **It is full compatible with official Query DSL**, can just copy query DSL and run on EDQL without any extra effort. also EDQL has visual editor for quickly write query conditions with interactive UI.
 
 **It** has powerful script engine: support function, variable and iteration etc. with smart Intellij you can easily write query DSL(refactor, extract etc).
 
 {% hint style="info" %}
-EDQL is cross platform since it's based on intellij, so we can use it on windows, linux or macos.
+EDQL is cross-platform since it's based on intellij, so It can be used on windows, linux or macOS.
 {% endhint %}
 
-**The most important EDQL is full compatible with official Query DSL**, It means we can copy query DSL from tutorial and run without any extra effort. also EDQL has visual editor for quickly write query dsl with interactive UI.
+**The most important EDQL feature is full compatible with official Query DSL**, It means we can copy query DSL from
+document and run directly without any extra effort. also EDQL has visual editor feature that can help you use
+interactive UI to query Elasticsearch without know Elasticsearch syntax.
 
-> Elasticsearch Query DSL is complex, although we can use SQL or simple DSL directly query Elasticsearch, but in some time if we want to aggs data, further analysis or share Query DSL, it's hard to achieve.
+> Elasticsearch Query DSL is complex and hard to learn, event we can use SQL or simple DSL directly query
+> Elasticsearch, but in most cases such as we want to aggs complex time-series data and dig data value, it's hard to
+> achieve.
+> also query dsl is not easily share with team members, but we always want to efficiently collaborate
 
-**It** has powerful script engine: support function, variable and iteration etc. with intelligent Intellij you can easily write query DSL(autocomplete, refactor, live templates, extract etc).
+so based on the above scenarios **EDQL** implements powerful script engine: support function, variable and iteration
+etc. with intelligent Intellij you can easily write query DSL(autocomplete, refactor, live templates, extract etc).
 
-For aggregations, **EDQL** support plotting aggregation results in Intellij directly for analysis data(find more: [visualize.md](ide-actions/visualize.md "mention")).
+For aggregations, **EDQL** support plotting aggregation results in Intellij directly for analysis data(find
+more: [data-browser.md](ide-actions/data-browser.md "mention")), that's powered by vega-lite plot library and is fully
+compatible with kibana vega-lite plot.
 
 {% embed url="https://plugins.jetbrains.com/embeddable/card/16364" %}
 
@@ -28,9 +38,10 @@ For aggregations, **EDQL** support plotting aggregation results in Intellij dire
 
 <details>
 
-<summary>Cluster Management</summary>
+<summary>Connections Management</summary>
 
-Manage Elasticsearch connections: add, delete and modify connection, view index, templates, tasks and nodes etc. also can modify index and create new index.
+Manage Elasticsearch connections: new, delete, modify and test connection. list indices, scripts, nodes, templates,
+tasks and nodes etc. also new index, modify index, new script, modify script etc.
 
 </details>
 
@@ -38,7 +49,8 @@ Manage Elasticsearch connections: add, delete and modify connection, view index,
 
 <summary>Query</summary>
 
-Query directly with official Query DSL without any other extra effort. so can quickly verify query conditions and examine data
+Query with official Query DSL without any extra effort. so you can quickly verify query syntax and
+check data
 
 </details>
 
@@ -46,7 +58,8 @@ Query directly with official Query DSL without any other extra effort. so can qu
 
 <summary>Data Browser</summary>
 
-View query result as table mode, JSON mode, search, highlight, fields selection etc. and  modify, delete, new and export(scroll) documents on Data Viewer.
+EDQL for query result it support 3 modes: table mode, JSON mode, plot mode, and these modes support search, highlight,
+fields selection etc. also we can new modify, delete and export(scroll) documents on Data Viewer table mode.
 
 </details>
 
@@ -54,7 +67,9 @@ View query result as table mode, JSON mode, search, highlight, fields selection 
 
 <summary>Script Function</summary>
 
-Works like a script with function, variable or iteration etc, so can quickly create your own query template or library for handling common use cases
+Works like a script with function, variable or iteration etc, so can quickly create personal query template or library
+for handling common use cases to reduce duplicate code. also can convert function to IDE shortcut action so we can quickly 
+run function in common scenes
 
 </details>
 
@@ -62,13 +77,15 @@ Works like a script with function, variable or iteration etc, so can quickly cre
 
 ### 1. Connect to Elasticsearch
 
-Connect to Elasticsearch by using EDQL Dock Manager, it's default **on the Intellij right side**. In the EDQL Dock Manager, you can **add a new connection to connect Elasticsearch and Test connectivity**.
+Connect to Elasticsearch by using EDQL Dock Manager, it's default **on the Intellij right side**. In the EDQL Dock
+Manager, you can **add a new connection to connect Elasticsearch and Test connectivity**.
 
 ![](.gitbook/assets/new-connection.gif)
 
 ### 2. Start New Query Console
 
-After create and test a connection of Elasticsearch, you can create new query console on the Dock Toolbar with terminal icon:
+After create and test a connection of Elasticsearch, you can create new query console on the Dock Toolbar with terminal
+icon:
 
 ```
 POST myindex/_search
@@ -106,37 +123,38 @@ POST $myindex/_search
 
 Follow our handy guides to get started on the basics as quickly as possible:
 
-{% content-ref url="introduction/install-edql-on-intellij.md" %}
-[install-edql-on-intellij.md](introduction/install-edql-on-intellij.md)
+{% content-ref url="getting-started/install-edql-on-intellij.md" %}
+[install-edql-on-intellij.md](getting-started/install-edql-on-intellij.md)
 {% endcontent-ref %}
 
-{% content-ref url="introduction/create-edql-script.md" %}
-[create-edql-script.md](introduction/create-edql-script.md)
+{% content-ref url="getting-started/create-edql-script.md" %}
+[create-edql-script.md](getting-started/create-edql-script.md)
 {% endcontent-ref %}
 
-{% content-ref url="introduction/run-edql-request.md" %}
-[run-edql-request.md](introduction/run-edql-request.md)
+{% content-ref url="getting-started/run-edql-request.md" %}
+[run-edql-request.md](getting-started/run-edql-request.md)
 {% endcontent-ref %}
 
 ### Use cases with EDQL
 
 EDQL is not only target for query also can help solve multi scenarios problems, you could find use cases by:
 
-{% content-ref url="use-cases/query-data.md" %}
-[query-data.md](use-cases/query-data.md)
+{% content-ref url="tutorials/query-data.md" %}
+[query-data.md](tutorials/query-data.md)
 {% endcontent-ref %}
 
-{% content-ref url="use-cases/analysis-data.md" %}
-[analysis-data.md](use-cases/analysis-data.md)
+{% content-ref url="tutorials/analysis-data.md" %}
+[analysis-data.md](tutorials/analysis-data.md)
 {% endcontent-ref %}
 
-{% content-ref url="use-cases/manage-cluster.md" %}
-[manage-cluster.md](use-cases/manage-cluster.md)
+{% content-ref url="tutorials/manage-cluster.md" %}
+[manage-cluster.md](tutorials/manage-cluster.md)
 {% endcontent-ref %}
 
 ### Explore More about EDQL Syntax
 
-EDQL is a full features of script with compatible Elasticsearch Query DSL, and also support: function, variable, collection, type and iteration etc. explore more :
+EDQL is a full features of script with compatible Elasticsearch Query DSL, and also support: function, variable,
+collection, type and iteration etc. explore more :
 
 {% content-ref url="syntax/basic-syntax.md" %}
 [basic-syntax.md](syntax/basic-syntax.md)
@@ -149,3 +167,9 @@ EDQL is a full features of script with compatible Elasticsearch Query DSL, and a
 {% content-ref url="syntax/glossary.md" %}
 [glossary.md](syntax/glossary.md)
 {% endcontent-ref %}
+
+
+## QSharp EDQL IDE
+[QSharp IDE](https://github.com/chengpohi/edql/releases) is a standalone IDE, it can be used individually similar DataGrip. 
+since in some cases use EDQL intellij plugin on Intellij platform is not easy and afraid to effect other actions. so create 
+QSharp standalone IDE for EDQL(but also it's based on Intellij Community).

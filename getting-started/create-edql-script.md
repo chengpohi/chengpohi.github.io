@@ -1,8 +1,8 @@
 ---
-description: Connect Elasticsearch and Query by EDQL
+description: Connection Elasticsearch and Query by EDQL
 ---
 
-# Connect and Query
+# Connection and Query
 
 ## 1 Connection
 
@@ -12,8 +12,8 @@ Connect to Elasticsearch by using EDQL Dock Manage default **on the Intellij rig
 
 View more on:
 
-{% content-ref url="../ide-actions/dock-manager.md" %}
-[dock-manager.md](../ide-actions/dock-manager.md)
+{% content-ref url="../configuration/configure-connection.md" %}
+[configure-connection.md](../configuration/configure-connection.md)
 {% endcontent-ref %}
 
 ## 2 Authorization
@@ -36,7 +36,7 @@ Use general api key to connect Elasticsearch cluster, such as Elastic cloud
 
 ### 2.5 SSH Tunnel
 
-Use SSH tunnel encrypt a connection between a client and a server to connect Server, or make connections inside same VPC(Virtual Private Cloud), Example: connect aws server in same VPC.
+Use an SSH tunnel to encrypt a connection between a client and a server to connect Server, Or make connections inside same VPC(Virtual Private Cloud), Example: connect aws server in the same VPC.
 
 <figure><img src="../.gitbook/assets/ssh-tunnel.png" alt=""><figcaption></figcaption></figure>
 
@@ -46,16 +46,14 @@ Use HTTP Proxy to connect Elasticsearch with http proxy
 
 ## 3 Query Console
 
-After create and test a connection of Elasticsearch, you can create new query console on the Dock Toolbar with terminal icon
+After creating and testing a connection of Elasticsearch, You can create a new query console on the Dock Toolbar with terminal icon
 
 ![](../.gitbook/assets/query-console.gif)
 
 ## 3.1 Query by Visual Editor
 
-After EDQL file is created, we can use the **Visual Editor** to configure an query action, since the common query conditions are annoying and boring.  Visual Editor is a powerful tool to visual query conditions and configurations, example: term match, range query, wildcard query and size, explan etc.
+After EDQL file is created, we can use the **Visual Editor** to configure a query action, since the common query conditions are annoying and boring. Visual Editor is a powerful tool for visual query conditions and configurations, example: term match, range query, wildcard query and size, explain etc.
 
 ![](../.gitbook/assets/configure-by-dashboard.gif)
-
-
 
 ![](../.gitbook/assets/new-visual.gif)
