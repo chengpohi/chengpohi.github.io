@@ -131,16 +131,16 @@ Follow our handy guides to get started on the basics as quickly as possible:
 
 EDQL is not only target for query also can help solve multi scenarios problems, you could find use cases by:
 
-{% content-ref url="use-cases/query-data.md" %}
-[query-data.md](use-cases/query-data.md)
+{% content-ref url="tutorials/query-data.md" %}
+[query-data.md](tutorials/query-data.md)
 {% endcontent-ref %}
 
-{% content-ref url="use-cases/analysis-data.md" %}
-[analysis-data.md](use-cases/analysis-data.md)
+{% content-ref url="tutorials/analysis-data.md" %}
+[analysis-data.md](tutorials/analysis-data.md)
 {% endcontent-ref %}
 
-{% content-ref url="use-cases/manage-cluster.md" %}
-[manage-cluster.md](use-cases/manage-cluster.md)
+{% content-ref url="tutorials/manage-cluster.md" %}
+[manage-cluster.md](tutorials/manage-cluster.md)
 {% endcontent-ref %}
 
 ### Explore More about EDQL Syntax
