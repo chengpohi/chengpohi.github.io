@@ -11,6 +11,7 @@
 * [QSharp Elasticsearch IDE](getting-started/qsharp-elasticsearch-ide.md)
 
 ## Configuration
+
 * [OpenAPI API Key](configuration/openapi-api-key.md)
 * [Keyboard Shortcuts](configuration/keyboard-shortcuts.md)
 
@@ -29,7 +30,11 @@
 
 ## Export and import
 
+* [Export](export-import/export.md)
+* [Import](export-import/import.md)
+
 ## Script
+
 * [EDQL Script](script/edql-script-usage.md)
 
 ## Tutorials
