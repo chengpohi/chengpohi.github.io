@@ -4,12 +4,17 @@
 
 ## Getting Started
 
-* [Install on Intellij](getting-started/install-edql-on-intellij.md)
-* [Dock Manager](getting-started/dock-manager.md)
+* [Installation](getting-started/install-edql-on-intellij.md)
+* [User Interface](getting-started/user-interface.md)
 * [Connect and Query](getting-started/create-edql-script.md)
 * [Run Query and Data Browser](getting-started/run-edql-request.md)
-* [EDQL Script Usage](getting-started/edql-script-usage.md)
 * [QSharp Elasticsearch IDE](getting-started/qsharp-elasticsearch-ide.md)
+
+***
+
+* [Configuration](configuration/README.md)
+  * [OpenAPI API Key](configuration/openapi-api-key.md)
+  * [Keyboard Shortcuts](configuration/keyboard-shortcuts.md)
 
 ## RUN QUERIES
 
@@ -23,7 +28,12 @@
 ## Data Editor and Viewer
 
 * [Data Browser](data-viewer/data-browser.md)
-* [Keyboard Shortcuts](extras/keyboard-shortcuts.md)
+
+***
+
+* [Export and import](export-and-import.md)
+* [Script](script/README.md)
+  * [EDQL Script](script/edql-script-usage.md)
 
 ## Tutorials
 
