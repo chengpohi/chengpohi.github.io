@@ -10,11 +10,9 @@
 * [Run Query and Data Browser](getting-started/run-edql-request.md)
 * [QSharp Elasticsearch IDE](getting-started/qsharp-elasticsearch-ide.md)
 
-***
-
-* [Configuration](configuration/README.md)
-  * [OpenAPI API Key](configuration/openapi-api-key.md)
-  * [Keyboard Shortcuts](configuration/keyboard-shortcuts.md)
+## Configuration
+* [OpenAPI API Key](configuration/openapi-api-key.md)
+* [Keyboard Shortcuts](configuration/keyboard-shortcuts.md)
 
 ## RUN QUERIES
 
@@ -29,11 +27,10 @@
 
 * [Data Browser](data-viewer/data-browser.md)
 
-***
+## Export and import
 
-* [Export and import](export-and-import.md)
-* [Script](script/README.md)
-  * [EDQL Script](script/edql-script-usage.md)
+## Script
+* [EDQL Script](script/edql-script-usage.md)
 
 ## Tutorials
 
