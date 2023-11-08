@@ -6,12 +6,13 @@
 
 * [Installation](getting-started/install-edql-on-intellij.md)
 * [User Interface](getting-started/user-interface.md)
-* [Connect and Query](getting-started/create-edql-script.md)
-* [Run Query and Data Browser](getting-started/run-edql-request.md)
+* [Connection and Query](getting-started/create-edql-script.md)
+* [Run Query and Data Viewer](getting-started/run-edql-request.md)
 * [QSharp Elasticsearch IDE](getting-started/qsharp-elasticsearch-ide.md)
 
 ## Configuration
 
+* [Configure Connection](configuration/configure-connection.md)
 * [OpenAPI API Key](configuration/openapi-api-key.md)
 * [Keyboard Shortcuts](configuration/keyboard-shortcuts.md)
 
@@ -37,11 +38,19 @@
 
 * [EDQL Script](script/edql-script-usage.md)
 
+***
+
+* [File management](file-management/README.md)
+  * [EDQL Files](file-management/edql-files.md)
+  * [Chart Files](file-management/chart-files.md)
+  * [Scratches](file-management/scratches.md)
+
 ## Tutorials
 
 * [Query](tutorials/query-data.md)
 * [Aggregate](tutorials/analysis-data.md)
 * [Manage](tutorials/manage-cluster.md)
+* [Plot](tutorials/plot.md)
 
 ## Syntax
 
