@@ -1,0 +1,2 @@
+# QSharp Elasticsearch IDE
+

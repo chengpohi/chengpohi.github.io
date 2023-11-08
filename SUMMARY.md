@@ -1,6 +1,6 @@
 # Table of contents
 
-* [EDQL: Elasticsearch GUI Client by Intellij Plugin](README.md)
+* [EDQL - Elasticsearch GUI Client and QSharp Elasticsearch IDE](README.md)
 
 ## Introduction
 
@@ -8,6 +8,7 @@
 * [Connect and Query](introduction/create-edql-script.md)
 * [Run Query and Data Browser](introduction/run-edql-request.md)
 * [EDQL Script Usage](introduction/edql-script-usage.md)
+* [QSharp Elasticsearch IDE](introduction/qsharp-elasticsearch-ide.md)
 
 ## IDE ACTIONS
 
