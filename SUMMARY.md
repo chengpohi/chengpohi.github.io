@@ -16,9 +16,7 @@
 * [OpenAPI API Key](configuration/openapi-api-key.md)
 * [Keyboard Shortcuts](configuration/keyboard-shortcuts.md)
 
-## RUN QUERIES
-
-* [Run Query](run-query/run-query.md)
+## [RUN QUERIES](run-query/run-query.md)
 
 ## Editor
 
@@ -34,16 +32,12 @@
 * [Export](export-import/export.md)
 * [Import](export-import/import.md)
 
-## Script
+## [EDQL Script](script/edql-script-usage.md)
 
-* [EDQL Script](script/edql-script-usage.md)
-
-***
-
-* [File management](file-management/README.md)
-  * [EDQL Files](file-management/edql-files.md)
-  * [Chart Files](file-management/chart-files.md)
-  * [Scratches](file-management/scratches.md)
+## [File management](file-management/README.md)
+* [EDQL Files](file-management/edql-files.md)
+* [Chart Files](file-management/chart-files.md)
+* [Scratches](file-management/scratches.md)
 
 ## Tutorials
 
