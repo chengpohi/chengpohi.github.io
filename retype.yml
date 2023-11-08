@@ -12,7 +12,10 @@ links:
     link: https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/
     icon: download
   - text: Install EDQL on Intellij
-    link: https://chengpohi.github.io/introduction/install-edql-on-intellij/
+    link: https://chengpohi.github.io/getting-started/install-edql-on-intellij/
+    icon: gear
+  - text: QSharp IDE
+    link: https://chengpohi.github.io/getting-started/qsharp-elasticsearch-ide/
     icon: gear
   - text: Github
     link: https://github.com/chengpohi/edql
