@@ -2,23 +2,25 @@
 
 ## Run
 
-**EDQL** script support run request action directly on **Intellij** by click right **Run** button or use the **Run shortcut**.
+**EDQL** script support run request action directly on **Intellij** by click right **Run** button or use the **Run
+shortcut**.
 
 ### Run Query Action
 
-We can run single request by click the request right icon directly or when cursor stay on the request action block use the Run shortcut directly. it will only run current request action and return current request action response.
+We can run a single request by clicking the request right icon directly or when the cursor stays on the request action
+block use the Run shortcut directly. It will only run current request action and return current request action response.
 
 ### Run Script
 
-If EDQL script has multiple request actions, we can run whole request actions when cursor not stay on any request action block and use Run shortcut to run whole requests. For multiple request actions, multiple responses will return and display separated by tab
+If EDQL script has multiple request actions, we can run whole request actions when the cursor does not stay on any
+request action block and uses Run shortcut to run whole requests. For multiple request actions, multiple responses will
+return and display separated by tab
 
-## Download
+## Export
 
-### Download Query Result
+### Export Query Result
 
-### Scroll Download by Query
-
-
+### Scroll Export by Query
 
 ## Manage
 
@@ -52,8 +54,8 @@ If EDQL script has multiple request actions, we can run whole request actions wh
 
 ## Plot
 
-{% content-ref url="visualize.md" %}
-[visualize.md](visualize.md)
+{% content-ref url="data-browser.md" %}
+[data-browser.md](data-browser.md)
 {% endcontent-ref %}
 
 ## Convert Query to Java

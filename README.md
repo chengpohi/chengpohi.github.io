@@ -21,7 +21,7 @@ so based on the above scenarios **EDQL** implements powerful script engine: supp
 etc. with intelligent Intellij you can easily write query DSL(autocomplete, refactor, live templates, extract etc).
 
 For aggregations, **EDQL** support plotting aggregation results in Intellij directly for analysis data(find
-more: [visualize.md](ide-actions/visualize.md "mention")), that's powered by vega-lite plot library and is fully
+more: [data-browser.md](ide-actions/data-browser.md "mention")), that's powered by vega-lite plot library and is fully
 compatible with kibana vega-lite plot.
 
 {% embed url="https://plugins.jetbrains.com/embeddable/card/16364" %}
@@ -115,16 +115,16 @@ POST $myindex/_search
 
 Follow our handy guides to get started on the basics as quickly as possible:
 
-{% content-ref url="introduction/install-edql-on-intellij.md" %}
-[install-edql-on-intellij.md](introduction/install-edql-on-intellij.md)
+{% content-ref url="getting-started/install-edql-on-intellij.md" %}
+[install-edql-on-intellij.md](getting-started/install-edql-on-intellij.md)
 {% endcontent-ref %}
 
-{% content-ref url="introduction/create-edql-script.md" %}
-[create-edql-script.md](introduction/create-edql-script.md)
+{% content-ref url="getting-started/create-edql-script.md" %}
+[create-edql-script.md](getting-started/create-edql-script.md)
 {% endcontent-ref %}
 
-{% content-ref url="introduction/run-edql-request.md" %}
-[run-edql-request.md](introduction/run-edql-request.md)
+{% content-ref url="getting-started/run-edql-request.md" %}
+[run-edql-request.md](getting-started/run-edql-request.md)
 {% endcontent-ref %}
 
 ### Use cases with EDQL

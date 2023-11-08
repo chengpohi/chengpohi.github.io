@@ -96,7 +96,7 @@ ApiSessionToken "c"
 
 ### Query Action
 
-Elasticsearch query action include 4 parts:
+Elasticsearch query action includes 4 parts:
 
 * Query Methods: GET, POST, DELETE and PUT
 * Query Index: the index name for query
@@ -117,7 +117,7 @@ GET _cluster/stats
 
 ### Query DSL Body
 
-Query DSL body is same as the offcial Query DSL block: [QueryDSL](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html), it's a **JSON** format with the query configurations. since EDQL is based on Intellij, it supports autocomplete, format and live templates, example: qbm, range, wildcard etc.
+Query DSL body is the same as the official Query DSL block: [QueryDSL](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html), it's a **JSON** format with the query configurations. since EDQL is based on Intellij, it supports autocomplete, format and live templates, example: qbm, range, wildcard etc.
 
 ```
 POST my-index/_search

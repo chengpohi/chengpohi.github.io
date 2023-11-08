@@ -8,366 +8,369 @@ description: Intellij IDE support for EDQL DSL editor
 
 ## Live Templates
 
-**EDQL** plugin already defined the common used Live Templates for intelligence, easily and quickly to write the request action or query conditions, so when input the below keyword, the Live Template will automatically expand.
+**EDQL** plugin already defined the common used Live Templates for intelligence, easily and quickly to write the request
+action or query conditions, so when input the below keyword, the Live Template will automatically expand.
 
 Defined Live Templates:
 
-*   search
+* search
 
-    ```
-    POST $EXPR$/_search
-    {
-      "query": {
-        "bool": {
-          "must": [
-          ]
+  ```
+  POST $EXPR$/_search
+  {
+    "query": {
+      "bool": {
+        "must": [
+        ]
+      }
+    }
+  }
+      
+  ```
+* term
+
+  ```
+  {
+    "term": {
+      "$EXPR$": "$V$"
+    }
+  },
+      
+  ```
+* clusterHealth
+
+  ```
+  GET _cluster/health
+      
+  ```
+* clusterStats
+
+  ```
+  GET _cluster/stats
+      
+  ```
+* catIndices
+
+  ```
+  GET _cat/indices?v
+      
+  ```
+* catHealth
+
+  ```
+  GET _cat/health?v
+      
+  ```
+* catNodes
+
+  ```
+  GET _cat/nodes?v
+      
+  ```
+* aggs
+
+  ```
+  "aggs": {
+    "$E$": {
+      $P$
+    }
+  }
+      
+  ```
+* term
+
+  ```
+  {
+    "term": {
+      "$EXPR$": "$V$"
+    }
+  },
+      
+  ```
+* terms
+
+  ```
+  {
+    "terms": {
+      "$EXPR$": [$V$]
+    }
+  }
+      
+  ```
+* bool
+
+  ```
+  "bool": {
+    $EXPR$
+  }
+      
+  ```
+* avg
+
+  ```
+  "aggregations": {
+    "$P1$": {
+      "avg": {
+        "field": "$EXPR$"
+     }
+    }
+  }
+      
+  ```
+* count
+
+  ```
+  GET $E$/_count
+      
+  ```
+* from
+
+  ```
+  "from": $EXPR$,
+      
+  ```
+* size
+
+  ```
+  "size": $EXPR$,
+      
+  ```
+* qbm
+
+  ```
+  {
+    "query": {
+      "bool": {
+        "must": [
+          $EXPR$
+        ]
+      }
+    }
+  }
+      
+  ```
+* qbf
+
+  ```
+  {
+    "query": {
+      "bool": {
+        "filter": [
+          $EXPR$
+        ]
+      }
+    }
+  }
+      
+  ```
+* script
+
+  ```
+  {
+    "script": {
+       "script": "$EXPR$"
+    }
+  },
+      
+  ```
+* range
+
+  ```
+  {
+    "range": {
+     "$EXPR$": {
+      "gt": $E$,
+      "lt": $A$,
+     }
+    }
+  },
+      
+  ```
+* wildcard
+
+  ```
+  {
+    "wildcard": {
+      "$EXPR$": {
+          "value": "*$K$*",
+          "boost": 1.0,
+      }
+    }
+  }
+      
+  ```
+* regexp
+
+  ```
+  {
+    "regexp" : {
+       "$EXPR$" : {
+          "value" : "$V$",
         }
+    }
+  }
+      
+  ```
+* profile
+
+  ```
+  "profile": true,
+      
+  ```
+* explain
+
+  ```
+  "explain": true,
+      
+  ```
+* mapping
+
+  ```
+  GET $E$/_mapping
+      
+  ```
+* from
+
+  ```
+  "from": $EXPR$,
+      
+  ```
+* field
+
+  ```
+  "field": "$EXPR$"
+      
+  ```
+* sort
+
+  ```
+  "sort": [
+    {
+      "$EXPR$": {
+        "order": "$F1$"
       }
     }
-        
-    ```
-*   term
+  ]
+      
+  ```
+* exists
 
-    ```
-    {
-      "term": {
-        "$EXPR$": "$V$"
-      }
-    },
-        
-    ```
-*   clusterHealth
-
-    ```
-    GET _cluster/health
-        
-    ```
-*   clusterStats
-
-    ```
-    GET _cluster/stats
-        
-    ```
-*   catIndices
-
-    ```
-    GET _cat/indices?v
-        
-    ```
-*   catHealth
-
-    ```
-    GET _cat/health?v
-        
-    ```
-*   catNodes
-
-    ```
-    GET _cat/nodes?v
-        
-    ```
-*   aggs
-
-    ```
-    "aggs": {
-      "$E$": {
-        $P$
-      }
-    }
-        
-    ```
-*   term
-
-    ```
-    {
-      "term": {
-        "$EXPR$": "$V$"
-      }
-    },
-        
-    ```
-*   terms
-
-    ```
-    {
-      "terms": {
-        "$EXPR$": [$V$]
-      }
-    }
-        
-    ```
-*   bool
-
-    ```
-    "bool": {
-      $EXPR$
-    }
-        
-    ```
-*   avg
-
-    ```
-    "aggregations": {
-      "$P1$": {
-        "avg": {
-          "field": "$EXPR$"
-       }
-      }
-    }
-        
-    ```
-*   count
-
-    ```
-    GET $E$/_count
-        
-    ```
-*   from
-
-    ```
-    "from": $EXPR$,
-        
-    ```
-*   size
-
-    ```
-    "size": $EXPR$,
-        
-    ```
-*   qbm
-
-    ```
-    {
-      "query": {
-        "bool": {
-          "must": [
-            $EXPR$
-          ]
-        }
-      }
-    }
-        
-    ```
-*   qbf
-
-    ```
-    {
-      "query": {
-        "bool": {
-          "filter": [
-            $EXPR$
-          ]
-        }
-      }
-    }
-        
-    ```
-*   script
-
-    ```
-    {
-      "script": {
-         "script": "$EXPR$"
-      }
-    },
-        
-    ```
-*   range
-
-    ```
-    {
-      "range": {
-       "$EXPR$": {
-        "gt": $E$,
-        "lt": $A$,
-       }
-      }
-    },
-        
-    ```
-*   wildcard
-
-    ```
-    {
-      "wildcard": {
-        "$EXPR$": {
-            "value": "*$K$*",
-            "boost": 1.0,
-        }
-      }
-    }
-        
-    ```
-*   regexp
-
-    ```
-    {
-      "regexp" : {
-         "$EXPR$" : {
-            "value" : "$V$",
-          }
-      }
-    }
-        
-    ```
-*   profile
-
-    ```
-    "profile": true,
-        
-    ```
-*   explain
-
-    ```
-    "explain": true,
-        
-    ```
-*   mapping
-
-    ```
-    GET $E$/_mapping
-        
-    ```
-*   from
-
-    ```
-    "from": $EXPR$,
-        
-    ```
-*   field
-
-    ```
+  ```
+  "exists": {
     "field": "$EXPR$"
-        
-    ```
-*   sort
+  }
+      
+  ```
+* createIndex
 
-    ```
-    "sort": [
-      {
-        "$EXPR$": {
-          "order": "$F1$"
-        }
-      }
-    ]
-        
-    ```
-*   exists
-
-    ```
-    "exists": {
-      "field": "$EXPR$"
-    }
-        
-    ```
-*   createIndex
-
-    ```
-    PUT /$EXPR$
-    {
-      "settings": {
-      },
-      "mappings": {
-        "properties": {
-            $A$
-        }
+  ```
+  PUT /$EXPR$
+  {
+    "settings": {
+    },
+    "mappings": {
+      "properties": {
+          $A$
       }
     }
-        
-    ```
-*   getNodes
+  }
+      
+  ```
+* getNodes
 
-    ```
-    GET /_nodes
-        
-    ```
-*   source
+  ```
+  GET /_nodes
+      
+  ```
+* source
 
-    ```
-    "_source": ["$EXPR$"],
-        
-    ```
-*   tasks
+  ```
+  "_source": ["$EXPR$"],
+      
+  ```
+* tasks
 
-    ```
-    GET /_tasks
-        
-    ```
-*   notEmpty
+  ```
+  GET /_tasks
+      
+  ```
+* notEmpty
 
-    ```
-    {
-      "regexp": {
-        "$EXPR$": {
-          "value": ".+",
-        }
+  ```
+  {
+    "regexp": {
+      "$EXPR$": {
+        "value": ".+",
       }
     }
-        
-    ```
-*   mustNot
+  }
+      
+  ```
+* mustNot
 
-    ```
-    "must_not" : [
-      $EXPR$
-    ],
-        
-    ```
-*   must
+  ```
+  "must_not" : [
+    $EXPR$
+  ],
+      
+  ```
+* must
 
-    ```
-    "must" : [
-      $EXPR$
-    ],
-        
-    ```
-*   filter
+  ```
+  "must" : [
+    $EXPR$
+  ],
+      
+  ```
+* filter
 
-    ```
-    "filter" : [
-      $EXPR$
-    ],
-        
-    ```
-*   should
+  ```
+  "filter" : [
+    $EXPR$
+  ],
+      
+  ```
+* should
 
-    ```
-    "should" : [
-      $EXPR$
-    ],
-        
-    ```
+  ```
+  "should" : [
+    $EXPR$
+  ],
+      
+  ```
 
 ## Highlight
 
-**Highlight** include two parts for edql, for now it supports:
+**Highlight** includes two parts for edql, for now it supports:
 
 1. highlight for reservered words
-   * HOST
-   * Authorization
-   * local
-   * …
+    * HOST
+    * Authorization
+    * local
+    * …
 2. highlight for key characters
-   * brackets
-   * number
-   * comment
-   * colon
-   * …
+    * brackets
+    * number
+    * comment
+    * colon
+    * …
 
 **TODO**: In next step will try to support semantics hilightling
 
 ## Autocomplete
 
-**Autocomplete** include two ways autocomplete for edql:
+**Autocomplete** includes two ways autocomplete for edql:
 
-1.  Keywords autocomplete
+1. Keywords autocomplete
 
-    Usally include the reservered words and keywords for edql, example: HOST, Authorization, POST, GET, DELETE, PUT, local etc
-2.  Live Templates autocomplete
+   Usually include the reserved words and keywords for edql, example: HOST, Authorization, POST, GET, DELETE, PUT,
+   local etc
+2. Live Templates autocomplete
 
-    Live Templates is defined for autocomplete the query dsl, example: qbm, qbf, size, terms, term, queryString, search etc
+   Live Templates are defined for autocomplete the query dsl, example: qbm, qbf, size, terms, term, queryString, search
+   etc
 
-**TODO**: autocomplete auto integrate with the current dsl, such as remove extra bracket
+**TODO**: autocomplete auto integrates with the current dsl, such as remove extra bracket
 
 ## Refactor
 
@@ -375,4 +378,5 @@ Defined Live Templates:
 
 ## Format
 
-**Format** support to format **Query DSL** blocks, includes: function, variable, JSON block, array block etc. it’s a simple way to make code is clean
+**Format** support to format **Query DSL** blocks, includes: function, variable, JSON block, array block etc. it’s a
+simple way to make code is clean

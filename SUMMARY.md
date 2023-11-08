@@ -1,14 +1,14 @@
 # Table of contents
 
-* [EDQL - Elasticsearch GUI Client and QSharp Elasticsearch IDE](README.md)
+* [EDQL—Elasticsearch GUI Client and QSharp Elasticsearch IDE](README.md)
 
 ## Introduction
 
-* [Install on Intellij](introduction/install-edql-on-intellij.md)
-* [Connect and Query](introduction/create-edql-script.md)
-* [Run Query and Data Browser](introduction/run-edql-request.md)
-* [EDQL Script Usage](introduction/edql-script-usage.md)
-* [QSharp Elasticsearch IDE](introduction/qsharp-elasticsearch-ide.md)
+* [Install on Intellij](getting-started/install-edql-on-intellij.md)
+* [Connect and Query](getting-started/create-edql-script.md)
+* [Run Query and Data Browser](getting-started/run-edql-request.md)
+* [EDQL Script Usage](getting-started/edql-script-usage.md)
+* [QSharp Elasticsearch IDE](getting-started/qsharp-elasticsearch-ide.md)
 
 ## IDE ACTIONS
 
@@ -16,7 +16,7 @@
 * [Dock Manager](ide-actions/dock-manager.md)
 * [DSL Editor](ide-actions/language-support.md)
 * [Visual Editor](ide-actions/visual-editor.md)
-* [Data Browser](ide-actions/visualize.md)
+* [Data Browser](ide-actions/data-browser.md)
 
 ## USE CASES
 

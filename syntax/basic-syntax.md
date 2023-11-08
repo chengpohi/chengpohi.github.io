@@ -8,38 +8,36 @@ description: basic EDQL syntax for help quickly use EDQL
 
 When firstly prepare to query from **Elasticsearch**, we need to configure how to connect the **Elasticsearch cluster**
 
-### Host
-
-The api point to **Elasticsearch Cluster**, include: ip, port and http protocol, such as:
-
-```
-HOST http://127.0.0.1:9200
-```
-
 ### Authorization
 
-If the **Elasticsearch Cluster** need **authorization** to connect, configure authorization there are 3 ways to achieve it.
+If the **Elasticsearch Cluster** needs **authorization** to connect, configure authorization, there are three ways to achieve
+that.
 
 #### Authorization Header
 
-If **Elasticsearch Cluster** support http basic **Authorization** header, we can configure **Authorization** header directly by:
+If **Elasticsearch Cluster** supports http basic **Authorization** header, we can configure **Authorization** header
+directly by:
 
 ```
 Authorization "Basic <token>"
 ```
 
-The **token** should compute by base64 with username and password, see more: [HTTP/REST clients and security](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-clients-integrations.html) and [Elasticsearch Token Service tokens](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/current/\_other\_authentication\_methods.html#\_elasticsearch\_token\_service\_tokens)
+The **token** should compute by base64 with username and password, see
+more: [HTTP/REST clients and security](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-clients-integrations.html)
+and [Elasticsearch Token Service tokens](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/current/\_other\_authentication\_methods.html#\_elasticsearch\_token\_service\_tokens)
 
 #### Basic Username and Password
 
-For if you don’t want use **Authorization** header, you can directly use the reserverd words **Username** and **Password** to configure the **Authorization**:
+For if you don’t want use **Authorization** header, you can directly use the reserverd words **Username** and **Password
+** to configure the **Authorization**:
 
 ```
 Username "username"
 Password "password"
 ```
 
-see more: [Basic Authentication](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/current/\_basic\_authentication.html)
+see
+more: [Basic Authentication](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/current/\_basic\_authentication.html)
 
 #### ApiKeyId and ApiKeySecret
 
@@ -50,7 +48,8 @@ ApiKeyId ""
 ApiKeySecret ""
 ```
 
-see more: [ApiKeySecret](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/current/\_other\_authentication\_methods.html#\_elasticsearch\_api\_keys)
+see
+more: [ApiKeySecret](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/current/\_other\_authentication\_methods.html#\_elasticsearch\_api\_keys)
 
 #### AWS IAM: ApiKeyId, ApiKeySecret and ApiSessionToken
 
@@ -65,7 +64,8 @@ ApiSessionToken ""
 
 ### Timeout
 
-**Timeout** is used to control the query actions timeout for **Elasticsearch Cluster**, it will apply to every action in current context. set **Timeout** by:
+**Timeout** is used to control the query actions timeout for **Elasticsearch Cluster**, it will apply to every action in
+current context. set **Timeout** by:
 
 ```
 Timeout 1000
@@ -75,7 +75,10 @@ this will set timeout for action 1 second.
 
 ## Query Actions
 
-**Query Actions** is same with [Elasticsearch REST APIs](https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-apis.html), but in edql context defined it as **Query Actions**. so we can copy from **Elascticsearch** offical sample requests and execute these directly. such as:
+**Query Actions** is same
+with [Elasticsearch REST APIs](https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-apis.html), but in
+edql context defined it as **Query Actions**. so we can copy from **Elascticsearch** offical sample requests and execute
+these directly. such as:
 
 ```
 POST my-index/_search
@@ -91,11 +94,13 @@ POST my-index/_search
 
 query from **my-index** with **bool** query and **filter**.
 
-why called it as **REST Actions** not **REST APIS**? since have enhanced the apis such as variables and functions etc, maybe call it as **Action** maybe better.
+why called it as **REST Actions** not **REST APIS**? since have enhanced the apis such as variables and functions etc,
+maybe call it as **Action** maybe better.
 
 ## Query DSL: JSON Block
 
-**Query DSL JSON Block** is same as **Elasticsearch** query DSL definition, we can write these query contexts in current block. such as **bool** query, **aggregation** etc. Example:
+**Query DSL JSON Block** is the same as **Elasticsearch** query DSL definition, we can write these query contexts in the
+current block. such as **bool** query, **aggregation** etc. Example:
 
 ```
 POST my-index/_search
