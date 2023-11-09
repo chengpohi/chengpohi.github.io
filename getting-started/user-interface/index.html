@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752856626412">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752856715085">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -14,7 +14,7 @@
     <!-- Primary Meta Tags -->
     <title>User Interface</title>
     <meta name="title" content="User Interface">
-    <meta name="description" content="EDQL has a Dock Manager default on the right side of intellij, Dock Manager support manage Elasticsearch Connections and EDQL script files.">
+    <meta name="description" content="EDQL Dock Manager default on the right side of intellij. and it is used to manage connections and script files.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://chengpohi.github.io/getting-started/user-interface/">
@@ -23,21 +23,21 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chengpohi.github.io/getting-started/user-interface/">
     <meta property="og:title" content="User Interface">
-    <meta property="og:description" content="EDQL has a Dock Manager default on the right side of intellij, Dock Manager support manage Elasticsearch Connections and EDQL script files.">
+    <meta property="og:description" content="EDQL Dock Manager default on the right side of intellij. and it is used to manage connections and script files.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://chengpohi.github.io/getting-started/user-interface/">
     <meta property="twitter:title" content="User Interface">
-    <meta property="twitter:description" content="EDQL has a Dock Manager default on the right side of intellij, Dock Manager support manage Elasticsearch Connections and EDQL script files.">
+    <meta property="twitter:description" content="EDQL Dock Manager default on the right side of intellij. and it is used to manage connections and script files.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.752856626412" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.752856715085" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752856626412" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752856715085" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752856626412" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752856715085" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -266,59 +266,141 @@
         <span>User Interface</span>
     </h1>
 </doc-anchor-target>
-<p>EDQL has a <strong>Dock Manager</strong> default on the right side of intellij, Dock Manager support manage Elasticsearch Connections and EDQL script files. It&#x27;s easy for using to save global configurations and scripts.</p>
-<doc-anchor-target id="manage-connection">
+<doc-anchor-target id="dock-manager">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#manage-connection">#</doc-anchor-trigger>
-        <span>Manage Connection</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dock-manager">#</doc-anchor-trigger>
+        <span>Dock Manager</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="add-connection">
+<p><strong>EDQL Dock Manager</strong> default on the right side of intellij. and it is used to manage connections and
+script files.</p>
+<doc-anchor-target id="dock-toolbar">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#add-connection">#</doc-anchor-trigger>
-        <span>Add Connection</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dock-toolbar">#</doc-anchor-trigger>
+        <span>Dock Toolbar</span>
     </h3>
 </doc-anchor-target>
-<doc-anchor-target id="test-connection">
+<ul>
+<li><p>New Connection</p>
+<p>create a new Elasticsearch connection</p>
+</li>
+<li><p>Duplicate Connection</p>
+<p>duplicate Elasticsearch connection</p>
+</li>
+<li><p>Query Console</p>
+<p>create new query in selected connection</p>
+</li>
+<li><p>Plot</p>
+<p>plot in selected connection</p>
+</li>
+<li><p>Edit</p>
+<p>edit connection, index, edql etc</p>
+</li>
+<li><p>Delete</p>
+<p>delete connection, index, edql etc</p>
+</li>
+<li><p>Configuration</p>
+<p>configure connection</p>
+</li>
+</ul>
+<doc-anchor-target id="connection-node">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#test-connection">#</doc-anchor-trigger>
-        <span>Test Connection</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#connection-node">#</doc-anchor-trigger>
+        <span>Connection Node</span>
     </h3>
 </doc-anchor-target>
-<doc-anchor-target id="cluster-info">
+<p>After new connection, the added connection will display connection name as connection node, after double click will list
+all related infos:</p>
+<ul>
+<li><p>Indices</p>
+<p>list all selected indices, and double click index to run</p>
+</li>
+<li><p>Nodes</p>
+<p>list all selected connection&#x27;s nodes</p>
+</li>
+<li><p>Aliases</p>
+<p>list all selected connection&#x27;s aliases for view or edit details</p>
+</li>
+<li><p>Templates</p>
+<p>list all selected connection&#x27;s templates for view or edit details</p>
+</li>
+<li><p>Tasks</p>
+<p>list all selected connection&#x27;s tasks for view</p>
+</li>
+<li><p>Scripts</p>
+<p>list all selected connection&#x27;s scripts for view or edit details</p>
+</li>
+<li><p>Ingests</p>
+<p>list all selected connection&#x27;s ingests for view or edit details</p>
+</li>
+<li><p>Transforms</p>
+<p>list all selected connection&#x27;s transforms for view or edit details</p>
+</li>
+<li><p>Plugins</p>
+<p>list all selected connection&#x27;s plugins for view details</p>
+</li>
+<li><p>ILMS</p>
+<p>list all selected connection&#x27;s ilms for view details</p>
+</li>
+<li><p>EDQLS</p>
+<p>list all selected connection&#x27;s EDQLs for view, edit and run</p>
+</li>
+<li><p>Charts</p>
+<p>list all selected connection&#x27;s charts for view, it defaults includes ClusterStats chart</p>
+</li>
+<li><p>Favroite functions</p>
+<p>list all selected connection&#x27;s favorite function</p>
+</li>
+</ul>
+<doc-anchor-target id="edqls-node">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#cluster-info">#</doc-anchor-trigger>
-        <span>Cluster Info</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#edqls-node">#</doc-anchor-trigger>
+        <span>EDQLs Node</span>
     </h3>
 </doc-anchor-target>
-<p>Indices</p>
-<p>Aliases</p>
-<p>Tasks</p>
-<p>Snapshots</p>
-<doc-anchor-target id="query-console">
+<p>Global EDQLs file node.</p>
+<doc-anchor-target id="charts-node">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#charts-node">#</doc-anchor-trigger>
+        <span>Charts Node</span>
+    </h3>
+</doc-anchor-target>
+<p>Global Charts file node.</p>
+<doc-anchor-target id="documents-node">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#documents-node">#</doc-anchor-trigger>
+        <span>Documents Node</span>
+    </h3>
+</doc-anchor-target>
+<p>Elasticsearch documentation in local.</p>
+<doc-anchor-target id="run-result-panel">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#query-console">#</doc-anchor-trigger>
-        <span>Query Console</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#run-result-panel">#</doc-anchor-trigger>
+        <span>Run Result Panel</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="plot">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#plot">#</doc-anchor-trigger>
-        <span>Plot</span>
-    </h2>
+<p>After running a query by EDQL, the run result panel will display on the window bottom.</p>
+<doc-anchor-target id="running-details-panel">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#running-details-panel">#</doc-anchor-trigger>
+        <span>Running Details Panel</span>
+    </h3>
 </doc-anchor-target>
-<doc-anchor-target id="edit">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#edit">#</doc-anchor-trigger>
-        <span>Edit</span>
-    </h2>
+<p>Show the executed details: start, finished and usage time.</p>
+<doc-anchor-target id="data-panel">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#data-panel">#</doc-anchor-trigger>
+        <span>Data Panel</span>
+    </h3>
 </doc-anchor-target>
-<doc-anchor-target id="configure-connection">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#configure-connection">#</doc-anchor-trigger>
-        <span>Configure Connection</span>
-    </h2>
+<p>Show the query response: Table view, JSON view or Plot view.</p>
+<doc-anchor-target id="explainprofile-panel">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#explainprofile-panel">#</doc-anchor-trigger>
+        <span>Explain&amp;Profile Panel</span>
+    </h3>
 </doc-anchor-target>
+<p>Show the query explain&amp;profile info, it&#x27;s JSON structural view.</p>
 
                                 
                                 <!-- Required only on API pages -->
