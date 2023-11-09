@@ -2,13 +2,7 @@
 
 [EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/) is a professional query and management
 tool for Elasticsearch. It's intelligent and powerful for manage Elasticsearch
-cluster and query from Elasticsearch. and always follow Elasticsearch newest features. &#x20;
-
-Also it integrates Elasticsearch querying with ChatGPT. With EDQL, you can perform sophisticated Elasticsearch
-searches and engage in natural language conversations with your data. Experience the power of combined Elasticsearch
-and ChatGPT capabilities in one intuitive interface with EDQL.
-
-> Since EDQL not have a server, when using ChatGPT to query Elasticsesarch, you must provide your own apikey.
+cluster and query from Elasticsearch. also It always follow Elasticsearch newest features. &#x20;
 
 {% hint style="info" %}
 EDQL is cross-platform since it's based on intellij, so It can be used on windows, linux or macOS.
@@ -66,8 +60,7 @@ fields selection etc. also we can new modify, delete and export(scroll) document
 <summary>Script Function</summary>
 
 Works like a script with function, variable or iteration etc, so can quickly create personal query template or library
-for handling common use cases to reduce duplicate code. also can convert function to IDE shortcut action so we can
-quickly
+for handling common use cases to reduce duplicate code. also can convert function to IDE shortcut action so we can quickly 
 run function in common scenes
 
 </details>
@@ -167,10 +160,8 @@ collection, type and iteration etc. explore more :
 [glossary.md](syntax/glossary.md)
 {% endcontent-ref %}
 
-## QSharp EDQL IDE
 
-[QSharp IDE](https://github.com/chengpohi/edql/releases) is a standalone IDE, it can be used individually similar
-DataGrip.
-since in some cases use EDQL intellij plugin on Intellij platform is not easy and afraid to effect other actions. so
-create
+## QSharp EDQL IDE
+[QSharp IDE](https://github.com/chengpohi/edql/releases) is a standalone IDE, it can be used individually similar DataGrip. 
+since in some cases use EDQL intellij plugin on Intellij platform is not easy and afraid to effect other actions. so create 
 QSharp standalone IDE for EDQL(but also it's based on Intellij Community).
