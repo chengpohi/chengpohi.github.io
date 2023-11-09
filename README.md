@@ -8,7 +8,7 @@ Also it integrates Elasticsearch querying with ChatGPT. With EDQL, you can perfo
 searches and engage in natural language conversations with your data. Experience the power of combined Elasticsearch
 and ChatGPT capabilities in one intuitive interface with EDQL.
 
-> Since EDQL not have server, when using ChatGPT to query Elasticsesarch, you must provide your own apikey.
+> Since EDQL not have a server, when using ChatGPT to query Elasticsesarch, you must provide your own apikey.
 
 {% hint style="info" %}
 EDQL is cross-platform since it's based on intellij, so It can be used on windows, linux or macOS.
