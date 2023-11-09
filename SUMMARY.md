@@ -8,7 +8,7 @@
 * [User Interface](getting-started/user-interface.md)
 * [Connection and Query](getting-started/create-edql-script.md)
 * [Run Query and Data Viewer](getting-started/run-edql-request.md)
-* [QSharp Elasticsearch IDE](getting-started/qsharp-elasticsearch-ide.md)
+* [Install QSharp](getting-started/qsharp-elasticsearch-ide.md)
 
 ## Configuration
 
