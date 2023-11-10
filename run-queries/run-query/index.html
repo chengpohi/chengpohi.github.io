@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752896193505">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752896221157">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -14,7 +14,7 @@
     <!-- Primary Meta Tags -->
     <title>Run Query</title>
     <meta name="title" content="Run Query">
-    <meta name="description" content="EDQL script support run request action directly on Intellij by click right Run button or use the Run shortcut">
+    <meta name="description" content="EDQL (Elasticsearch Data Query Language) feature in Intellij provides convenient ways to execute queries and manage Elasticsearch resources.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://chengpohi.github.io/run-queries/run-query/">
@@ -23,21 +23,21 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chengpohi.github.io/run-queries/run-query/">
     <meta property="og:title" content="Run Query">
-    <meta property="og:description" content="EDQL script support run request action directly on Intellij by click right Run button or use the Run shortcut">
+    <meta property="og:description" content="EDQL (Elasticsearch Data Query Language) feature in Intellij provides convenient ways to execute queries and manage Elasticsearch resources.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://chengpohi.github.io/run-queries/run-query/">
     <meta property="twitter:title" content="Run Query">
-    <meta property="twitter:description" content="EDQL script support run request action directly on Intellij by click right Run button or use the Run shortcut">
+    <meta property="twitter:description" content="EDQL (Elasticsearch Data Query Language) feature in Intellij provides convenient ways to execute queries and manage Elasticsearch resources.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.752896193505" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.752896221157" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752896193505" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752896221157" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752896193505" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752896221157" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -266,148 +266,64 @@
         <span>Run Query</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="run">
+<p>EDQL (Elasticsearch Data Query Language) feature in Intellij provides convenient ways to execute queries and manage Elasticsearch resources. Additionally, you can convert queries written in EDQL to Java code for further integration and customization. Let&#x27;s explore these features in more detail:</p>
+<doc-anchor-target id="run-query-action">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#run">#</doc-anchor-trigger>
-        <span>Run</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#run-query-action">#</doc-anchor-trigger>
+        <span>Run Query Action:</span>
     </h2>
 </doc-anchor-target>
-<p><strong>EDQL</strong> script support run request action directly on <strong>Intellij</strong> by click right <strong>Run</strong> button or use the <strong>Run shortcut</strong>.</p>
-<doc-anchor-target id="run-query-action">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#run-query-action">#</doc-anchor-trigger>
-        <span>Run Query Action</span>
-    </h3>
-</doc-anchor-target>
-<p>We can run a single request by clicking the request right icon directly or when the cursor stays on the request action block use the Run shortcut directly. It will only run current request action and return current request action response.</p>
+<p>To execute an individual request, you can simply click the right icon of the request or use the Run shortcut when the cursor is positioned on the request action block. This action runs the selected request and returns the corresponding response. It is a quick and easy way to execute single queries within your EDQL script.</p>
 <doc-anchor-target id="run-script">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#run-script">#</doc-anchor-trigger>
-        <span>Run Script</span>
-    </h3>
+        <span>Run Script:</span>
+    </h2>
 </doc-anchor-target>
-<p>If EDQL script has multiple request actions, we can run whole request actions when the cursor does not stay on any request action block and uses Run shortcut to run whole requests. For multiple request actions, multiple responses will return and display separated by tab</p>
+<p>When an EDQL script contains multiple request actions, you can run all of them together. To do this, ensure that the cursor is not positioned on any specific request action block and use the Run shortcut. This action executes all the requests in the script sequentially, and the responses are returned and displayed in separate tabs. It allows you to conveniently analyze and compare the results of multiple queries.</p>
 <doc-anchor-target id="export">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#export">#</doc-anchor-trigger>
-        <span>Export</span>
+        <span>Export:</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="export-query-result">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#export-query-result">#</doc-anchor-trigger>
-        <span>Export Query Result</span>
-    </h3>
-</doc-anchor-target>
+<p>The export feature provides options for exporting query results. The &quot;Export Query Result&quot; functionality allows you to save the results of a query in various formats, such as CSV or JSON. This is useful for sharing or further analyzing the query results outside of Intellij.</p>
 <doc-anchor-target id="scroll-export-by-query">
-    <h3>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#scroll-export-by-query">#</doc-anchor-trigger>
-        <span>Scroll Export by Query</span>
-    </h3>
+        <span>Scroll Export by Query:</span>
+    </h2>
 </doc-anchor-target>
+<p>When dealing with large result sets, the scroll export feature is beneficial. It enables you to export query results in smaller batches, making the process more efficient and manageable. This helps prevent overwhelming system resources and ensures smoother execution of exports.</p>
+<doc-anchor-target id="query-conversion-to-java">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#query-conversion-to-java">#</doc-anchor-trigger>
+        <span>Query Conversion to Java:</span>
+    </h2>
+</doc-anchor-target>
+<p>In addition to running queries in EDQL, Intellij also offers the capability to convert EDQL queries to Java code. This is useful if you want to incorporate and customize your queries within Java applications. By converting the queries to Java, you can take advantage of the Elasticsearch Java API and its features.</p>
+<p>To convert an EDQL query to Java, you can use the appropriate code generation or conversion tools available in Intellij. These tools typically provide options to automatically generate Java code that corresponds to your EDQL query. Once the conversion is complete, you can integrate the generated Java code into your Java application, allowing for seamless interaction with Elasticsearch.</p>
 <doc-anchor-target id="manage">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#manage">#</doc-anchor-trigger>
-        <span>Manage</span>
+        <span>Manage:</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="create-index">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-index">#</doc-anchor-trigger>
-        <span>Create Index</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="delete-index">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#delete-index">#</doc-anchor-trigger>
-        <span>Delete Index</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="export-data">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#export-data">#</doc-anchor-trigger>
-        <span>Export Data</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="import-data">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#import-data">#</doc-anchor-trigger>
-        <span>Import Data</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="create-template">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-template">#</doc-anchor-trigger>
-        <span>Create Template</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="create-alias">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-alias">#</doc-anchor-trigger>
-        <span>Create Alias</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="create-script">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-script">#</doc-anchor-trigger>
-        <span>Create Script</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="create-pipeline">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-pipeline">#</doc-anchor-trigger>
-        <span>Create Pipeline</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="reindex">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#reindex">#</doc-anchor-trigger>
-        <span>Reindex</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="rebuild">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#rebuild">#</doc-anchor-trigger>
-        <span>Rebuild</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="templates">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#templates">#</doc-anchor-trigger>
-        <span>Templates</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="tasks">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tasks">#</doc-anchor-trigger>
-        <span>Tasks</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="ingests">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ingests">#</doc-anchor-trigger>
-        <span>Ingests</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="plugins">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#plugins">#</doc-anchor-trigger>
-        <span>Plugins</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="plot">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#plot">#</doc-anchor-trigger>
-        <span>Plot</span>
-    </h2>
-</doc-anchor-target>
-<p><a href="../run-query/data-browser.md">data-browser.md</a></p>
-<doc-anchor-target id="convert-query-to-java">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#convert-query-to-java">#</doc-anchor-trigger>
-        <span>Convert Query to Java</span>
-    </h2>
-</doc-anchor-target>
+<p>The manage section in Intellij provides various functionalities for managing Elasticsearch resources. Some of the key features available include:</p>
+<ul>
+<li>Create Index: This action allows you to create a new index in Elasticsearch, specifying the desired settings and mappings.</li>
+<li>Delete Index: Use this action to remove an existing index from Elasticsearch.</li>
+<li>Export Data: Export data from Elasticsearch to an external file or destination.</li>
+<li>Import Data: Import data from external sources into Elasticsearch.</li>
+<li>Create Template: Define templates that specify mappings and settings for new indices.</li>
+<li>Create Alias: Create an alias, which is an alternate name for an index or a group of indices.</li>
+<li>Create Script: Develop custom scripts for advanced data processing and transformations.</li>
+<li>Create Pipeline: Define an ingest pipeline for preprocessing data before indexing.</li>
+<li>Reindex: Perform data reindexing from one index to another, potentially applying transformations or filtering.</li>
+<li>Rebuild: Optimize indices by rebuilding them, refreshing and optimizing them for improved performance.</li>
+<li>Templates, Tasks, Ingests, Plugins, Plot: These sections provide additional management functionalities for templates, tasks, ingest pipelines, plugins, and plotting, respectively.</li>
+</ul>
+<p>The EDQL run query feature in Intellij, along with the ability to convert queries to Java, provides a comprehensive set of tools for executing and managing Elasticsearch queries. Whether you prefer working with EDQL or integrating queries into Java applications, Intellij offers the flexibility and functionality to streamline your Elasticsearch workflows.</p>
 
                                 
                                 <!-- Required only on API pages -->

@@ -6,14 +6,15 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752896193505">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752896221157">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>Export</title>
-    <meta name="title" content="Export">
+    <title>Import</title>
+    <meta name="title" content="Import">
+    <meta name="description" content="EDQL's Import Feature for Elasticsearch Index">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://chengpohi.github.io/export-import/import/">
@@ -21,20 +22,22 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chengpohi.github.io/export-import/import/">
-    <meta property="og:title" content="Export">
+    <meta property="og:title" content="Import">
+    <meta property="og:description" content="EDQL's Import Feature for Elasticsearch Index">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://chengpohi.github.io/export-import/import/">
-    <meta property="twitter:title" content="Export">
+    <meta property="twitter:title" content="Import">
+    <meta property="twitter:description" content="EDQL's Import Feature for Elasticsearch Index">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.752896193505" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.752896221157" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752896193505" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752896221157" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752896193505" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752896221157" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -257,12 +260,25 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="export" class="break-words">
+<doc-anchor-target id="import" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#export">#</doc-anchor-trigger>
-        <span>Export</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#import">#</doc-anchor-trigger>
+        <span>Import</span>
     </h1>
 </doc-anchor-target>
+<p>EDQL provides a robust import feature that simplifies the process of importing documents into an Elasticsearch index. Here&#x27;s a step-by-step guide on how to use this feature:</p>
+<ol>
+<li>Connect to Elasticsearch: Launch the EDQL Dock Manager and establish a connection with your Elasticsearch cluster. Double-click the connection node to configure and establish the connection.</li>
+<li>Select the target index: Navigate to the desired index within the EDQL Dock Manager. Right-click on the index node to open the context menu.</li>
+<li>Choose &quot;Import&quot; option: From the context menu, select the &quot;Import&quot; option. This action will open the import dialog specific to the selected index.</li>
+<li>Specify the import file format: In the import dialog, choose the file format of your documents. EDQL currently supports CSV and Excel formats for importing.</li>
+<li>Select the import file: Browse your system and select the CSV or Excel file containing the documents you want to import. Ensure that the file adheres to the expected format, with the first line containing field names and subsequent lines containing the corresponding document data.</li>
+<li>Start the import: Click the &quot;Import&quot; or &quot;Start&quot; button within the import dialog to initiate the import process. EDQL will read the file and automatically map the fields in the first line to the index properties in Elasticsearch.</li>
+<li>Monitor the import progress: The import dialog will display a progress bar indicating the import progress. You can monitor this progress to track the completion status.</li>
+<li>Cancel the import (if needed): If you need to cancel the import process for any reason, you can click the &quot;Cancel&quot; or &quot;Stop&quot; button within the import dialog. This action will halt the import, allowing you to abort the operation.</li>
+<li>Verify the import: Once the import is complete, you can verify the imported documents by querying the Elasticsearch index using EDQL or any other Elasticsearch querying tool.</li>
+</ol>
+<p>EDQL&#x27;s import feature streamlines the process of importing documents into your Elasticsearch index. It provides support for CSV and Excel formats, allowing you to easily import structured data. </p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -329,6 +345,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Export", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Import", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>

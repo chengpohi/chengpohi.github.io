@@ -6,14 +6,15 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752896193505">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752896221157">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>V1.10.0</title>
-    <meta name="title" content="V1.10.0">
+    <title>v1.10.0</title>
+    <meta name="title" content="v1.10.0">
+    <meta name="description" content="map monad: var a = [1, 2, 3].map{it - { return it+1 }}">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://chengpohi.github.io/changelog/v1.10.0/">
@@ -21,20 +22,22 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chengpohi.github.io/changelog/v1.10.0/">
-    <meta property="og:title" content="V1.10.0">
+    <meta property="og:title" content="v1.10.0">
+    <meta property="og:description" content="map monad: var a = [1, 2, 3].map{it - { return it+1 }}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://chengpohi.github.io/changelog/v1.10.0/">
-    <meta property="twitter:title" content="V1.10.0">
+    <meta property="twitter:title" content="v1.10.0">
+    <meta property="twitter:description" content="map monad: var a = [1, 2, 3].map{it - { return it+1 }}">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.752896193505" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.752896221157" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752896193505" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752896221157" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752896193505" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752896221157" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -260,9 +263,33 @@
 <doc-anchor-target id="v1100" class="break-words">
     <h1>
         <doc-anchor-trigger class="header-anchor-trigger" to="#v1100">#</doc-anchor-trigger>
-        <span>V1.10.0</span>
+        <span>v1.10.0</span>
     </h1>
 </doc-anchor-target>
+<doc-anchor-target id="added">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#added">#</doc-anchor-trigger>
+        <span>Added</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>map monad: <code v-pre>var a = [1, 2, 3].map{it -&gt; { return it+1 }}</code></li>
+<li>favorite function for quickly run function and reduce duplicate query</li>
+<li>autocompletion runnable funciton parameters</li>
+<li>edit favorite function jump to source code</li>
+<li>quick action to run favorite function</li>
+</ul>
+<doc-anchor-target id="changed">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#changed">#</doc-anchor-trigger>
+        <span>Changed</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>rewrite the whole parser and flexer to support complex syntax: arith, array map etc</li>
+<li>update chart file template</li>
+<li>compatible version from intellij 221</li>
+</ul>
 
                                 
                                 <!-- Required only on API pages -->
@@ -329,6 +356,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "V1.10.0", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "v1.10.0", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>

@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752896193505">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752896221157">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -14,6 +14,7 @@
     <!-- Primary Meta Tags -->
     <title>Export</title>
     <meta name="title" content="Export">
+    <meta name="description" content="Flexible Elasticsearch Document Index Data Export with Multiple Formats">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://chengpohi.github.io/export-import/export/">
@@ -22,19 +23,21 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chengpohi.github.io/export-import/export/">
     <meta property="og:title" content="Export">
+    <meta property="og:description" content="Flexible Elasticsearch Document Index Data Export with Multiple Formats">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://chengpohi.github.io/export-import/export/">
     <meta property="twitter:title" content="Export">
+    <meta property="twitter:description" content="Flexible Elasticsearch Document Index Data Export with Multiple Formats">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.752896193505" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.752896221157" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752896193505" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752896221157" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752896193505" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752896221157" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -263,6 +266,15 @@
         <span>Export</span>
     </h1>
 </doc-anchor-target>
+<p>EDQL export feature offers several convenient options to customize and optimize your export process:</p>
+<ol>
+<li>Scroll Download: With scroll download functionality, you can export large result sets that exceed the maximum number of rows displayed on the screen. This ensures that you can export complete query results, even if they span multiple pages.</li>
+<li>Download by Run Action: By simply clicking the run icon, you can initiate the export process and download the current result table directly. This quick and intuitive action saves you time and streamlines the export workflow.</li>
+<li>Visual Editor Download: The visual editor in EDQL provides a user-friendly interface for crafting queries. With the export feature integrated into the visual editor, you can effortlessly export query results while working on your queries.</li>
+<li>Format Options: EDQL supports multiple export formats, including CSV, Excel, and JSON. When exporting to CSV and Excel formats, noise data such as &quot;_hits&quot; and &quot;took&quot; will be automatically removed, ensuring cleaner and more focused exported data.</li>
+</ol>
+<p>The EDQL export feature now includes an automatic folder reveal functionality, simplifying the process of accessing your exported Elasticsearch data. After initiating the export, the plugin automatically reveals the destination folder where the exported files are saved.</p>
+<p>With this automated folder reveal, you can seamlessly navigate to the exported data without the need to manually search for the destination folder. </p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -285,7 +297,7 @@
                                         <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../export-import/import/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Export</span>
+                                                <span class="block mt-1">Import</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
