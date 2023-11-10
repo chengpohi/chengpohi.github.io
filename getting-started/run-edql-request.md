@@ -4,31 +4,26 @@ description: >-
   result
 ---
 
-# Run EDQL Query and Data Viewer
+# Run Query and Data Viewer
 
 ## Run with Intellij IDE
 
-EDQL is a script, it's easy to run and execute on Intellij IDE, the EDQL minimum run block is Query Action, also supports 
-run whole script. The following 3 ways to run EDQL script by Intellij.&#x20;
+EDQL is a script that offers a hassle-free execution experience on the Intellij IDE. With EDQL, you can easily run and execute scripts, with the minimum run block being the Query Action. Additionally, EDQL supports running the entire script for comprehensive execution. Explore the three convenient ways to execute EDQL scripts using Intellij, providing you with flexibility and efficiency in your development workflow.
 
 ### Run Query Action
 
-We can run single action by click action left icon directly or when the cursor stays on the request action block use the Run
-shortcut directly, also you can use click right mouse with run to run. it will only run current request action and
-return current request action response:
+Executing a single action in EDQL is as simple as a click. Just click on the left icon of the desired action to run it instantly. Alternatively, you can use the Run shortcut when the cursor is on the request action block. You can also right-click and select "Run" for quick execution. These methods ensure that only the selected action runs, return the corresponding response:
 
 ![](../.gitbook/assets/new-single-requests.gif)
 
 ### Run Script
 
-when EDQL script has multiple actions, we can run all actions when cursor not on any request action block and use Run
-shortcut to run whole requests also you can use right mouse for run. For multiple request actions, multiple responses
-will return, and display with multiple tabs for every result:
+When your EDQL script contains multiple actions, you have the flexibility to run all actions at once. Simply ensure that the cursor is not on any specific request action block, and then use the Run shortcut to execute the entire set of requests. Alternatively, you can right-click and select "Run" for a quick execution. For scripts with multiple request actions, EDQL will generate multiple responses, each displayed in a separate tab for easy access and analysis:
 
 ![](../.gitbook/assets/new-multi-requests.gif)
 
 ## Run with Visual Editor
 
-when switch in Visual Editor, Also we can just use Run button on every action block to run:
+Switching to Visual Editor mode provides an additional way to execute actions in EDQL. In this mode, you can simply use the Run button located on each action block to execute that specific action. This allows for quick and straightforward execution without the need to navigate away from the Visual Editor interface:
 
 ![](../.gitbook/assets/visual-runner.gif)

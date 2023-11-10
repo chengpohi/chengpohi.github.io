@@ -13,7 +13,7 @@
 ## Configuration
 
 * [Configure Connection](configuration/configure-connection.md)
-* [OpenAPI API Key](configuration/openapi-api-key.md)
+* [OpenAI API Key](configuration/openapi-api-key.md)
 * [Keyboard Shortcuts](configuration/keyboard-shortcuts.md)
 
 ## Run Queries
