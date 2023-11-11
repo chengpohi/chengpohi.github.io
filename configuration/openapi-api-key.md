@@ -1,5 +1,7 @@
 # OpenAI API Key
 
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
 The EDQL (Elasticsearch Data Query Language) plugin offers seamless integration with the OpenAI API, enabling natural language communication with ChatGPT and facilitating intelligent Elasticsearch queries. With this integration, users can interact with Elasticsearch using plain language without the need to learn the Elasticsearch Query DSL (Domain-Specific Language), making the querying process incredibly easy.
 
 Here's how the EDQL feature integrates the OpenAI API for effortless Elasticsearch querying:

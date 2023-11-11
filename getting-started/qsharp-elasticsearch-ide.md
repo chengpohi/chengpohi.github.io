@@ -18,6 +18,8 @@ Go to the [QSharp Releases](https://github.com/chengpohi/edql/releases) and choo
 
 <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
 ## Open QSharp
 
 * In macOS you can find the installed QSharp by _**LanunchPad**_ or _**Application Folder**_
