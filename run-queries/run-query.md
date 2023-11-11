@@ -2,6 +2,8 @@
 
 EDQL (Elasticsearch Data Query Language) feature in Intellij provides convenient ways to execute queries and manage Elasticsearch resources. Additionally, you can convert queries written in EDQL to Java code for further integration and customization. Let's explore these features in more detail:
 
+<figure><img src="../.gitbook/assets/image (10).png" alt="" width="375"><figcaption></figcaption></figure>
+
 ## Run Query Action:
 
 To execute an individual request, you can simply click the right icon of the request or use the Run shortcut when the cursor is positioned on the request action block. This action runs the selected request and returns the corresponding response. It is a quick and easy way to execute single queries within your EDQL script.

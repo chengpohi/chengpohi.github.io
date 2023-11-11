@@ -149,3 +149,5 @@ Experience the power of EDQL, a comprehensive scripting solution that fully supp
 ## QSharp EDQL IDE
 
 [QSharp IDE](https://github.com/chengpohi/edql/releases) is a powerful standalone IDE designed specifically for Elasticsearch querying. Unlike the EDQL plugin that requires installation within the Intellij IDE, QSharp can be installed independently. This is particularly useful for users who prefer not to install Intellij IDE solely for using EDQL.
+
+<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
