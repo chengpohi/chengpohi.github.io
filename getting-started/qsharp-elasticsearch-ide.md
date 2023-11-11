@@ -16,9 +16,9 @@ Experience the convenience and stability of QSharp as you dive into the world of
 
 Go to the [QSharp Releases](https://github.com/chengpohi/edql/releases) and choose the newest release, running platform and download. Since the macOS package is not signature, After click package, should go to the security preference and click `Open Anyway` to start install.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ## Open QSharp
 
