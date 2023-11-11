@@ -6,14 +6,14 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752896221157">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.753020486346">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>Data browser</title>
-    <meta name="title" content="Data browser">
+    <title>Data Browser</title>
+    <meta name="title" content="Data Browser">
     <meta name="description" content="Visualization is useful for analysis data and find data value">
 
     <!-- Canonical -->
@@ -22,24 +22,24 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chengpohi.github.io/data-viewer/data-browser/">
-    <meta property="og:title" content="Data browser">
+    <meta property="og:title" content="Data Browser">
     <meta property="og:description" content="Visualization is useful for analysis data and find data value">
     <meta property="og:image" content="https://chengpohi.github.io/.gitbook/assets/display-chart.gif">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://chengpohi.github.io/data-viewer/data-browser/">
-    <meta property="twitter:title" content="Data browser">
+    <meta property="twitter:title" content="Data Browser">
     <meta property="twitter:description" content="Visualization is useful for analysis data and find data value">
     <meta property="twitter:image" content="https://chengpohi.github.io/.gitbook/assets/display-chart.gif">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.752896221157" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.753020486346" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.752896221157" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.753020486346" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.752896221157" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.753020486346" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -265,29 +265,29 @@
 <doc-anchor-target id="data-browser" class="break-words">
     <h1>
         <doc-anchor-trigger class="header-anchor-trigger" to="#data-browser">#</doc-anchor-trigger>
-        <span>Data browser</span>
+        <span>Data Browser</span>
     </h1>
 </doc-anchor-target>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 <doc-anchor-target id="run-result-panel">
-    <h2>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#run-result-panel">#</doc-anchor-trigger>
         <span>Run Result Panel</span>
-    </h2>
+    </h3>
 </doc-anchor-target>
-<p>After running Elasticsearch query, the running result will display on a result panel, result panel include: left, middle
-and right panels.</p>
+<p>After running Elasticsearch query, the running result will display on a result panel, result panel include: left, middle and right panels.</p>
 <doc-anchor-target id="execution-details">
-    <h3>
+    <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#execution-details">#</doc-anchor-trigger>
         <span>Execution Details</span>
-    </h3>
+    </h4>
 </doc-anchor-target>
 <p>Execution details display time usage for query</p>
 <doc-anchor-target id="data-panel">
-    <h3>
+    <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#data-panel">#</doc-anchor-trigger>
         <span>Data Panel</span>
-    </h3>
+    </h4>
 </doc-anchor-target>
 <p>Display the query result data, support 3 mode: table mode, json mode and plot mode:</p>
 <ul>
@@ -296,47 +296,45 @@ and right panels.</p>
 <li>plot mode will display query data by vega-lite format</li>
 </ul>
 <doc-anchor-target id="explainprofile-panel">
-    <h3>
+    <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#explainprofile-panel">#</doc-anchor-trigger>
         <span>Explain&amp;Profile Panel</span>
-    </h3>
+    </h4>
 </doc-anchor-target>
 <p>Display the query explain and profile info when a run query with &quot;explain&quot;: true, &quot;profile&quot;: true</p>
 <doc-anchor-target id="table-mode">
-    <h2>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#table-mode">#</doc-anchor-trigger>
         <span>Table Mode</span>
-    </h2>
+    </h3>
 </doc-anchor-target>
-<p>Elasticsearch most of the data can be displayed as table mode includes: source hits, aggregation response, mapping and
-templates, etcs.</p>
+<p>Elasticsearch most of the data can be displayed as table mode includes: source hits, aggregation response, mapping and templates, etcs.</p>
 <doc-anchor-target id="documents">
-    <h3>
+    <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#documents">#</doc-anchor-trigger>
         <span>Documents</span>
-    </h3>
+    </h4>
 </doc-anchor-target>
 <p>Elasticsearch source hits documents default will display as table view and will remove noise info: shards, time etc.</p>
 <doc-anchor-target id="aggregations">
-    <h3>
+    <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#aggregations">#</doc-anchor-trigger>
         <span>Aggregations</span>
-    </h3>
+    </h4>
 </doc-anchor-target>
-<p>Aggregation result always includes a nest object, it&#x27;s hard to display and view, but EDQL has achieved flatten nested
-object to table view. So we can quickly and easily view the aggregate result.</p>
+<p>Aggregation result always includes a nest object, it&#x27;s hard to display and view, but EDQL has achieved flatten nested object to table view. So we can quickly and easily view the aggregate result.</p>
 <doc-anchor-target id="mappings">
-    <h3>
+    <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#mappings">#</doc-anchor-trigger>
         <span>Mappings</span>
-    </h3>
+    </h4>
 </doc-anchor-target>
 <p>Index mapping in Elasticsearch designs its nest object json. But usually we just want to focus on a field type and name.</p>
 <doc-anchor-target id="features">
-    <h3>
+    <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#features">#</doc-anchor-trigger>
         <span>Features</span>
-    </h3>
+    </h4>
 </doc-anchor-target>
 <ul>
 <li>Search</li>
@@ -348,25 +346,24 @@ object to table view. So we can quickly and easily view the aggregate result.</p
 <li>Fit Pane</li>
 </ul>
 <doc-anchor-target id="json-mode">
-    <h2>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#json-mode">#</doc-anchor-trigger>
         <span>JSON Mode</span>
-    </h2>
+    </h3>
 </doc-anchor-target>
-<p>In sometime some data it&#x27;s hard to display table directly, In these scenarios the query response will directly display
-as JSON</p>
+<p>In sometime some data it&#x27;s hard to display table directly, In these scenarios the query response will directly display as JSON</p>
 <doc-anchor-target id="plot-mode">
-    <h2>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#plot-mode">#</doc-anchor-trigger>
         <span>Plot Mode</span>
-    </h2>
+    </h3>
 </doc-anchor-target>
 <p>In plot mode, user can plot by using vega-lite syntax to plot Elasticsearch response.</p>
 <doc-anchor-target id="plot-aggregation">
-    <h3>
+    <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#plot-aggregation">#</doc-anchor-trigger>
         <span>Plot Aggregation</span>
-    </h3>
+    </h4>
 </doc-anchor-target>
 <ul>
 <li>plot metric</li>
@@ -445,6 +442,6 @@ as JSON</p>
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Data browser", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Data Browser", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
