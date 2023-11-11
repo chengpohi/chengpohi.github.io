@@ -4,6 +4,8 @@ description: Flexible Elasticsearch Document Index Data Export with Multiple For
 
 # Export
 
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
 EDQL export feature offers several convenient options to customize and optimize your export process:
 
 1. Scroll Download: With scroll download functionality, you can export large result sets that exceed the maximum number of rows displayed on the screen. This ensures that you can export complete query results, even if they span multiple pages.

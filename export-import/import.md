@@ -4,6 +4,8 @@ description: EDQL's Import Feature for Elasticsearch Index
 
 # Import
 
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
 EDQL provides a robust import feature that simplifies the process of importing documents into an Elasticsearch index. Here's a step-by-step guide on how to use this feature:
 
 1. Connect to Elasticsearch: Launch the EDQL Dock Manager and establish a connection with your Elasticsearch cluster. Double-click the connection node to configure and establish the connection.

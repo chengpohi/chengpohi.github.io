@@ -1,5 +1,7 @@
 # User Interface
 
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ## Dock Manager
 
 The EDQL Dock Manager is an integral part of the Intellij IDE user interface, positioned by default on the right side of the screen. It provides a user-friendly interface for efficiently managing connections and script files within the EDQL environment.
