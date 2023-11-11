@@ -4,7 +4,7 @@ description: Visual Editor for Help Quickly Generate Elasticsearch Query DSL in 
 
 # Visual Editor
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 Always complex Query DSL syntax is hard to learn and remember, also not easy to view if we only want to query by some simple conditions, example: must, must\_not, term, terms, range etc.
 
