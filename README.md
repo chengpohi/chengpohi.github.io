@@ -12,13 +12,13 @@ EDQL is cross-platform since it's based on intellij, so It can be used on window
 
 so based on the above scenarios **EDQL** implements powerful script engine: support function, variable and iteration etc. with intelligent Intellij you can easily write query DSL(autocomplete, refactor, live templates, extract etc).
 
+{% embed url="https://plugins.jetbrains.com/embeddable/card/16364" %}
+
 For aggregations, **EDQL** support plotting aggregation results in Intellij directly for analysis data(find more: ), that's powered by vega-lite plot library and is fully compatible with kibana vega-lite plot.
 
 {% content-ref url="tutorials/plot.md" %}
 [plot.md](tutorials/plot.md)
 {% endcontent-ref %}
-
-{% embed url="https://plugins.jetbrains.com/embeddable/card/16364" %}
 
 ## Feature Overview
 
