@@ -4,7 +4,7 @@ description: Visualization is useful for analysis data and find data value
 
 # Data Browser
 
-<figure><img src="/.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Run Result Panel
 
