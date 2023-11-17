@@ -2,7 +2,7 @@
 
 Connecting to Elasticsearch Using the EDQL Dock Manager in Intellij
 
-<figure><img src="/.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/image-(7).png" alt=""><figcaption></figcaption></figure>
 
 To facilitate seamless connectivity between Intellij and Elasticsearch, the EDQL Dock Manager offers a user-friendly solution. By utilizing the EDQL Dock Manager, users can conveniently establish connections to Elasticsearch and test the connection status.
 

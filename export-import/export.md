@@ -4,7 +4,7 @@ description: Flexible Elasticsearch Document Index Data Export with Multiple For
 
 # Export
 
-<figure><img src="/.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/image-(4).png" alt=""><figcaption></figcaption></figure>
 
 EDQL export feature offers several convenient options to customize and optimize your export process:
 

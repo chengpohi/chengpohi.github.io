@@ -8,7 +8,7 @@ EDQL has introduced a powerful feature that integrates EDQL functions seamlessly
 
 <figure><img src="/.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="/.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/image-(2).png" alt=""><figcaption></figcaption></figure>
 
 ## 1. Launch EDQL and Open the Editor
 
