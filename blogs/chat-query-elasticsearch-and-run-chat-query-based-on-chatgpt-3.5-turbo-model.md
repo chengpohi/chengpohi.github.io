@@ -9,7 +9,7 @@ This means that users can simply ask ChatGPT a question about the data they want
 generate the appropriate Elasticsearch query DSL. The Chat Query Elasticsearch feature is especially helpful for users
 who’re new to Elasticsearch or who don't want to spend time memorizing complex query syntax.
 
-<figure><img src="../.gitbook/assets/chatquery.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/chatquery.gif" alt=""><figcaption></figcaption></figure>
 
 The Chat Query Elasticsearch feature uses the ChatGPT 3.5 Turbo model to understand user queries and generate the
 appropriate Elasticsearch query DSL. This means that the plugin is smart and can generate complex queries based on the
@@ -17,7 +17,7 @@ context of the conversation. Additionally, the chat query feature supports conte
 querying an index, such as "query index my-index," and then add more details to the query using natural language, such
 as "field=222." The plugin will generate the complete query DSL based on the chat context.
 
-<figure><img src="../.gitbook/assets/chatquery2.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/chatquery2.gif" alt=""><figcaption></figcaption></figure>
 
 EDQL is an IntelliJ plugin that can be easily installed and integrated with your development environment. With the new
 Chat Query Elasticsearch feature, users can easily retrieve data from Elasticsearch without the hassle of remembering
@@ -27,7 +27,7 @@ The EDQL plugin also supports querying document data, as well as cluster stats a
 their query commands into the chat interface and receive the corresponding data as a result. For users who prefer SQL
 over Elasticsearch query DSL, the plugin can also help convert SQL queries to Elasticsearch query DSL.
 
-<figure><img src="../.gitbook/assets/chatquery3.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/chatquery3.gif" alt=""><figcaption></figcaption></figure>
 
 The EDQL plugin is still in development, and feedback is welcome on the project's GitHub page
 at [https://github.com/chengpohi/edql](https://github.com/chengpohi/edql). In conclusion, the Elasticsearch Query Plugin

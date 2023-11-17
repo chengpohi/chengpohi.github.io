@@ -13,9 +13,9 @@ improve search efficiency. (In the test GPT3 model is able to convert natural la
 Install and Try
 it: [https://github.com/chengpohi/edql/releases/tag/v1.9.16](https://github.com/chengpohi/edql/releases/tag/v1.9.16)
 
-<figure><img src="../.gitbook/assets/openai-query (1).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/openai-query (1).gif" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/openai-settings.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/openai-settings.gif" alt=""><figcaption></figcaption></figure>
 
 ## What is EDQL
 
