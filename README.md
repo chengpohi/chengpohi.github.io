@@ -22,8 +22,8 @@ so based on the above scenarios **EDQL** implements powerful script engine: supp
 
 For aggregations, **EDQL** support plotting aggregation results in Intellij directly for analysis data(find more: ), that's powered by vega-lite plot library and is fully compatible with kibana vega-lite plot.
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="tutorials/plot.md" %}
+[plot.md](tutorials/plot.md)
 {% endcontent-ref %}
 
 {% embed url="https://plugins.jetbrains.com/embeddable/card/16364" %}
@@ -104,7 +104,7 @@ POST $myindex/_search
 
 > Query index _**myindex**_ with custom source fields
 
-<figure><img src="/.gitbook/assets/new-query-demo.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/new-query-demo.gif" alt=""><figcaption></figcaption></figure>
 
 ### Guides: Jump right in
 
@@ -158,4 +158,4 @@ Experience the power of EDQL, a comprehensive scripting solution that fully supp
 
 [QSharp IDE](https://github.com/chengpohi/edql/releases) is a powerful standalone IDE designed specifically for Elasticsearch querying. Unlike the EDQL plugin that requires installation within the Intellij IDE, QSharp can be installed independently. This is particularly useful for users who prefer not to install Intellij IDE solely for using EDQL.
 
-<figure><img src="/.gitbook/assets/image-(11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image-(11).png" alt=""><figcaption></figcaption></figure>
