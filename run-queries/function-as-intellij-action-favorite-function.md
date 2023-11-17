@@ -4,7 +4,7 @@ description: quickly run function with params by action shortcut
 
 # Function as Intellij Action: Favorite Function
 
-EDQL has introduced a powerful feature that integrates EDQL functions seamlessly into the IntelliJ IDE, providing a familiar and efficient environment for query development. With EDQL Function as IntelliJ Action, developers can write, execute, and manage their EDQL functions directly within IntelliJ, leveraging the IDE's rich features and enhancing productivity. This integration enables a streamlined workflow, eliminating the need to switch between multiple tools and enhancing the overall developer experience. Whether you are a beginner or an experienced developer, EDQL Function as IntelliJ Action empowers you to develop Elasticsearch queries with ease and efficiency.
+EDQL has introduced a powerful feature that integrates EDQL functions seamlessly into the IntelliJ IDE, providing a familiar and efficient environment for query development. With EDQL Function as IntelliJ Action, developers can write, execute, and manage their EDQL functions directly within IntelliJ, leveraging the IDE's rich features and enhancing productivity. This integration enables a streamlined workflow, eliminating the need to switch between multiple tools and enhancing the overall developer experience. EDQL Function as IntelliJ Action empowers you to develop Elasticsearch queries with ease and efficiency.
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
