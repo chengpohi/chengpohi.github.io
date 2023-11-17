@@ -104,7 +104,7 @@ POST $myindex/_search
 
 > Query index _**myindex**_ with custom source fields
 
-<figure><img src="/.gitbook/assets/new-query-demo (2).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/new-query-demo.gif" alt=""><figcaption></figcaption></figure>
 
 ### Guides: Jump right in
 
@@ -158,4 +158,4 @@ Experience the power of EDQL, a comprehensive scripting solution that fully supp
 
 [QSharp IDE](https://github.com/chengpohi/edql/releases) is a powerful standalone IDE designed specifically for Elasticsearch querying. Unlike the EDQL plugin that requires installation within the Intellij IDE, QSharp can be installed independently. This is particularly useful for users who prefer not to install Intellij IDE solely for using EDQL.
 
-<figure><img src="/.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/image-(11).png" alt=""><figcaption></figcaption></figure>
