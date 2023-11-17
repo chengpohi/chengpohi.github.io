@@ -22,7 +22,7 @@ In the editor, create a new function by typing the following code:
 
 ```
 function getIds() {
-  POST fff/_search
+  POST myindex/_search
   {}
 }
 ```
