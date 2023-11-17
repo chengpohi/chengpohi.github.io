@@ -19,7 +19,7 @@
 ## Run Queries
 
 * [Run Query](run-queries/run-query.md)
-* [Quick Shortcut: Favorite Function](run-queries/quick-shortcut-favorite-function.md)
+* [Function as Intellij Action: Favorite Function](run-queries/function-as-intellij-action-favorite-function.md)
 
 ## Editor
 
