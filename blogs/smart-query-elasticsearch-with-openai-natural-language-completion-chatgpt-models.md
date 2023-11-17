@@ -11,9 +11,9 @@ combining ChatGPT with Elasticsearch DSL, to help people use natural language in
 improve search efficiency. (In the test GPT3 model is able to convert natural language into most accurate queries)
 
 Install and Try
-it: [https://github.com/chengpohi/edql/releases/tag/v1.9.16](https://github.com/chengpohi/edql/releases/tag/v1.9.16)
+it: [https://github.com/chengpohi/edql/releases](https://github.com/chengpohi/edql/releases)
 
-<figure><img src="/.gitbook/assets/openai-query (1).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/openai-query-(1).gif" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="/.gitbook/assets/openai-settings.gif" alt=""><figcaption></figcaption></figure>
 

@@ -12,7 +12,7 @@ Install and Try: [https://github.com/chengpohi/edql/releases/tag/v1.9.16](https:
 
 <figure><img src="/.gitbook/assets/java-code-generation.gif" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="/.gitbook/assets/openai-query (1).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/openai-query-(1).gif" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="/.gitbook/assets/filetype-settings.gif" alt=""><figcaption></figcaption></figure>
 
@@ -45,5 +45,3 @@ smarter context and completion, and test code generation. We will continue to wo
 for better, more useful and convenient code generation tools. We hope that EDQL will become a great tool for developers,
 helping them to be more productive and save more time, so that they can focus more on the logic and implementation of
 the code. The future EDQL will definitely be smarter and better, and become an indispensable tool for developers.
-
-Translated with www.DeepL.com/Translator (free version)

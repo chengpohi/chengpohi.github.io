@@ -29,4 +29,4 @@ Once you have downloaded the EDQL plugin, follow these simple steps to complete 
 3. Select the downloaded EDQL zip file.
 4. Restart the Intellij IDE to finalize the installation.
 
-![](</.gitbook/assets/install-edql (1).png>)
+![](</.gitbook/assets/install-edql-(1).png>)
