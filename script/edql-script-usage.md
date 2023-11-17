@@ -17,13 +17,13 @@ EDQL manager dashboard is used to manage the EDQL files, it will share cross pro
 
 it will auto fill the HOST, Timeout and Authorization with a simple EDQL Action, the EDQL file will be stored in the Manager like the Scratches files.
 
-![](../.gitbook/assets/new-edql-by-manager.gif)
+![](/.gitbook/assets/new-edql-by-manager.gif)
 
 ### New EDQL by New file
 
 it will automatically load the EDQL file template, include: HOST, Timeout , Authorization and with a simple EDQL Query Action. this file will be stored on the current directory
 
-![](../.gitbook/assets/new-edql-by-file.gif)
+![](/.gitbook/assets/new-edql-by-file.gif)
 
 ### Configurations
 
@@ -136,4 +136,4 @@ POST my-index/_search
 }
 ```
 
-![](../.gitbook/assets/new-visual.gif)
+![](/.gitbook/assets/new-visual.gif)

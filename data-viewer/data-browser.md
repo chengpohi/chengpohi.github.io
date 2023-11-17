@@ -4,7 +4,7 @@ description: Visualization is useful for analysis data and find data value
 
 # Data Browser
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Run Result Panel
 
@@ -67,4 +67,4 @@ In plot mode, user can plot by using vega-lite syntax to plot Elasticsearch resp
 * plot stats
 * multi line plot
 
-![](../.gitbook/assets/display-chart.gif)
+![](/.gitbook/assets/display-chart.gif)
