@@ -3,7 +3,7 @@
 [EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/) is a professional query and management tool for Elasticsearch. It's intelligent and powerful for manage Elasticsearch cluster and query from Elasticsearch. also It always follow Elasticsearch newest features.
 
 {% hint style="info" %}
-EDQL is cross-platform since it's based on intellij, so It can be used on windows, linux or macOS.
+EDQL is cross-platform since it's based on intellij, so It can be used on windows, linux or mac.
 {% endhint %}
 
 **The most important EDQL feature is full compatible with official Query DSL**, It means we can copy query DSL from document and run directly without any extra effort. also EDQL has visual editor feature that can help you use interactive UI to query Elasticsearch without know Elasticsearch syntax.
