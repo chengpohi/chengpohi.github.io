@@ -1,4 +1,4 @@
-# EDQL—Elasticsearch GUI Client and QSharp Elasticsearch IDE
+# EDQL: Elasticsearch GUI Client and QSharp Elasticsearch IDE
 
 [EDQL](https://plugins.jetbrains.com/plugin/16364-elasticsearch-query--edql/) is a professional query and management tool for Elasticsearch. It's intelligent and powerful for manage Elasticsearch cluster and query from Elasticsearch. also It always follow Elasticsearch newest features.
 
@@ -6,18 +6,20 @@
 EDQL is cross-platform since it's based on intellij, so It can be used on windows, linux or mac.
 {% endhint %}
 
-**The most important EDQL feature is full compatible with official Query DSL**, It means we can copy query DSL from document and run directly without any extra effort. also EDQL has visual editor feature that can help you use interactive UI to query Elasticsearch without know Elasticsearch syntax.
+## **Why EDQL?**
+
+**The most important EDQL feature is full compatible with official Query DSL**, It means we can copy query DSL from Elasticsearch document and run directly without any extra effort. also EDQL has visual editor feature that can help you use interactive UI to query Elasticsearch without know Elasticsearch syntax.
 
 > Elasticsearch Query DSL is complex and hard to learn, event we can use SQL or simple DSL directly query Elasticsearch, but in most cases such as we want to aggs complex time-series data and dig data value, it's hard to achieve. also query dsl is not easily share with team members, but we always want to efficiently collaborate
 
-so based on the above scenarios **EDQL** implements powerful script engine: support function, variable and iteration etc. with intelligent Intellij you can easily write query DSL(autocomplete, refactor, live templates, extract etc).
+So based on the above scenarios **EDQL** implements powerful script engine: support function, variable and iteration etc. with intelligent Intellij you can easily write query DSL(autocomplete, refactor, live templates, extract etc).
 
 {% embed url="https://plugins.jetbrains.com/embeddable/card/16364" %}
 
 For aggregations, **EDQL** support plotting aggregation results in Intellij directly for analysis data(find more: ), that's powered by vega-lite plot library and is fully compatible with kibana vega-lite plot.
 
-{% content-ref url="tutorials/plot.md" %}
-[plot.md](tutorials/plot.md)
+{% content-ref url="tutorials/plot/" %}
+[plot](tutorials/plot/)
 {% endcontent-ref %}
 
 ## Feature Overview
