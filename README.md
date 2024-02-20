@@ -11,7 +11,7 @@ icon: home
 **It** has powerful script engine: support function, variable and iteration etc. with smart Intellij you can easily write query DSL(refactor, extract etc).
 
 {% hint style="info" %}
-EDQL is cross-platform since it's based on intellij, so It can be used on windows, linux or macOS.
+EDQL is cross-platform since it's based on intellij, so It can be used on windows, linux or mac.
 {% endhint %}
 
 **The most important EDQL feature is full compatible with official Query DSL**, It means we can copy query DSL from document and run directly without any extra effort. also EDQL has visual editor feature that can help you use interactive UI to query Elasticsearch without know Elasticsearch syntax.
