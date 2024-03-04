@@ -16,7 +16,7 @@ links:
     icon: gear
   - text: QSharp IDE
     link: https://chengpohi.github.io/getting-started/qsharp-elasticsearch-ide/
-    icon: gear
+    icon: rocket
   - text: Github
     link: https://github.com/chengpohi/edql
     icon: mark-github
