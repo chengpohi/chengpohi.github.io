@@ -69,4 +69,4 @@
 
 ***
 
-* [Support EDQL](support-edql.md)
+* [Support EDQL 🎉🎉🎉](support-edql.md)
