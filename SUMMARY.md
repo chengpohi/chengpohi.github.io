@@ -66,3 +66,7 @@
 * [EDQL Smart Completion Elasticsearch Query DSL by ChatGPT](blogs/intellij-auto-completion-by-openai-completion-ai-chatgpt-text-davinci-003-code-davinci-002.md)
 * [Smart Query Elasticsearch with Natural Language Completion by ChatGPT](blogs/smart-query-elasticsearch-with-openai-natural-language-completion-chatgpt-models.md)
 * [Wildcard Query causes Cluster Crash](blogs/wildcard-query-cause-cluster-crash.md)
+
+***
+
+* [Support EDQL](support-edql.md)
