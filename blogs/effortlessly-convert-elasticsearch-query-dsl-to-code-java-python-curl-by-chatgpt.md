@@ -17,7 +17,7 @@ This innovative feature leverages the power of large language models, such as Ch
 \
 So users can easily to test query and convert query to code for quickly debug  and verify  result.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Unleash the Power of EDQL
 
