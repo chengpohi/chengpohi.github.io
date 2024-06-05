@@ -2,7 +2,7 @@
 
 ## Background
 
-Elasticsearch's powerful query capabilities are undoubtedly a game-changer, but the complexity of the DSL can often be a barrier for developers. Translating these queries into the appropriate code format, whether it's Java, Python, cURL, or any other language, can be a time-consuming and error-prone process.
+Elasticsearch's powerful query capabilities to query data, but the complexity of the DSL can often be a barrier for developers. Translating these query dsls into the appropriate code format, whether it's Java, Python, cURL, or any other language, can be a time-consuming and error-prone process.
 
 ## The Solution: EDQL - Convert feature
 
@@ -21,7 +21,7 @@ So users can easily to test query and convert query to code for quickly debug  a
 
 ## Unleash the Power of EDQL
 
-Experience the transformative power of EDQL's Query Conversion feature and take your Elasticsearch workflow to new heights. Download EDQL today and witness the seamless integration of Elasticsearch DSL into your preferred programming languages, unlocking a world of possibilities for your data management and analysis needs.
+Experience the transformative power of EDQL's Query Conversion feature, which can improve user development efficiency. Download EDQL today and witness the seamless integration of Elasticsearch DSL into your preferred programming languages.
 
-[https://chengpohi.github.io/getting-started/install-edql-on-intellij/](https://chengpohi.github.io/getting-started/install-edql-on-intellij/)
+{% embed url="https://chengpohi.github.io/getting-started/install-edql-on-intellij/" %}
 
