@@ -17,6 +17,8 @@ This innovative feature leverages the power of large language models, such as Ch
 \
 So users can easily to test query and convert query to code for quickly debug  and verify  result.
 
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ## Unleash the Power of EDQL
 
 Experience the transformative power of EDQL's Query Conversion feature and take your Elasticsearch workflow to new heights. Download EDQL today and witness the seamless integration of Elasticsearch DSL into your preferred programming languages, unlocking a world of possibilities for your data management and analysis needs.
