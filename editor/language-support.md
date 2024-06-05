@@ -4,8 +4,6 @@ description: Intellij IDE support for EDQL DSL editor
 
 # DSL Editor
 
-##
-
 <figure><img src="../.gitbook/assets/image-(1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## File Template
@@ -380,3 +378,7 @@ Defined Live Templates:
 ## Format
 
 **Format** support to format **Query DSL** blocks, includes: function, variable, JSON block, array block etc. it’s a simple way to make code is clean
+
+## Show Connection Info
+
+show current edql file bind connection info, it will automatically expand connections dock panel and scroll to current connection.
