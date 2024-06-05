@@ -62,6 +62,7 @@
 
 ## Blogs
 
+* [Effortlessly Convert Elasticsearch Query DSL to Code (Java, Python cURL) by ChatGPT](blogs/effortlessly-convert-elasticsearch-query-dsl-to-code-java-python-curl-by-chatgpt.md)
 * [Chat Query Elasticsearch and Run Query](blogs/chat-query-elasticsearch-and-run-chat-query-based-on-chatgpt-3.5-turbo-model.md)
 * [EDQL Smart Completion Elasticsearch Query DSL by ChatGPT](blogs/intellij-auto-completion-by-openai-completion-ai-chatgpt-text-davinci-003-code-davinci-002.md)
 * [Smart Query Elasticsearch with Natural Language Completion by ChatGPT](blogs/smart-query-elasticsearch-with-openai-natural-language-completion-chatgpt-models.md)
