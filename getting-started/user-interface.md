@@ -1,14 +1,14 @@
 # User Interface
 
-<figure><img src="/.gitbook/assets/image-(3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image-(3).png" alt=""><figcaption></figcaption></figure>
 
-## Dock Manager
+## Connection Manager
 
 The EDQL Dock Manager is an integral part of the Intellij IDE user interface, positioned by default on the right side of the screen. It provides a user-friendly interface for efficiently managing connections and script files within the EDQL environment.
 
 With the EDQL Dock Manager, you can effortlessly organize and navigate through your connections, establishing seamless communication with your Elasticsearch clusters. Additionally, it allows you to conveniently manage and access your script files, ensuring easy retrieval and modification as needed.
 
-### Dock Toolbar
+### Manager Toolbar
 
 The Dock Toolbar is a user-friendly feature located within the EDQL environment, designed to streamline connection and query management. Here are the key functionalities offered by the toolbar:
 
