@@ -4,20 +4,18 @@
 
 Elasticsearch's powerful query capabilities are undoubtedly a game-changer, but the complexity of the DSL can often be a barrier for developers. Translating these queries into the appropriate code format, whether it's Java, Python, cURL, or any other language, can be a time-consuming and error-prone process.
 
-So users can easily to test query and convert query to code for quickly debug query and verify query result.
+## The Solution: EDQL - Convert feature
 
-## EDQL: Convert feature
-
-
-
-**EDQL**, the Elasticsearch Query GUI client, has been designed to address this challenge head-on. With its latest feature, **Query Conversion**, users can now effortlessly translate their Elasticsearch DSL queries into a variety of programming language formats, including:
+**EDQL**, the Elasticsearch Query GUI client, has been designed to address this challenge head-on. With its latest feature, DSL **Query Conversion**, users can now effortlessly translate their Elasticsearch DSL queries into a variety of programming language formats, including:
 
 * Java
 * Python
 * cURL
 * Other Language
 
-This innovative feature leverages the power of large language models, such as ChatGPT and other AI-generated content (AIGC) technologies, to provide accurate and reliable code translations. Users can  their Elasticsearch DSL query will automatically generate the corresponding code snippets for their desired programming language.
+This innovative feature leverages the power of large language models, such as ChatGPT and other AI-generated content (AIGC) technologies, to provide accurate and reliable code translations. Users can  translate their Elasticsearch DSL query  automatically generate the corresponding code snippets for their desired programming language.\
+\
+So users can easily to test query and convert query to code for quickly debug  and verify  result.
 
 ## Unleash the Power of EDQL
 
